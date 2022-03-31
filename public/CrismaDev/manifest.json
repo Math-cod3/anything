@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "version": "0.0.1",
+    "name": "Crisma Developer",
+    "description": "Habilite o ambiente de desenvolvimento para as marcas do esquadrão CRISMA.",
+    "author": "Felipe",
+    "content_scripts": [{
+      "matches": [
+        "https://mariafilo.myvtex.com/*",
+        "https://homologmariafilo.myvtex.com/*",
+        "https://mariafilo.com.br/*",
+        "https://www.mariafilo.com.br/*"],
+      "js": ["scripts.js"],
+      "run_at": "document_end"
+    }],
+    "background": {
+       "scripts": [ "background.js" ]
+    },
+    "permissions": [
+        "<all_urls>","webRequest","webRequestBlocking"
+      ],
+    "icons": { 
+        "48": "icon-48.png"
+    },
+    "browser_action": {
+   	 "default_title": "CrismaDev"
+    }
+}
