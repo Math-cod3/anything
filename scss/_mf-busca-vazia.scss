@@ -1,0 +1,251 @@
+html {
+    font-size: 100%;
+    .resultado-busca {
+
+        .x-content {
+            margin: 100px auto 0;
+
+            .x-empty-search {
+                max-width: 1366px;
+                margin: 0 auto;
+                background-color: #f7f7f7;
+                position: relative;
+
+                .x-empty-search__suggestions {
+                    display: inline-block;
+                    width: 72%;
+                    vertical-align: top;
+                    background: url('/arquivos/atendimento-bg.jpg') repeat;
+                    padding-left: 8%;
+
+                    max-height: calc(100vh - 100px);
+                    overflow: auto;
+                        padding-right: 10px;
+
+                    .prateleira {
+                        margin-top: 100px;
+                        position: relative;
+
+                        &:before {
+                            content: "você pode gostar";
+                            position: absolute;
+                            top: -50px;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            -ms-transform: translate(-50%, -50%);
+                            font-size: 25px;
+                            color: #414042;
+                            font-family: "Playfair Display";
+                            font-style: italic;
+                            font-weight: 700;
+                        }
+
+                        &:after {
+                            content: "\2022 \2022 \2022";
+                            position: absolute;
+                            top: -25px;
+                            transform: translate(-50%, -50%);
+                            -ms-transform: translate(-50%, -50%);
+                            left: 50%;
+                            color: #dfaf83;
+                        }
+                        li {
+                            width: 30%;
+                            display: inline-block;
+                            margin-right: 3%;
+                            max-width: 260px;
+
+                            &:nth-child(3n) {
+                                margin-right: 0;
+                            }
+
+                            .x-product {
+                                padding: 0;
+
+                                .x-product-info {
+                                    h2 {
+                                        text-align: left;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .x-empty-search__tips {
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 28%;
+                    background-color: #f7f7f7;
+                    text-align: center;
+                    position: relative;
+
+                    &:before {
+                        content: "";
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 15px 15px 15px 0;
+                        border-color: transparent #f7f7f7 transparent transparent;
+                        position: absolute;
+                        right: 100%;
+                        top: 50px;
+                    }
+
+                    .x-empty-search__top {
+                        position: relative;
+                        padding-top: 60px;
+                        &:before {
+                            content: "";
+                            width: 0;
+                            height: 0;
+                            top: 0;
+                            position: absolute;
+                            left: 20%;
+                            border-style: solid;
+                            border-width: 15px 13.5px 0 13.5px;
+                            border-color: #ffffff transparent transparent transparent;
+                            line-height: 0px;
+                        }
+                        .x-empty-search__icon {
+                            background: url('/arquivos/icon_btnSearch.png') center no-repeat;
+                            width: 27px;
+                            height: 27px;
+                            display: block;
+                            margin: 0 auto 30px;
+                            display: none;
+                        }
+
+                        h5 {
+                            font-size: 31px;
+                            color: #dfaf83;
+                            font-style: italic;
+                            font-family: 'Playfair Display';
+                            font-weight: 700;
+                            text-transform: lowercase;
+                            background-color: transparent;
+                            text-align: center;
+                            margin-bottom: 20px;
+                            display: none;
+                        }
+
+                        p {
+                            font-family: "Lato", sans-serif;
+                            font-size: 13px;
+                            color: #595959;
+                            text-transform: uppercase;
+                            font-weight: 600;
+                            letter-spacing: 1.4px;
+                            display: none;
+                        }
+
+                        &:after {
+                            content: "\2022 \2022 \2022";
+                            margin: 25px auto 40px;
+                            color: #dfaf83;
+                            position: relative;
+                            display: block;
+                            font-size: 13px;
+                            text-align: center;
+                            display: none;
+                        }
+                    }
+
+                    .x-empty-search__form {
+                        width: 90%;
+                        margin: 60px auto 0;
+                        position: relative;
+
+                        input {
+                            font-size: 29px;
+                            color: #dfaf83;
+                            font-style: italic;
+                            font-family: 'Playfair Display';
+                            font-weight: 700;
+                            text-transform: lowercase;
+                            background-color: transparent;
+                            text-align: center;
+                            width: 100%;
+
+                            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                                color: #dfaf83 !important;
+                            }
+                            &::-moz-placeholder { /* Firefox 19+ */
+                                color: #dfaf83 !important;
+                            }
+                            &:-ms-input-placeholder { /* IE 10+ */
+                                color: #dfaf83 !important;
+                            }
+                            &:-moz-placeholder { /* Firefox 18- */
+                                color: #dfaf83 !important;
+                            }
+                        }
+
+                        input:focus::-webkit-input-placeholder{
+                            color: transparent!important;
+                        }
+                        input:focus::-moz-placeholder{
+                            color: transparent!important;
+                        }
+                        input:focus:-moz-placeholder{
+                            color: transparent!important;
+                        }
+
+                        button {
+                            background-color: transparent;
+                            font-size: 0;
+                            display: inline-block;
+                            vertical-align: middle;
+                            background: url('/arquivos/icon_btnSearch.png') center no-repeat;
+                            cursor: pointer;
+                            display: block;
+                            height: 32px;
+                            position: absolute;
+                            top: -50px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 35px;
+                        }
+
+                        &:after {
+                            content: "\2022 \2022 \2022";
+                            margin: 20px auto -10px;
+                            color: #dfaf83;
+                            position: relative;
+                            display: block;
+                            font-size: 13px;
+                            text-align: center;
+                        }
+                    }
+
+                    .x-empty-search__steps {
+                        div {
+                            margin: 40px auto;
+                            span {
+                                font-family: "Playfair Display", sans-serif;
+                                font-size: 20px;
+                                color: #dfdfdf;
+                            }
+
+                            p {
+                                font-family: "Playfair Display";
+                                font-size: 12px;
+                                color: #838383;
+                                width: 50%;
+                                display: block;
+                                line-height: 22px;
+                                margin: 10px auto 0;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .x-footer {
+            margin-top: 0;
+        }
+    }
+}
+

@@ -1,0 +1,124 @@
+.lp-leads{
+.x-header__title-container {
+    @include justify-content(center);
+    padding: 30px 15% 40px;
+}
+
+.x-content {
+    background-color: #FBEEE2;
+}
+
+.wrapper {
+    width: 724px;
+    margin: auto;
+}
+
+
+    .x-footer__news {
+        display: none;
+    }
+
+.lp-title {
+    padding: 55px 0 0;
+
+    h1 {
+        font: 24px/29px $fontSecundaria;
+        text-align: center;
+    }
+
+    b {
+        font-weight: 900;
+    }
+}
+
+.lp-form {
+    padding: 40px 0 0;
+
+    &__fields {
+        @include display-flex();
+
+        &-item {
+            @include display-flex();
+
+            label {
+                margin-bottom: 8px;
+                cursor: pointer;
+                font: 15px/18px $fontSecundaria;
+                color: #826248;
+            }
+
+            input {
+                width: 350px;
+                height: 40px;
+                padding: 10px;
+            }
+
+            &:last-of-type {
+                margin-left: 24px;
+            }
+        }
+    }
+
+    &__submit-btn {
+        @include display-flex();
+        @include justify-content(center);
+        padding: 24px 0 0;
+
+        input {
+            padding: 14px 86px;
+            background-color: $color-0;
+            cursor: pointer;
+            font: 900 12px/14px $fontSecundaria;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+    }
+
+    &__response {
+        text-align: center;
+    }
+}
+
+.lp-plus {
+    padding: 48px 0 0;
+
+    p {
+        font: italic 700 16px/24px $fontSecundaria;
+        text-decoration-line: underline;
+        text-align: center;
+    }
+}
+
+.lp-advantages {
+    @include display-flex();
+    padding: 24px 0 97px;
+
+    &__item {
+        @include display-flex();
+        @include flex-direction(column);
+        @include justify-content(center);
+        @include align-items(center);
+        @include border-radius(10px);
+        width: 220px;
+        height: 194px;
+        padding: 0 15px 40px;
+        background-color: #FFE1C5;
+        
+        &-image {
+            @include display-flex();
+            @include justify-content(center);
+            margin: auto 0 25px;
+        }
+
+        &-text {
+            font: 14px/21px $fontSecundaria;
+            text-align: center;
+        }
+
+        &:not(:first-child) {
+            margin-left: 32px;
+        }
+    }
+}
+}

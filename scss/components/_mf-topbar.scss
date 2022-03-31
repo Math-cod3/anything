@@ -1,0 +1,122 @@
+.top-bar {
+  background-color: #2c2b29;
+  text-transform: uppercase;
+  display: none;
+
+  &.js-active {
+    display: block;
+  }
+
+  .topbarCountdown {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    color: inherit;
+    cursor: pointer;
+
+    .divider{
+      width: 1px;
+      height: 16px;
+      background-color: white;
+      margin: 0 15px;
+    }
+    * {
+      font-family: "Lato", serif;
+    }
+    > .content {
+      display: flex;
+      flex-direction: row;
+      margin: 0 auto;
+    }
+    &__countdown{
+      float:left;
+      display:flex;
+      flex-direction:row;
+      align-items:center;
+      // border-right: 1px solid rgb(104, 104, 104);
+      &__timer {
+        float: left;
+        position: relative;
+        margin-right: 30px;
+        > div {
+          display: inline-block;
+          &.countDown-counter {
+            position: relative;
+            margin: 0 4px;
+            line-height: 20px;
+            span {
+              display: block;
+              text-align: center;
+              font-size: 0.5rem;
+              font-weight: lighter;
+              &.value {
+                font-size: 1.2rem;
+                font-weight: unset;
+              }
+            }
+
+            &.divisor {
+              position: relative;
+              top: -10px;
+              margin: 0;
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+
+      &__title {
+        float: left;
+        font-size: 1.2em;
+        margin: 0 10px;
+        line-height: 75px;
+        font-weight: 600;      }
+    }
+    &__infos {
+      display: flex;
+      align-items: center;
+
+      &__description {
+        font-size: 1.0em;
+        margin-right: 18px;
+        margin-left: 10px;
+        font-weight: 400;
+        color: #FFF;
+      }
+      &__coupon{
+        border: 1px dashed #fff;
+        padding: 5px 8px 5px 15px;
+        border-radius: 5px;
+        display: flex;
+        column-gap: 10px;
+        justify-content: center;
+        align-items: center;
+        cursor: copy;
+
+        .coupon-text{
+          padding: 0 16px 0 0;
+          display: flex;
+          align-items: center;
+          font-family: Lato;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 17px;
+          letter-spacing: 0.04em;
+          text-align: left;
+        }
+      }
+      &__rules {
+        font-family: Lato;
+        font-size: 0.7em;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.04em;
+        text-align: left;
+        margin-left: 30px;
+      }
+    }
+    }
+}

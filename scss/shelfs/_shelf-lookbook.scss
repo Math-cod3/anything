@@ -1,0 +1,47 @@
+.x-lookshelf{
+    position: relative;
+    
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+    &__cta{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#000, 0.2);
+        left: 0;
+        top: 0;
+        
+        opacity: 0;
+        
+        
+        span{
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 900;
+            @include transform(translate(-50%, -50%));
+            
+            &:after{
+                content:'';
+                width: 100%;
+                position: absolute;
+                left: 0;
+                bottom: -5px;
+                border-bottom: 2px dotted #fff;
+                display: block;
+            }
+        }
+    }
+    
+    &:hover{
+        .x-lookshelf__cta{
+            // opacity: 1;
+        }
+    }
+}

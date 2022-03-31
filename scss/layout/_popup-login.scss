@@ -1,0 +1,884 @@
+#vtexIdContainer {
+  position: fixed !important;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.vtexIdUI {
+  transition: none !important;
+  min-height: 350px;
+  border-radius: 0 !important;
+
+  & * {
+    transition: none !important;
+  }
+
+}
+
+.vtexIdUI-show-app {
+  box-shadow: none !important;
+  border: 0 !important;
+  max-width: 540px !important;
+  width: 60% !important;
+  background: transparent !important;
+
+  .vtexid-icon-lock {
+    display: none;
+  }
+}
+
+#vtexIdUI-auth-selector {
+  max-width: 480px;
+  padding-top: 20px;
+  min-height: auto;
+
+  .modal-header {
+    padding: 40px 0 48px 0;
+    border-bottom: 0;
+    background: #fff;
+
+    .vtexIdUI-heading {
+      height: 24px;
+      display: block;
+      text-align: center;
+      margin: 0;
+
+      span {
+        font-size: 0;
+
+        &::after {
+          content: 'Selecione uma opção de login:';
+          font-family: $fontSecundaria;
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .vtexIdUI-close {
+      display: block !important;
+      cursor: pointer;
+      font-size: 0;
+      background-color: transparent;
+      background: url('/arquivos/icon_deleteBlack.png') center no-repeat;
+      height: 15px;
+      width: 15px;
+      margin-top: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  .modal-body {
+    min-height: 100px;
+    background-color: #fff;
+    padding: 0 0 32px;
+
+    .vtexIdUI-providers-list {
+      li {
+        margin-bottom: 16px;
+      }
+
+      #loginWithAccessKeyBtn {
+        max-width: 272px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        background: #000;
+        border-radius: 2px;
+        border: 0;
+        box-shadow: none;
+
+        i {
+          display: none;
+        }
+
+        span {
+          font-size: 0;
+
+          &::after {
+            content: 'entrar com e-mail';
+            font-family: $fontSecundaria;
+            font-size: 11px;
+            font-weight: bold;
+            text-transform: uppercase;
+            word-spacing: 2px;
+            color: #fff;
+          }
+        }
+      }
+
+      #vtexIdUI-facebook {
+        max-width: 272px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        background: #1977F3;
+        border-radius: 2px;
+        border: 0;
+        box-shadow: none;
+        position: relative;
+
+        &::before {
+          content: '';
+          background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yMCAxMC4wNjA4QzIwIDQuNTA0OCAxNS41MjI0IDAgMTAgMEM0LjQ3NzU4IDAgMCA0LjUwNDggMCAxMC4wNjA4QzAgMTUuMDgyIDMuNjU2MzQgMTkuMjQ0NCA4LjQzNzY1IDIwVjEyLjk2OTdINS44OTc5VjEwLjA2MDhIOC40Mzc2NVY3Ljg0Mzc2QzguNDM3NjUgNS4zMjI1MiA5LjkzMTEgMy45Mjg5MiAxMi4yMTQ5IDMuOTI4OTJDMTMuMzA4OSAzLjkyODkyIDE0LjQ1MzcgNC4xMjU1NyAxNC40NTM3IDQuMTI1NTdWNi42MDE1NUgxMy4xOTIyQzExLjk1MDUgNi42MDE1NSAxMS41NjIzIDcuMzc2ODggMTEuNTYyMyA4LjE3MzRWMTAuMDYwN0gxNC4zMzU1TDEzLjg5MjUgMTIuOTY5NkgxMS41NjIzVjIwQzE2LjM0MzYgMTkuMjQ1NyAyMCAxNS4wODMzIDIwIDEwLjA2MDdWMTAuMDYwOFoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPg==");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          top: 50%;
+          transform: translate(-550%, -50%);
+        }
+
+        i {
+          display: none;
+        }
+
+        span {
+          text-shadow: none;
+          font-family: $fontSecundaria;
+          text-transform: uppercase;
+          font-size: 11px;
+          color: #fff;
+          word-spacing: 2px;
+          letter-spacing: 1px;
+          font-weight: 700;
+        }
+      }
+
+      #vtexIdUI-google-plus {
+        max-width: 272px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        background: #4485F4;
+        border-radius: 2px;
+        border: 0;
+        box-shadow: none;
+        position: relative;
+
+        &::before {
+          content: '';
+          background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wLjk4OTc0NiA0Ljk2NDUxQzEuMzY0NDMgNC4xNTY5NyAxLjg5Mzg5IDMuNDUyNCAyLjUxNDczIDIuODE0ODNDMy45MTk2MSAxLjM3MTk1IDUuNjIwNjMgMC40NDc5OTQgNy42MzQxNyAwLjEzMjgzOEMxMC40NTI1IC0wLjMwODMwNCAxMi45NzQ4IDAuMzQyODQ1IDE1LjE1NDUgMi4xODE4NkMxNS4yOTIyIDIuMjk4MDggMTUuMzI2MyAyLjM2NjAxIDE1LjE3NjUgMi41MDk2OEMxNC40MDcyIDMuMjQ3ODUgMTMuNjUgMy45OTgxNiAxMi44ODgzIDQuNzQ0MDFDMTIuODEwMiA0LjgyMDU0IDEyLjc1NzQgNC45MTM5NCAxMi42MTg3IDQuNzg5MzFDMTAuNjk5NiAzLjA2NjQ3IDcuNTY3MjIgMy4wODYwOSA1LjUyODAyIDQuOTQ0MjVDNC44Mjc5NSA1LjU4MjIgNC4zMzAxMiA2LjM0NjcyIDQuMDA0MTggNy4yMjMxMUMzLjk1NjYyIDcuMTkyNiAzLjkwNjY0IDcuMTY1MzQgMy44NjE3OSA3LjEzMTU0QzIuOTA0MTEgNi40MDk2NyAxLjk0Njk4IDUuNjg2OTcgMC45ODk3NDYgNC45NjQ1MVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMy45ODE4MSAxMC43NDE4QzQuMjU2ODcgMTEuNDI2MyA0LjU5ODc1IDEyLjA3MzcgNS4xMDY3OSAxMi42MjM0QzYuMzk4NjQgMTQuMDIxMyA3Ljk5OTk1IDE0LjYyNDQgOS45MTg1NiAxNC40MjkyQzEwLjgxIDE0LjMzODUgMTEuNjIyMiAxNC4wNDI3IDEyLjM4MTEgMTMuNTg4MUMxMi40NTM5IDEzLjY1MTkgMTIuNTIzMiAxMy43MiAxMi42IDEzLjc3ODhDMTMuNDg4MSAxNC40NTgzIDE0LjM3NzUgMTUuMTM2MyAxNS4yNjY0IDE1LjgxNDdDMTQuMjg2MSAxNi43MjY5IDEzLjEyODcgMTcuMzM0MiAxMS44MjY3IDE3LjY1NjdDOC43NTY4NyAxOC40MTcgNS45MjcxMSAxNy45MzY1IDMuNDE0MzYgMTUuOTkzNUMyLjM3NTUyIDE1LjE5MDMgMS41NTg0MSAxNC4xOTggMC45ODI0MjIgMTMuMDIzNUMxLjk4MjI4IDEyLjI2MjkgMi45ODIwNSAxMS41MDIzIDMuOTgxODEgMTAuNzQxOFoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTUuMjY2MyAxNS44MTQ3QzE0LjM3NzMgMTUuMTM2MyAxMy40ODggMTQuNDU4MyAxMi41OTk5IDEzLjc3ODlDMTIuNTIzMSAxMy43MjAxIDEyLjQ1MzggMTMuNjUxOSAxMi4zODEgMTMuNTg4MUMxMi45ODI5IDEzLjEzOCAxMy40ODUxIDEyLjYwNTcgMTMuODE1IDExLjkyOTNDMTMuOTQ2NSAxMS42NTk3IDE0LjAzOSAxMS4zNzc0IDE0LjEyNjQgMTEuMDkyQzE0LjE4NjYgMTAuODk1MyAxNC4xNjc5IDEwLjgxODcgMTMuOTE5NSAxMC44MjA4QzEyLjQ0IDEwLjgzMzEgMTAuOTYwMyAxMC44MjY5IDkuNDgwNjEgMTAuODI2OEM5LjE2NzIgMTAuODI2OCA5LjE2Njk2IDEwLjgyNjYgOS4xNjY5NiAxMC41MDkxQzkuMTY2ODEgOS41MjY0NiA5LjE3MTc0IDguNTQzNzYgOS4xNjI2NSA3LjU2MTEyQzkuMTYwOTkgNy4zNzE2MSA5LjE5NDg4IDcuMjk4ODUgOS40MTI2MiA3LjI5OTQzQzEyLjE0MTcgNy4zMDcyMSAxNC44NzA5IDcuMzA1NTIgMTcuNjAwMSA3LjMwMTlDMTcuNzQ3NCA3LjMwMTcgMTcuODQgNy4zMTI0MyAxNy44NjU2IDcuNDg4MDJDMTguMjA1MSA5LjgyNjc3IDE3LjkzMyAxMi4wNjE0IDE2LjY4MzcgMTQuMTI1NUMxNi4zMDEyIDE0Ljc1NzQgMTUuODQxNiAxNS4zMzQ0IDE1LjI2NjMgMTUuODE0N1oiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMy45ODE3NyAxMC43NDE4QzIuOTgyIDExLjUwMjMgMS45ODIyNCAxMi4yNjI5IDAuOTgyMzgxIDEzLjAyMzZDMC40OTQxMTkgMTIuMTM0MSAwLjIxMjQ5IDExLjE3ODYgMC4wODEwOTk3IDEwLjE4MzRDLTAuMTQ2NTUyIDguNDU5MDMgMC4xMDM1OTggNi44IDAuODUwMTUxIDUuMjE3ODNDMC44OTExNTIgNS4xMzA5MSAwLjk0MzEwNyA1LjA0ODk3IDAuOTg5OTMgNC45NjQ2MUMxLjk0NzE2IDUuNjg2OTcgMi45MDQyOSA2LjQwOTY3IDMuODYxOTcgNy4xMzE1NEMzLjkwNjgyIDcuMTY1MzQgMy45NTY4NSA3LjE5MjYgNC4wMDQzNiA3LjIyMzExQzMuNjAzMzMgOC4zOTM2NyAzLjYyMzMyIDkuNTY2NjQgMy45ODE3NyAxMC43NDE4WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          top: 50%;
+          transform: translate(-550%, -50%);
+        }
+
+        i {
+          display: none;
+        }
+
+        span {
+          text-shadow: none;
+          font-family: $fontSecundaria;
+          text-transform: uppercase;
+          font-size: 11px;
+          color: #fff;
+          word-spacing: 2px;
+          letter-spacing: 1px;
+          font-weight: 700;
+        }
+      }
+
+      #loginWithUserAndPasswordBtn {
+        max-width: 272px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        background: #fff;
+        border-radius: 2px;
+        border: 1px solid #000;
+        box-shadow: none;
+
+
+        i {
+          display: none;
+        }
+
+        span {
+          text-shadow: none;
+          font-family: $fontSecundaria;
+          text-transform: uppercase;
+          font-size: 11px;
+          color: #000;
+          word-spacing: 2px;
+          letter-spacing: 1px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+#vtexIdUI-form-classic-login {
+  max-width: 480px;
+  padding-top: 20px;
+  min-height: auto;
+
+  .modal-header {
+    padding: 40px 0 48px 0;
+    border-bottom: 0;
+    background: #fff;
+
+    button.close.vtexIdUI-close {
+      content: '';
+      display: block !important;
+      font-size: 0;
+      background-color: transparent;
+      background: url('/arquivos/icon_deleteBlack.png') center no-repeat;
+      height: 15px;
+      width: 15px;
+      margin-top: 10px;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+
+    h4 {
+      height: 24px;
+      display: block;
+      text-align: center;
+      margin: 0;
+
+      .vtexIdUI-heading {
+        font-size: 0;
+
+        &::after {
+          content: 'Informe seu e-mail e senha:';
+          font-size: 20px;
+          font-family: $fontSecundaria;
+          color: #000;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .modal-body {
+    position: relative;
+    padding: 0;
+
+    .control-group.vtexIdUI-classic-login-control {
+      max-width: 300px;
+      margin: 0 auto 15px;
+    }
+
+    .control-group.vtexIdUI-classic-login-control.email-model {
+      margin-bottom: 10px;
+    }
+
+    a[data-i18n="vtexid.forgotPswd"] {
+      font-size: 0;
+
+      &::after {
+        content: 'Esqueci a senha';
+        font-size: 12px;
+        text-decoration: underline;
+        color: #000;
+        position: absolute;
+        bottom: 12px;
+        left: 160px;
+      }
+    }
+
+    a[data-i18n="vtexid.forgotPswdHelper"] {
+      margin-top: 10px;
+      font-size: 0;
+
+      &::after {
+        content: 'Não tenho senha';
+        font-size: 12px;
+        text-decoration: underline;
+        color: #000;
+      }
+    }
+
+    .dead-link {
+      font-size: 11px;
+      color: #6e6e6e;
+      text-transform: initial;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+    }
+
+    .controls {
+
+      input[type="email"],
+      input[type="password"] {
+        width: 300px;
+        height: 40px;
+        background: #fff;
+        border: 1px solid #C4C4C4;
+        box-shadow: none;
+        border-radius: 2px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #000;
+        letter-spacing: 1px;
+        outline: none;
+        box-sizing: border-box;
+        padding: 0 10px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .modal-footer {
+    background: #fff;
+    border-top: 0;
+    border-radius: 0;
+    padding: 15px 90px 40px;
+
+    .dead-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 0;
+
+      &::after {
+        content: '';
+        background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNSAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI4MDMzIDAuMjE5NjdDNy41NzMyMiAwLjUxMjU2MyA3LjU3MzIyIDAuOTg3NDM3IDcuMjgwMzMgMS4yODAzM0wyLjU2MDY2IDZIMTQuMjVDMTQuNjY0MiA2IDE1IDYuMzM1NzkgMTUgNi43NUMxNSA3LjE2NDIxIDE0LjY2NDIgNy41IDE0LjI1IDcuNUgyLjU2MDY2TDcuMjgwMzMgMTIuMjE5N0M3LjU3MzIyIDEyLjUxMjYgNy41NzMyMiAxMi45ODc0IDcuMjgwMzMgMTMuMjgwM0M2Ljk4NzQ0IDEzLjU3MzIgNi41MTI1NiAxMy41NzMyIDYuMjE5NjcgMTMuMjgwM0wwLjIyMDA5MiA3LjI4MDc1QzAuMjE5OTUxIDcuMjgwNjEgMC4yMTk4MTEgNy4yODA0NyAwLjIxOTY3IDcuMjgwMzNDMC4xNDc3NjMgNy4yMDg0MiAwLjA5MzUwODkgNy4xMjU1NSAwLjA1NjkwOTEgNy4wMzcwOUMwLjAyMDIzOTIgNi45NDg2NiAwIDYuODUxNjkgMCA2Ljc1QzAgNi42NDgzMSAwLjAyMDIzOTIgNi41NTEzNCAwLjA1NjkwOTEgNi40NjI5MUMwLjA5MzUwODkgNi4zNzQ0NSAwLjE0Nzc2MyA2LjI5MTU4IDAuMjE5NjcgNi4yMTk2N0w2LjIxOTY3IDAuMjE5NjdDNi41MTI1NiAtMC4wNzMyMjMzIDYuOTg3NDQgLTAuMDczMjIzMyA3LjI4MDMzIDAuMjE5NjdaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4=");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        transform: translate(50%, 50%);
+      }
+
+      i {
+        display: none;
+      }
+    }
+
+    .btn {
+      width: 96px;
+      background-color: #000;
+      color: #fff;
+      background-image: none;
+      border: 0;
+      box-shadow: none;
+      border-radius: 0;
+      text-transform: uppercase;
+      text-shadow: none;
+      font-size: 11px;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  
+}
+
+#vtexIdUI-email-confirmation {
+  max-width: 480px;
+  padding-top: 20px;
+  min-height: auto;
+
+  .modal-header {
+    padding: 40px 0 48px 0;
+    border-bottom: 0;
+    background: #fff;
+
+    button.close.vtexIdUI-close {
+      content: '';
+      display: block !important;
+      font-size: 0;
+      background-color: transparent;
+      background: url('/arquivos/icon_deleteBlack.png') center no-repeat;
+      height: 15px;
+      width: 15px;
+      margin-top: 10px;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+
+    h4 {
+      height: 24px;
+      display: block;
+      text-align: center;
+      margin: 0;
+
+      .vtexIdUI-heading {
+        font-size: 0;
+
+        &::after {
+          content: 'Informe seu e-mail';
+          font-size: 20px;
+          font-family: $fontSecundaria;
+          color: #000;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .modal-body {
+    padding: 0;
+    min-height: 100px;
+
+    label {
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 600;
+      color: #6e6e6e;
+      letter-spacing: 1px;
+    }
+
+    .dead-link {
+      color: #6e6e6e;
+      text-transform: initial;
+      font-size: 10px;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+    }
+
+    .controls {
+
+      input[type="email"],
+      input[type="password"] {
+        max-width: 236px;
+        height: 40px;
+        padding: 0 10px;
+        background: #fff;
+        border: 1px solid #C4C4C4;
+        box-shadow: none;
+        border-radius: 2px;
+        font-family: $fontSecundaria;
+        font-size: 14px;
+        color: #000;
+        letter-spacing: 1px;
+        outline: none;
+        box-sizing: border-box;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .modal-footer {
+    border: none;
+    background: #fff;
+    border-radius: 0;
+
+    .dead-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 0;
+
+      &::after {
+        content: '';
+        background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNSAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI4MDMzIDAuMjE5NjdDNy41NzMyMiAwLjUxMjU2MyA3LjU3MzIyIDAuOTg3NDM3IDcuMjgwMzMgMS4yODAzM0wyLjU2MDY2IDZIMTQuMjVDMTQuNjY0MiA2IDE1IDYuMzM1NzkgMTUgNi43NUMxNSA3LjE2NDIxIDE0LjY2NDIgNy41IDE0LjI1IDcuNUgyLjU2MDY2TDcuMjgwMzMgMTIuMjE5N0M3LjU3MzIyIDEyLjUxMjYgNy41NzMyMiAxMi45ODc0IDcuMjgwMzMgMTMuMjgwM0M2Ljk4NzQ0IDEzLjU3MzIgNi41MTI1NiAxMy41NzMyIDYuMjE5NjcgMTMuMjgwM0wwLjIyMDA5MiA3LjI4MDc1QzAuMjE5OTUxIDcuMjgwNjEgMC4yMTk4MTEgNy4yODA0NyAwLjIxOTY3IDcuMjgwMzNDMC4xNDc3NjMgNy4yMDg0MiAwLjA5MzUwODkgNy4xMjU1NSAwLjA1NjkwOTEgNy4wMzcwOUMwLjAyMDIzOTIgNi45NDg2NiAwIDYuODUxNjkgMCA2Ljc1QzAgNi42NDgzMSAwLjAyMDIzOTIgNi41NTEzNCAwLjA1NjkwOTEgNi40NjI5MUMwLjA5MzUwODkgNi4zNzQ0NSAwLjE0Nzc2MyA2LjI5MTU4IDAuMjE5NjcgNi4yMTk2N0w2LjIxOTY3IDAuMjE5NjdDNi41MTI1NiAtMC4wNzMyMjMzIDYuOTg3NDQgLTAuMDczMjIzMyA3LjI4MDMzIDAuMjE5NjdaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4=");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        transform: translate(50%, 50%);
+      }
+
+      i {
+        display: none;
+      }
+    }
+
+    .btn {
+      width: 56px;
+      height: 40px;
+      position: absolute;
+      top: 42px;
+      right: 0;
+      font-size: 0;
+      background-color: #000;
+      background-image: none;
+      border: 0;
+      border-radius: 2px;
+      box-shadow: none;
+      text-shadow: none;
+      transform: translate(-100%, 225%);
+
+      &::after {
+        content: 'ok';
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+#vtexIdUI-confirm-access-code {
+  max-width: 480px;
+  padding-top: 20px;
+  min-height: auto;
+
+  .modal-header {
+    border: none;
+    padding: 40px 0 16px 0;
+    background: #fff;
+
+    h4 {
+      height: 24px;
+      display: block;
+      text-align: center;
+      margin: 0;
+
+      .vtexIdUI-heading {
+        font-size: 0;
+
+        &::after {
+          content: 'Insira a chave de acesso';
+          font-family: $fontSecundaria;
+          font-size: 20px;
+          color: #000;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .modal-body {
+    padding: 0;
+
+    label.info-code {
+      display: flex;
+      justify-content: center;
+
+      span {
+        font-size: 0;
+
+        &::after {
+          content: 'O código foi enviado para ';
+          font-size: 14px;
+          font-weight: normal;
+          color: #000;
+        }
+      }
+
+      strong {
+        font-weight: normal;
+        margin-left: 2px;
+      }
+    }
+
+    .vtexIdUI-code-field {
+      #access-code {
+        max-width: 118px;
+        height: 40px;
+        padding: 0 10px;
+        background: #fff;
+        border: 1px solid #C4C4C4;
+        box-shadow: none;
+        border-radius: 2px;
+        font-size: 18px;
+        color: #000;
+        letter-spacing: 1px;
+        outline: none;
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  .modal-footer {
+    border: none;
+    background: #fff;
+    border-radius: 0;
+
+    .dead-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 0;
+
+      &::after {
+        content: '';
+        background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNSAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI4MDMzIDAuMjE5NjdDNy41NzMyMiAwLjUxMjU2MyA3LjU3MzIyIDAuOTg3NDM3IDcuMjgwMzMgMS4yODAzM0wyLjU2MDY2IDZIMTQuMjVDMTQuNjY0MiA2IDE1IDYuMzM1NzkgMTUgNi43NUMxNSA3LjE2NDIxIDE0LjY2NDIgNy41IDE0LjI1IDcuNUgyLjU2MDY2TDcuMjgwMzMgMTIuMjE5N0M3LjU3MzIyIDEyLjUxMjYgNy41NzMyMiAxMi45ODc0IDcuMjgwMzMgMTMuMjgwM0M2Ljk4NzQ0IDEzLjU3MzIgNi41MTI1NiAxMy41NzMyIDYuMjE5NjcgMTMuMjgwM0wwLjIyMDA5MiA3LjI4MDc1QzAuMjE5OTUxIDcuMjgwNjEgMC4yMTk4MTEgNy4yODA0NyAwLjIxOTY3IDcuMjgwMzNDMC4xNDc3NjMgNy4yMDg0MiAwLjA5MzUwODkgNy4xMjU1NSAwLjA1NjkwOTEgNy4wMzcwOUMwLjAyMDIzOTIgNi45NDg2NiAwIDYuODUxNjkgMCA2Ljc1QzAgNi42NDgzMSAwLjAyMDIzOTIgNi41NTEzNCAwLjA1NjkwOTEgNi40NjI5MUMwLjA5MzUwODkgNi4zNzQ0NSAwLjE0Nzc2MyA2LjI5MTU4IDAuMjE5NjcgNi4yMTk2N0w2LjIxOTY3IDAuMjE5NjdDNi41MTI1NiAtMC4wNzMyMjMzIDYuOTg3NDQgLTAuMDczMjIzMyA3LjI4MDMzIDAuMjE5NjdaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4=");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        transform: translate(50%, 50%);
+      }
+
+      i {
+        display: none;
+      }
+    }
+
+    .btn {
+      width: 96px;
+      height: 40px;
+      position: absolute;
+      top: 30px;
+      right: 10px;
+      font-size: 0;
+      background-color: #000;
+      background-image: none;
+      border: 0;
+      border-radius: 2px;
+      box-shadow: none;
+      text-shadow: none;
+      transform: translate(-100%, 250%);
+
+      &::after {
+        content: 'ENTRAR';
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+// recovery password
+#vtexIdUI-change-pswd {
+  max-width: 480px;
+  padding-top: 20px;
+  min-height: auto;
+
+  .modal-header {
+    border: none;
+    padding: 40px 0 16px 0;
+    background: #fff;
+
+    button.close.vtexIdUI-close {
+      content: '';
+      display: block !important;
+      font-size: 0;
+      background-color: transparent;
+      background: url('/arquivos/icon_deleteBlack.png') center no-repeat;
+      height: 15px;
+      width: 15px;
+      margin-top: 10px;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+
+    .vtexIdUI-header.row-fluid {
+      display: none;
+    }
+
+    h4 {
+      height: 24px;
+      display: block;
+      text-align: center;
+      margin: 0;
+
+      .vtexIdUI-heading {
+        font-size: 0;
+
+        &::after {
+          content: 'Cadastrar senha';
+          font-size: 20px;
+          font-family: $fontSecundaria;
+          color: #000;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .modal-body {
+    padding: 0;
+
+    .info-why.muted {
+      text-align: center;
+      margin-bottom: 16px;
+
+      span {
+        font-size: 14px;
+        color: #000;
+      }
+    }
+
+    .control-group {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    label {
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 600;
+      color: #000;
+      letter-spacing: 1px;
+    }
+
+    .dead-link {
+      color: #6e6e6e;
+      text-transform: initial;
+      font-size: 10px;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+    }
+
+    .controls {
+
+      input[type="email"],
+      input[type="password"] {
+        width: 300px;
+        height: 40px;
+        background: #fff;
+        border: 1px solid #C4C4C4;
+        box-shadow: none;
+        border-radius: 2px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #000;
+        letter-spacing: 1px;
+        outline: none;
+        box-sizing: border-box;
+        padding: 0 10px;
+        margin: 0 auto;
+      }
+    }
+
+    .vtexid-password-requirements {
+      max-width: 300px;
+      margin: 32px auto 48px;
+
+      span {
+        font-size: 12px;
+        color: #000;
+      }
+    }
+
+    .vtexid-password-requirements-list {
+      color: #000;
+      font-size: 12px;
+      margin-top: 16px;
+      margin-left: 0;
+      line-height: 16px;
+    }
+  }
+
+  .modal-footer {
+    background: #fff;
+    border-top: 0;
+    padding: 15px 90px 40px;
+
+    .dead-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 0;
+
+      &::after {
+        content: '';
+        background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNSAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI4MDMzIDAuMjE5NjdDNy41NzMyMiAwLjUxMjU2MyA3LjU3MzIyIDAuOTg3NDM3IDcuMjgwMzMgMS4yODAzM0wyLjU2MDY2IDZIMTQuMjVDMTQuNjY0MiA2IDE1IDYuMzM1NzkgMTUgNi43NUMxNSA3LjE2NDIxIDE0LjY2NDIgNy41IDE0LjI1IDcuNUgyLjU2MDY2TDcuMjgwMzMgMTIuMjE5N0M3LjU3MzIyIDEyLjUxMjYgNy41NzMyMiAxMi45ODc0IDcuMjgwMzMgMTMuMjgwM0M2Ljk4NzQ0IDEzLjU3MzIgNi41MTI1NiAxMy41NzMyIDYuMjE5NjcgMTMuMjgwM0wwLjIyMDA5MiA3LjI4MDc1QzAuMjE5OTUxIDcuMjgwNjEgMC4yMTk4MTEgNy4yODA0NyAwLjIxOTY3IDcuMjgwMzNDMC4xNDc3NjMgNy4yMDg0MiAwLjA5MzUwODkgNy4xMjU1NSAwLjA1NjkwOTEgNy4wMzcwOUMwLjAyMDIzOTIgNi45NDg2NiAwIDYuODUxNjkgMCA2Ljc1QzAgNi42NDgzMSAwLjAyMDIzOTIgNi41NTEzNCAwLjA1NjkwOTEgNi40NjI5MUMwLjA5MzUwODkgNi4zNzQ0NSAwLjE0Nzc2MyA2LjI5MTU4IDAuMjE5NjcgNi4yMTk2N0w2LjIxOTY3IDAuMjE5NjdDNi41MTI1NiAtMC4wNzMyMjMzIDYuOTg3NDQgLTAuMDczMjIzMyA3LjI4MDMzIDAuMjE5NjdaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4=");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        transform: translate(50%, 50%);
+      }
+
+      i {
+        display: none;
+      }
+    }
+
+    .btn {
+      width: 120px;
+      height: 40px;
+      font-size: 0;
+      background-color: #000;
+      background-image: none;
+      border: 0;
+      border-radius: 2px;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      text-shadow: none;
+      position: absolute;
+      bottom: 155px;
+      right: 90px;
+
+      &::after {
+        content: 'CADASTRAR';
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+.x-popup {
+  position: fixed;
+  z-index: 110;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  height: 100%;
+
+  &__img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 20%;
+    width: 635px;
+    height: 414px;
+  }
+
+  &__buttons {
+    position: absolute;
+    left: 0;
+    display: block;
+    right: 0;
+    bottom: 45px;
+  }
+
+  &__link {
+    font-size: 11px;
+    color: white;
+    background: #384565;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 320px;
+    display: block;
+    margin: 0 auto;
+    padding: 17px 0;
+    letter-spacing: 2px;
+    transition: all 0.4s ease;
+
+    &:hover {
+      background-color: #384565;
+      transition: all 0.4s ease;
+    }
+  }
+
+  &__overlay {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  &__close {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    @include sprite($closetab-icon);
+  }
+}

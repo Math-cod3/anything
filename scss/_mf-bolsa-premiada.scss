@@ -1,0 +1,73 @@
+.awarded-backpack{
+	&__wrapper{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+		text-align:center;
+		padding:75px 0;
+	}
+
+	&__title{
+		font-size:20px;
+		font-weight:600;
+		padding-top:48px;		
+	}
+
+	&__subtitle{
+		font-size:16px;
+		font-weight:400;
+		padding-top:32px;
+	}
+
+	&__cta{
+		display:block;
+		width:280px;
+		height:48px;
+		font-size:11px;
+		font-weight:700;
+		text-transform:uppercase;
+		color:#FFF;
+		text-align:center;
+		line-height:48px;
+		letter-spacing:2px;
+		background:#000;
+		margin:32px auto;
+		&:hover{
+			opacity:0.9;
+		}
+	}
+
+	.js-awarded-backpack-alert{
+		display:none;
+		font-size:12px;
+		&.active{
+			display:block;
+		}
+	}
+
+	&__backpack{
+		&-icon{
+			&--opened{
+				display:none;
+			}
+			&.opened{
+				.awarded-backpack__backpack-icon--closed{
+					display:none;
+				}
+				.awarded-backpack__backpack-icon--opened{
+					display:flex;
+					flex-direction:column;
+					justify-content:center;
+					align-items:center;
+					strong{
+						font-size:20px;
+				    font-weight:600;
+				    padding-top:12px;
+					}
+				}
+			}
+		}
+	}
+
+}

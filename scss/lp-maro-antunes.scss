@@ -1,0 +1,410 @@
+.maro{
+
+	.hlBanner{
+		img{
+			width:100%;
+			height:auto;
+		}
+	}
+
+	.maroApresentation{
+		position:relative;
+		display:flex;
+		flex-direction:row;
+		justify-content:center;
+		align-items:center;
+		width:100%;
+		max-width:1128px;
+		height:234px;
+		background:rgba(234,176,83,0.9);
+		margin:-24px auto 0;
+		>p{
+			font-size:16px;
+			color:#FFF;
+			line-height:24px;
+			max-width:425px;
+			padding-left:72px;
+		}
+	}
+
+	.maroVideo{
+		display:block;
+		width:100%;
+		max-width:1128px;
+		margin:64px auto 0;
+		iframe{
+			display:block;
+		}
+	}
+
+	.maroShelf{
+		display:flex;
+		flex-direction:row;
+		width:100%;
+		max-width:1128px;
+		margin:104px auto 0;
+		.outShelf{
+			display:flex;
+			flex-direction:row;
+			span{
+				width:50%;
+				padding-right:24px;
+				img{
+					width:100%;
+					height:auto;
+				}
+				p{
+					text-align:center;
+					padding-top:8px;
+				}
+			}
+		}
+		.prateleira{
+			ul{
+				display:flex;
+				flex-direction:row;
+				li{
+					width:50%;
+					.x-product{
+
+						padding:0 26px 0 0;
+
+						.js-shelf-product-video {
+						  display: none !important;
+						}
+
+						.x-product__video {
+						  width:100%;
+						  height:auto;
+						}
+
+						.x-product.has-video.js-product-video-iterated {
+						  .x-image {
+						    width: 296px;
+						    height: 386px;
+						  }
+						}
+
+						.x-installment{
+							display:none;
+						}
+
+					}
+				}
+			}
+		}
+		>span{
+			display:flex;
+			flex-direction:column;
+			align-items:center;
+			>a{
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				box-sizing:border-box;
+				width:264px;
+				height:48px;
+				font-size:11px;
+				font-weight:700;
+				color:#000;
+				text-transform:uppercase;
+				letter-spacing:2px;
+				text-align:center;
+				line-height:48px;
+				border:1px solid #000;
+				margin-top:24px;
+				&:hover{
+					border:2px solid #000;
+				}
+			}
+		}
+	}
+
+	.newsletter-home{
+		width:100%;
+		max-width:1128px;
+		margin:60px auto !important;
+	}
+
+	.newsletter-left {
+	    display: flex;
+	}
+
+	.newsletter-left img {
+	    height: 48px; 
+	    margin-right: 20px;
+	}
+
+	.newsletter-title {
+	    font-family: Lato;
+	    font-size: 12px;
+	    font-style: normal;
+	    font-weight: 400;
+	    line-height: 16px;
+	    letter-spacing: 1px;
+	    margin-bottom: 6px;
+	}
+
+	.newsletter-subtitle {
+	    font-family: Lato;
+	    font-size: 14px;
+	    font-style: normal;
+	    font-weight: 700; 
+	    line-height: 18px;
+	    letter-spacing: 1px;
+	    text-align: left; 
+	    margin-bottom: 28px;
+	}
+
+	.newsletter-asterisk {
+	    font-family: Lato; 
+	    font-size: 10px; 
+	    font-style: normal; 
+	    font-weight: 400; 
+	    line-height: 13px; 
+	    letter-spacing: 0px; 
+	    text-align: left;
+	}
+
+	.newsletter-right {
+	    margin-top: -32px;
+	    margin-left: 60px;
+	    display: flex;
+	}
+
+	#nomenews {
+	    height: 48px; 
+	    width: 231px; 
+	    border-radius: 2px; 
+	    border: 1px solid #CCCCCC; 
+	    background: #FFFFFF; 
+	    padding-left: 10px; 
+	    margin-right: 10px;
+	}
+
+	#emailnews {
+	    height:48px; 
+	    width: 231px;
+	    border-radius:2px;
+	    border:1px solid #CCCCCC; 
+	    background:#FFFFFF;
+	    padding-left:10px;
+	}
+
+	#nomenews::placeholder, 
+	#emailnews::placeholder { 
+	    font-family: 'Lato'; 
+	}
+
+	.send-newsletter {
+	    border: 1px solid black; 
+	    display: inline-block;
+	    margin-left: 10px; 
+	    position: relative;
+	    height: 48px; 
+	    width: 51px; 
+	    cursor: pointer;
+	}
+
+	.send-newsletter img {
+	    padding-top: 14px;
+	    padding-left: 17px;
+	    padding-right: 17px;
+	}
+	.newsletter-success-asterisk {
+	    font-weight: normal;
+	}
+	.newsletter-success-asterisk a {
+	    font-weight: bold;
+	    text-decoration: underline;
+	}
+
+	.newsletter-success {
+	    display: flex;
+	}
+
+	.newsletter-success > img {
+	    width: 40px;
+	    height: 40px;
+	    margin-right: 15px;
+	    margin-top: 1px;
+	}
+
+	.newsletter-success-title {
+	    font-family: 'Lato';
+	    font-size: 12px;
+	    font-style: normal;
+	    font-weight: 400;
+	    line-height: 16px;
+	    letter-spacing: 1px;
+	    text-align: left;
+	}
+
+	.newsletter-success-subtitle {
+	    font-family: Lato;
+	    font-size: 16px;
+	    font-style: normal;
+	    font-weight: 700;
+	    line-height: 40px;
+	    letter-spacing: 1px;
+	    text-align: left;
+	}
+
+	.newsletter-success-asterisk {
+		font-family: Lato;
+	    font-size: 12px;
+	    font-style: normal;
+	    line-height: 16px;
+	    letter-spacing: 0px;
+	    text-align: left;
+	    margin-top: 20px;
+	}
+
+	.newsletter-success-asterisk a {
+		font-weight: bold;
+	    color: black;
+	}
+
+	.newsletter-success-right {
+		display: flex;
+	    margin-left: 40px;
+	}
+
+	.newsletter-cupom {
+	    width: 245px;
+	    white-space: nowrap;
+	    font-family: Lato;
+	    font-size: 14px;
+	    font-style: normal;
+	    font-weight: 700;
+	    line-height: 21px;
+	    letter-spacing: 2px;
+	    text-align: left;
+	    padding: 10px;
+	    padding-right: 60px;
+	    padding-top: 13px;
+	    height: 50px;
+	    border-radius: 4px;
+	    filter: brightness(3.5);
+	    /*background-image: url(data:image/svg xml,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' fill='none' rx='4' ry='4' stroke='#333' stroke-width='3' stroke-dasharray='3, 11, 5, 1' stroke-dashoffset='35' stroke-linecap='square'/></svg>);*/
+	    border: 3px dashed #3c3c3c;
+	}
+
+	.copy-icon {
+	    margin-top: 1px; 
+	    margin-left: 12px; 
+	    cursor: pointer;
+	}
+
+	.success-name {
+	     text-transform: uppercase;
+	}
+
+	.newsletter-images {
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+
+	.newsletter-images img {
+	    width: 133px;
+	    height: 133px;
+	}
+
+	.newsletter-images div {
+		display: flex;
+	    flex-direction: column;
+	    align-items: center;
+		font-family: 'Lato';
+	}
+
+	.newsletter-images h3 {
+	    line-height: 5em;
+	    font-size: 16px;
+	    font-weight: 700;
+	}
+
+	.newsletter-images p {
+	    width: 70%;
+	    text-align: center;
+	    line-height: 16px;
+	    font-size: 14px;
+	}
+
+	.newsalert {
+	    position: absolute;
+	    top: 60px;
+	    font-family: Lato;
+	    font-size: 11px;
+	    color: #F9A533;
+	}
+
+	.newsalert:last-of-type {
+	    right: 37%;
+	}
+
+	.newsalert-img {
+	    position: absolute;
+	    right: 60%;
+	    top: 12px;
+	    width: 22px;
+	}
+
+	.newsalert-img:last-of-type {
+	    right: 15%;
+	}
+
+	.maroBanners{
+		display:flex;
+		flex-direction:row;
+		justify-content:space-between;
+		width:100%;
+		max-width:936px;
+		margin:104px auto 128px;
+		>div{
+			display:flex;
+			flex-direction:column;
+			justify-content:center;
+			align-items:center;
+			color:#000;
+			text-align:center;
+			img{
+				max-width:456px;
+				height:auto;
+			}
+			>p{
+				font-size:18px;
+				font-weight:700;
+				padding-top:28px;
+			}
+			span{
+				font-size:16px;
+				font-weight:400;
+				line-height:24px;
+				max-width:390px;
+				padding-top:8px;
+			}
+			a{
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				box-sizing:border-box;
+				width:264px;
+				height:48px;
+				font-size:11px;
+				font-weight:700;
+				color:#000;
+				text-transform:uppercase;
+				letter-spacing:2px;
+				text-align:center;
+				line-height:48px;
+				border:1px solid #000;
+				margin-top:24px;
+				&:hover{
+					border:2px solid #000;
+				}
+			}
+		}
+	}
+
+}

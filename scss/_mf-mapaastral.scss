@@ -1,0 +1,431 @@
+.mapaastral{
+
+	background:url("https://homologmariafilo.vteximg.com.br/arquivos/astral-bg.jpg");
+	background-repeat:no-repeat;
+	background-size:contain;
+	&.active{
+		background:#FDF5ED;
+	}
+
+	.rxAstral{
+
+		&__step1{
+			box-sizing:border-box;
+			padding:104px 0 128px;
+			&.hidden{
+				display:none;
+			}
+			.rxAstralForm{
+				display:flex;
+				flex-direction:column;
+				justify-content:center;
+				align-items:center;
+				p{
+					width:475px;
+					font-size:16px;
+					font-weight:400;
+					line-height:24px;
+					padding-top:48px;
+					text-align:center;
+				}
+				&__group{
+					display:flex;
+					flex-direction:column;
+					padding-top:37px;
+					label{
+						font-size:12px;
+					}
+					input[type="text"],input[type="date"],input[type="email"]{
+						width:332px;
+						height:48px;
+						font-family:Lato;
+						font-size:16px;
+						color:#000;
+						box-sizing:border-box;
+						padding:0 16px;
+						border:1px solid #D5D3D4;
+						border-radius:2px;
+						margin-top:2px;
+					}
+					input[type="date"]{
+						font-size:13px;
+					}
+					::placeholder{
+						color:#D5D3D4;
+					}
+					.citySuggestions{
+						max-height:150px;
+						background:#FFF;
+						border:1px solid #D5D3D4;
+						overflow-y:scroll;
+						margin-top:-1px;
+						li{
+							font-size:14px;
+							font-weight:500;
+							padding:10px 12px;
+							border-bottom:1px solid #D5D3D4;
+							cursor:pointer;
+						}
+					}
+					a{
+						width:332px;
+						height:48px;
+						font-size:11px;
+						color:#FFF;
+						text-transform:uppercase;
+						text-align:center;
+						line-height:48px;
+						letter-spacing:2px;
+						background:#000;
+						border-radius:2px;
+						cursor:pointer;
+						&:hover{
+							opacity:0.9;
+						}
+					}
+					&:nth-of-type(4){
+						flex-direction:row;
+						>div{
+							position:relative;
+							display:flex;
+							flex-direction:column;
+							margin:0 8px;
+							input{
+								width:158px;
+							}
+							span{
+								position:absolute;
+								font-size:12px;
+								left:0;
+								bottom:-20px;
+								input{
+									position:relative;
+									top:1px;
+									width:12px;
+									height:12px;
+									border:1px solid #000;
+									margin-right:2px;
+									&:checked{
+										background:#000;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&__step2{
+			display:none;
+			flex-direction:column;
+			width:100%;
+			max-width:1300px;
+			margin:0 auto;
+			&.active{
+				display:flex;
+			}
+
+			.rxAstralResult{
+				&__text{
+					display:flex;
+					flex-direction:row;
+					justify-content:center;
+					align-items:center;
+					padding-top:72px;
+					img{
+
+					}
+					span{
+						display:flex;
+						flex-direction:column;
+						padding-top:32px;
+						padding-left:48px;
+						strong{
+							font-family:Playfair Display;
+							font-size:50px;
+							font-weight:700;
+						}
+						p{
+							font-size:14px;
+							line-height:24px;
+							padding-top:56px;
+						}
+					}
+				}
+				&__product{
+					display:flex;
+					flex-direction:row;
+					padding-top:64px;
+					iframe{
+						display:none;
+						width:calc(100% - 427px);
+						height:498px;
+						&.active{
+							display:block;
+						}
+					}
+					&-product{
+						display:block;
+						width:316px;
+						.highlightProduct{
+							display:none;
+						}
+						>a:first-of-type{
+							display:block;
+							width:100%;
+							margin-bottom:20px;
+							img{
+								width:100%;
+								height:auto;
+							}
+						}
+						>span{
+							float:left;
+							display:flex;
+							flex-direction:column;
+							width:50%;
+							padding-right:60px;
+							p{
+								font-size:15px;
+								font-weight:500;
+								line-height:16px;
+							}
+							strong{
+								font-size:15px;
+								font-weight:700;
+								line-height:16px;
+								margin-top:10px;
+							}
+						}
+						>a:last-of-type{
+							float:right;
+							width:50%;
+							height:48px;
+							font-size:11px;
+							text-transform:uppercase;
+							letter-spacing:2px;
+							color:#FFF;
+							font-weight:500;
+							text-align:center;
+							line-height:48px;
+							background:#000;
+							margin-top:6px;
+							&:hover{
+								opacity:0.9;
+							}
+						}
+						box-sizing:border-box;
+						margin-left:106px;
+					}
+				}
+
+				&__result{
+					display:flex;
+					flex-direction:column;
+					padding-top:148px;
+					&-intro{
+						display:flex;
+						flex-direction:column;
+						max-width:510px;
+						h2{
+							font-family:Playfair Display;
+							font-size:42px;
+							font-weight:700;
+							color:#232323;
+						}
+						p{
+							font-family:Lato;
+							font-size:14px;
+							font-weight:400;
+							line-height:21px;
+							padding-top:56px;
+						}
+					}
+					&-view{
+						display:flex;
+						flex-direction:row;
+						justify-content:space-between;
+						background-image:url("http://mariafilo.vteximg.com.br/arquivos/legenda-elementos.png");
+						background-repeat:no-repeat;
+						background-position:0% center;
+						padding:0 0 140px 100px;
+						margin-top:32px;
+						&--circle{
+							display:flex;
+							align-items:center;
+							width:980px;
+							.canvas_wrapper{
+								width:100%;
+								margin-left:-112px;
+							}
+						}
+						&--infos{
+							width:509px;
+							h3{
+								font-size:20px;
+								font-weight:400;
+								line-height:30px;
+								color:#232323;
+								strong{
+									position:relative;
+									font-weight:700;
+									&:after{
+										position:absolute;
+										content:"";
+										width:100%;
+										height:4px;
+										background:#354F40;
+										bottom:-8px;
+										left:0;
+									}
+								}
+							}
+							>span{
+								strong.fogo{ &:after{ background:#A1010B; }}
+								strong.agua{ &:after{ background:#84A39F; }}
+								strong.ar{ &:after{ background:#D1836A; }}
+								strong.terra{ &:after{ background:#38503E; }}
+							}
+							p{
+								font-size:14px;
+								font-weight:400;
+								line-height:21px;
+								margin-top:24px;
+								margin-bottom:48px;
+							}
+						}
+					}
+				}
+
+				&__shelf{
+					display:block;
+					width:1074px;
+					padding-bottom:72px;
+					margin:0 auto;
+					&-intro{
+						display:flex;
+						flex-direction:column;
+						h2{
+							font-family:Playfair Display;
+							font-size:42px;
+							font-weight:700;
+						}
+						p{
+							font-size:14px;
+							font-weight:400;
+							margin-top:32px;
+						}
+					}
+					&-products{
+						display:flex;
+						flex-direction:row;
+						width:90%;
+						margin-top:40px;
+					}
+					&-options{
+						padding-right:40px;
+						ul{
+							li{
+								font-size:14px;
+								height:24px;
+								line-height:24px;
+								padding-left:13px;
+								border-left:4px solid transparent;
+								cursor:pointer;
+								margin-bottom:40px;
+								&.active{
+									border-left:4px solid #38503E;
+								}
+								&:nth-child(1):hover,&:nth-child(1).active{
+									border-left:4px solid #38503E;
+								}
+								&:nth-child(2):hover,&:nth-child(2).active{
+									border-left:4px solid #A1010B;
+								}
+								&:nth-child(3):hover,&:nth-child(3).active{
+									border-left:4px solid #84A39F;
+								}
+								&:nth-child(4):hover,&:nth-child(4).active{
+									border-left:4px solid #D1836A;
+								}
+							}
+						}
+					}
+					&-collection{
+						width:100%;
+						>span{
+							display:none;
+							&.active{
+								display:block;
+							}
+							.eshelf{
+								position:relative;
+								h2{
+									display:none;
+								}
+								.slick-prev{
+									display:none !important;
+								}
+								.slick-next{
+									position:absolute;
+									top:50%;
+									right:-24px;
+									width:22px;
+									height:22px;
+									font-size:0;
+									transform:translateY(-50%);
+									background:transparent;
+									border-top:5px solid #000;
+									border-right:5px solid #000;
+									transform:rotate(45deg);
+									opacity:0.4;
+									cursor:pointer;
+									&:hover{
+										opacity:1;
+									}
+								}
+								ul{
+									display:block;
+									width:966px;
+									li{
+										width:298px;
+									}
+									.elShelf{
+										display:flex;
+										flex-direction:column;
+										width:298px;
+										img{
+											width:298px;
+											height:auto;
+										}
+										a:last-of-type{
+											width:298px;
+											height:48px;
+											font-size:11px;
+											color:#FFF;
+											text-transform:uppercase;
+											text-align:center;
+											line-height:48px;
+											letter-spacing:2px;
+											background:#000;
+											border-radius:2px;
+											cursor:pointer;
+											margin-top:30px;
+											&:hover{
+												opacity:0.9;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+
+			}
+
+		}
+
+	}
+}

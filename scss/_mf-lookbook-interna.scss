@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@import "menu-lookbook";
+
+.interna{
+    .x-content{
+        margin-top: 120px;
+    }
+}
+
+.x-lookbook{
+    &__products{
+        max-width: 1140px;
+        margin: 35px auto;
+        >div>h2 {
+            display:none;
+        }
+        
+        >div{
+            >h2{display: none;}
+        }
+        
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            li{
+                width: 40%;
+                // float: left;
+                margin-bottom: 15px;
+                
+                // &:nth-child(even){
+                //     float: right;
+                // }
+            }
+        }
+    }
+}

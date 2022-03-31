@@ -1,0 +1,119 @@
+.mf-sidebar-filters {
+    position: absolute;
+    border: 0;
+    top: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.45s;
+    background: #fff;
+    transform: translateX(100%);
+    overflow-y: scroll;
+    height: 100vh;
+    min-width: 256px;
+    
+    .x-category__filter {
+        padding: 0 24px 120px;
+    }
+
+    &__spacing {
+        width: 100%;
+        height: 56px;
+        background: #fff;
+        position: sticky;
+        top: 0;
+    }
+
+    max-width: 256px;
+
+    &::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #b3afb3;
+        border-radius: 0px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: #b3afb3;
+    }
+    &::-webkit-scrollbar-track {
+        background: #f0f0f0;
+        border-radius: 0px;
+        box-shadow: inset 0px 0px 0px 0px #f0f0f0;
+    }
+
+    &.is--active {
+        z-index: 100;
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .filtro_tamanho {
+        order: 1;
+
+        label {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #E5E5E5;
+            // margin: 0 15.87px 16px 0;
+            text-align: center;
+            cursor: pointer;
+            justify-content: center;
+        }
+
+        & > div {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            // grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+            grid-column-gap: 16px;
+            grid-row-gap: 16px;
+            place-content: stretch;
+            place-items: stretch;
+        }
+    }
+    .filtro_faixa-de-preco {
+        order: 2;
+    }
+    .filtro_cor {
+        order: 3;
+    }
+
+    .filtro_cor,
+    .filtro_faixa-de-preco {
+        label {
+            &:not(:last-child) {
+                padding-bottom: 16px;
+            }
+        }
+    }
+
+    .filtro_tamanho, 
+    .filtro_faixa-de-preco {
+        border-bottom: 1px solid #d5d3d4;
+    }
+
+    .filtro_tamanho,
+    .filtro_cor,
+    .filtro_faixa-de-preco {
+        padding-bottom: 24px;
+
+        & > h5 {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+            padding: 24px 0;
+        }
+
+        label {
+            font-family: Lato;
+            display: flex;
+            align-items: center;
+            background: #fff !important;
+            font-size: 14px;
+        }
+    }
+}

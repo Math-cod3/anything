@@ -1,0 +1,21 @@
+.search-result{
+
+	.catalogText{
+		display:flex;
+		flex-direction:row;
+		justify-content:center;
+		align-items:center;
+		width:100%;
+		max-width:1300px;
+		span{
+			font-size:18px;
+			font-weight:500;
+			margin-right:6px;
+		}
+		h2{
+			font-size:24px;
+			font-weight:700;
+		}
+	}
+
+}

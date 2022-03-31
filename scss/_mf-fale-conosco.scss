@@ -1,0 +1,204 @@
+.interna{
+.x-content{
+    margin-top: 100px;
+    
+    @include breakpoint('mobile'){
+        margin-top: 50px;
+    }
+}
+}
+
+.x-talk-with-us{
+    background: #f7f7f7;
+    padding: 40px 0;
+
+    &__title{
+        max-width: 600px;
+        margin: 0 auto 20px;
+        padding: 20px 40px;
+        background: #fff;
+        border-left: 4px solid #e0b083;
+        font-size: 22px;
+        color: #e0b083;
+        box-shadow: 0 0px 15px #e4e4e4;
+    }
+
+    &__form{
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 40px;
+        box-shadow: 0 0px 15px #e4e4e4;
+        background-color: #fff;
+    }
+    
+    &__success,
+    &__fail,
+    &__loading{
+        font-size: 15px;
+        text-align: center;
+        line-height: 23px;
+        font-weight: 500;
+        
+        a{
+            color: #607d8b;
+        }
+    }
+    
+    &__success,
+    &__loading{
+        color: #e2b083;
+    }
+    
+    &__fail{
+        color: #f44336;
+    }
+
+    &__field{
+        display: block;
+        margin: 0 0 20px;
+        position: relative;
+        &:nth-child(2) {
+            label {
+                position: relative;
+                input[type="file"] {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 225px;
+                    opacity: 0;
+                    padding: 14px 0;
+                    cursor: pointer;
+                }
+                input[type="button"] {
+                    display: inline-block;
+                    padding: 14px 30px;
+                    background: #dfaf83;
+                    color: #fff;
+                    font-size: 13px;
+                    font-weight: bold;
+                    transition: all .4s;
+                    cursor: pointer;
+                    text-transform: uppercase
+                }
+                p {
+                    display: inline-block;
+                    margin-left: 20px;
+                    color: #333;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    &__label{
+        display: block;
+        margin-bottom: 7px;
+        font-size: 13px;
+        color: #dfaf83;
+        
+        b{
+            color: #f71919;
+        }
+    }
+
+    &__input{
+        display: block;
+        width: 100%;
+        height: 35px;
+        border: 1px solid #ccc;
+        padding: 0 15px;
+        color: #636363;
+
+        &:focus{
+            border-color: #dfaf83;
+            outline: 0;
+        }
+
+        &.is--hidden{
+            display: none;
+        }
+    }
+
+    textarea{
+        resize: none;
+        height: 100px;
+        padding: 15px;
+    }
+
+    &__stepselect{
+        width: 100%;
+        background: #fff;
+        border: 1px solid #cccccc;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        z-index: 2;
+        display: none;
+
+        &.is--active{
+            display: block;
+        }
+    }
+
+    &__stepitem{
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+
+        &.is--active{
+            position: static;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &__stepbtn{
+        width: 100%;
+        cursor: pointer;
+        display: block;
+        background-color: transparent;
+        font-size: 13px;
+        padding: 8px 15px;
+        font-weight: 700;
+        color: #000;
+        text-align: left;
+        
+        &.is--not-allowed{
+            display: none;
+        }
+
+        &:hover{
+            background-color: #eaeaea;
+        }
+    }
+
+    &__picked-text{
+        width: 100%;
+        display: block;
+        padding: 9px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        background-color: transparent;
+        text-align: left;
+        color: #e0b083;
+
+        span{
+            margin: 0 15px 0 0;
+        }
+    }
+
+    &__send{
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    &__btn{
+        padding: 5px 20px;
+        text-align: center;
+        color: #fff;
+        background-color: #dfaf83;
+        cursor: pointer;
+        height: 40px;
+    }
+}

@@ -1,0 +1,63 @@
+li[layout="4a258ce9-136f-46aa-9925-ed1081dfe366"] {
+
+    .x-product {
+
+        .x-product-info {
+            flex-direction: column;    
+            padding: 25px 0 38px;
+
+            .x-product-info_price {
+    
+                span {
+                    color: $color-0;
+                    
+                    &.x-bestPrice {
+                        font-weight: 400;
+                    }
+
+                    &.x-oldPrice {
+                        margin-right: 16px;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 14px;
+                        text-decoration: line-through;
+                        opacity: 1;
+                        color: $color-17;
+                    }
+
+                    &.x-installment {
+                        font-weight: normal;
+                        text-transform: lowercase;
+
+                        .x-number {
+                            text-transform: lowercase;                        
+                        }    
+                        
+                        span {
+                            font-weight: normal;
+                        }                        
+                    } 
+                }
+            }
+        }
+
+        .x-product-info_name, .x-product-info_price {
+            margin-bottom: 8px;
+            width: 100%;
+            text-align: left;
+
+            a {
+                font-size: 13px;
+                line-height: 16px;
+            }
+        }
+
+        .x-product-info_name {
+
+            a {
+                text-transform: uppercase;
+                color: $color-0;
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+.bread-crumb {
+	// padding: 16px 16px 24px;
+    // padding: 32px 15px 24px;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+
+	ul {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		flex-wrap: wrap;
+
+		li {
+			margin-bottom: 8px;
+			font-family: 'Lato';
+			font-style: normal;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 16px;
+			letter-spacing: 0.08em;
+			text-transform: capitalize;
+			color: #999999;
+
+			a {
+				font-style: normal;
+				font-weight: normal;
+				color: #999999;
+			}
+			&:not(.last):not(:last-child)::after {
+				content: "";
+				border: solid #999999;
+				border-width: 0px 1px 1px 0;
+				display: inline-block;
+				padding: 2.5px;
+				transform: rotate(-45deg);
+				margin: 0 8px;
+			}
+			&:not(:last-child) {
+				margin-right: 8px;
+			}
+		}
+	}
+
+
+}
+
+.catalog{
+	.bread-crumb {
+		ul li {
+			line-height: 24px;
+			margin-bottom: 0px;
+		}
+	}
+}
+.mf-breadcrumb {
+	&.is--hide{
+		display: block !important;
+		opacity: 0;
+	}
+}
+.product2019 {
+	.bread-crumb {
+		padding: 16px 0px 8px 16px;
+	}
+}
+.produto2021 {
+	.bread-crumb {
+		padding: 16px 0px 8px 16px;
+	}
+}
+.resultado-busca, .Novidades {
+	.catalogText ~ .catalogResults > .catalogResults{
+		padding: 48px 0;
+	}
+	.mf-breadcrumb {
+		display: none;
+	}
+}

@@ -1,0 +1,981 @@
+.account,
+.wishlist {
+
+    // Regras gerais
+.t-small, div, span {
+    font-family: $fontSecundaria;
+}
+
+.b--action-primary {
+    border-color: $color-18;
+}
+
+.bg-action-primary {
+    background-color: $color-18;
+
+    &:hover {
+        background-color: $color-11;
+        border-color: $color-11;
+        color: $color-18;
+    }
+}
+
+.c-action-primary {
+    color: $color-18;
+}
+
+.c-link {
+    color: $color-18;
+
+    &:hover, &:active {
+        color: $color-18;
+    }
+}
+
+
+// Container account
+.vtex-account {
+
+    &__user-image {
+
+        .cover {
+            background-position: center;
+        }
+
+        button {
+            background-color: $color-18;
+        }
+    } 
+
+    &__page-body {
+
+        span, input, button, .vtex-dropdown__label, .vtex-input__label, .f6 {
+            font-family: $fontSecundaria;
+        }
+    }
+
+    &__orders-list, &__order-details {
+
+        svg {
+            fill: $color-18;
+        }
+    }
+}
+
+
+// Header account
+.vtex-pageHeader {
+
+    &-link__container span, &__title, &__children span {
+        font-family: $fontSecundaria;
+    }
+}
+
+
+// Endereços
+.vtex-address-form__postalCode .pt4 {
+    padding-bottom: 12px;
+}
+
+.address-summary span {
+    line-height: 24px;
+}
+
+
+// Cartões
+.vtex-alert .ph5 {
+    line-height: 20px;
+}
+
+
+// Modal Logout
+.vtex-modal {
+
+    &__overlay span {
+        font-family: $fontSecundaria;
+    }
+
+    &__confirmation div {
+        font-family: $fontSecundaria;
+    }
+}
+
+// Pedidos
+.myo-order-product {
+
+    .c-link {
+        color: $cinzaEscuro;
+        font-weight: 700;
+    }
+}
+
+.myo-details-btn {
+    background-color: $color-18;
+    color: #fff;
+}
+
+    &body.wishlist {
+        &:after {
+            content: "";
+            position: fixed;
+            z-index: 99999999;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(#fff, .7);
+            background-image: url('ripple.gif');
+            background-repeat: no-repeat;
+            background-position: center;
+            left: 0;
+            top: 0;
+            background-size: 75px;
+        }
+
+        &.x-active {
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    &body {
+        color: #000;
+
+        &.interna {
+            .x-general .x-content {
+                overflow: inherit
+            }
+
+            .x-footer {
+                margin-top: 0
+            }
+
+            .x-header {
+                background-color: #fff;
+            }
+        }
+    }
+
+    .is--hidden {
+        display: none;
+    }
+
+    .x-content {
+        background-color: #fcfcfc;
+    }
+
+    .x-account {
+        padding-top: 100px;
+        width: 100%;
+        position: relative;
+        max-width: 1366px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+
+    .x-nav-account {
+        position: relative;
+        @include display-flex;
+        align-items: center;
+        width: 84.0025%;
+        margin: 45px 8% 0;
+        border-bottom: 1px solid #bcbcbc;
+        color: #414042;
+        z-index: 9999999;
+    }
+
+
+    .x-nav-account__title {
+        // float: left;
+        margin-right: 57px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+
+    ul.x-nav-account__list {
+        @include display-flex;
+        align-items: center;
+    }
+
+    li.x-nav-account__item {
+        margin-left: 29px;
+        margin-bottom: 23px;
+
+        &:first-of-type {
+            margin-left: 0;
+        }
+
+        a {
+            position: relative;
+            color: #414042;
+            font-family: $fontSecundaria;
+            font-size: 12px;
+            font-weight: 300;
+
+            &:hover,
+            &.active-nav-item {
+                color: #e0b187;
+                font-weight: 500;
+
+                &:after {
+                    content: '...';
+                    position: absolute;
+                    left: 0px;
+                    top: 8px;
+                    font-size: 16px;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .x-instagram-banner {
+        margin-top: 55px;
+        padding-bottom: 55px;
+
+        img {
+            /*max-width: 84%;*/
+            height: auto;
+
+            @include between-breakpoints(768px,
+                1024px) {
+                -webkit-transform: scale(0.8) translateX(-63%) !important;
+                transform: scale(0.8) translateX(-63%) !important;
+            }
+        }
+    }
+
+    // 
+    // NEW VTEX MY ACCONT
+    .x-account__container {
+        width: 84.0025%;
+        margin: 30px auto;
+
+        .x-account__profile {}
+    }
+
+    #render-my-account-portal {
+
+        // ASIDE MENU
+        .vtex-account__menu {
+            min-width: 270px;
+        }
+
+        .vtex-account__user-info {
+            @include display-flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .vtex-account__user-image {
+            margin: auto;
+
+            button {
+                width: 18px;
+                height: 18px;
+                @include display-flex;
+                align-items: center;
+                justify-content: center;
+                line-height: 0;
+
+                background-color: $Bege;
+
+                &:hover {
+                    background: $cinzaEscuro;
+                }
+            }
+
+            &+div {
+                margin-top: 20px;
+
+                .vtex-account__user-greeting {}
+
+                .vtex-account__user-name {}
+            }
+        }
+
+        .vtex-account__menu-links {
+            .vtex-account_menu-link {
+                &.b--action-primary {
+                    border-color: $Bege;
+                }
+            }
+        }
+
+        // CONTENT MY ACCONT
+        .vtex-account__page {}
+
+        .vtex-pageHeader-link__container {
+            display: none;
+        }
+
+        .vtex-account__page-body.vtex-account__profile {
+            .w-60-ns.w-100-s+.w-40-ns.w-100-s {
+                display: none;
+            }
+        }
+
+        .vtex-profile-form__toggle-business-btn__wrapper {
+            button {
+                &.blue {
+                    color: $cinzaEscuro;
+                }
+
+                &.bg-washed-blue {
+                    background-color: #fff;
+                }
+
+                &.hover-b--light-blue:focus,
+                &.hover-b--light-blue:hover {
+                    background-color: $cinzaClaro;
+                }
+
+                &.b--washed-blue {
+                    border-color: $cinzaClaro;
+                }
+            }
+        }
+
+        input,
+        button {
+            @include transition(all .3s ease);
+        }
+
+        .b--action-primary {
+            border-color: $Bege
+        }
+
+        .bg-action-primary {
+            background-color: $Bege;
+        }
+
+        .c-action-primary {
+            color: $Bege;
+        }
+
+        .hover-b--action-primary:focus,
+        .hover-b--action-primary:hover {
+            border-color: $cinzaEscuro;
+        }
+
+        .hover-bg-action-primary:focus,
+        .hover-bg-action-primary:hover {
+            background-color: $cinzaEscuro;
+        }
+    }
+
+
+    .orders {
+        .x-content {
+            margin: 100px auto 0;
+
+            .x-nav-account {
+                position: relative;
+                margin: 40px auto;
+                max-width: 1140px;
+                height: 35px;
+                border-bottom: 1px solid #bcbcbc;
+                float: none;
+            }
+
+            .x-orders__container {
+                max-width: 1140px;
+                margin: 60px auto;
+                background-color: #fff;
+                width: 84.0025%;
+
+                .subscriptions-page {
+                    width: 100%;
+                    padding: 20px;
+
+                    .page-header {
+                        display: none;
+                    }
+
+                    .containerPage {
+                        .form-search {
+                            display: none;
+                        }
+
+                        .myorders-list {
+                            .ordergroup {
+                                border: 0;
+                                max-width: 695px;
+                                width: 100%;
+                                margin: 0 auto 100px;
+
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+
+                                >div {
+                                    padding: 0;
+                                }
+
+                                .order-header.page-header {
+                                    display: block;
+                                    border-bottom: 1px solid #e8e8e8;
+                                    padding-bottom: 30px;
+
+                                    .order-title {
+
+                                        .title-ordergroup-order,
+                                        .order-date {
+                                            font-family: "Playfair Display";
+                                            font-size: 23px;
+                                            font-style: italic;
+                                            font-weight: 700;
+                                            color: #dfaf83;
+                                        }
+
+                                        .repeat-order {
+                                            a {
+                                                width: 163px;
+                                                height: 30px;
+                                                line-height: 30px;
+                                                text-align: center;
+                                                text-transform: uppercase;
+                                                color: #fff;
+                                                letter-spacing: 1px;
+                                                font-size: 10px;
+                                                font-family: "Playfair Display", sans-serif;
+                                                font-weight: 700;
+                                                background-color: #dfaf83;
+                                                display: block;
+                                                cursor: pointer;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .x-timeline {
+                                    padding: 1.5em 0;
+                                    border-bottom: 1px solid #e8e8e8;
+
+                                    ul {
+                                        display: -webkit-box;
+                                        display: -ms-flexbox;
+                                        display: flex;
+                                        -ms-flex-flow: row nowrap;
+                                        flex-flow: row nowrap;
+                                        -webkit-box-pack: justify;
+                                        -ms-flex-pack: justify;
+                                        justify-content: space-between;
+                                        -webkit-box-align: center;
+                                        -ms-flex-align: center;
+                                        align-items: center;
+
+                                        li {
+                                            display: -webkit-box;
+                                            display: -ms-flexbox;
+                                            display: flex;
+                                            -ms-flex-flow: column nowrap;
+                                            flex-flow: column nowrap;
+                                            -webkit-box-pack: justify;
+                                            -ms-flex-pack: justify;
+                                            justify-content: space-between;
+                                            -webkit-box-align: center;
+                                            -ms-flex-align: center;
+                                            align-items: center;
+                                        }
+                                    }
+
+                                    &-label {
+                                        color: #808080;
+                                        font-size: .85rem;
+                                        padding-top: 1em;
+                                        font-family: $fontSecundaria;
+                                        cursor: default;
+                                    }
+
+                                    &-seta {
+                                        display: inline-block;
+                                        @include sprite($timeline-seta);
+                                    }
+
+                                    &-realizado {
+                                        .x-timeline-icon {
+                                            display: block;
+                                            @include sprite($timeline-realizado);
+                                        }
+                                    }
+
+                                    &-aprovado {
+                                        .x-timeline-icon {
+                                            display: block;
+                                            @include sprite($timeline-aprovado);
+                                        }
+                                    }
+
+                                    &-faturado {
+                                        .x-timeline-icon {
+                                            display: block;
+                                            @include sprite($timeline-faturado);
+                                        }
+                                    }
+
+                                    &-enviado {
+                                        .x-timeline-icon {
+                                            display: block;
+                                            @include sprite($timeline-preparando);
+                                        }
+                                    }
+
+                                    &-entregue {
+                                        .x-timeline-icon {
+                                            display: block;
+                                            @include sprite($timeline-enviado);
+                                        }
+                                    }
+
+                                    &-done {
+                                        .x-timeline-label {
+                                            font-family: $fontTerciaria;
+                                            font-style: italic;
+                                            font-weight: bold;
+                                            color: #dfaf83;
+                                            font-size: 1rem;
+                                        }
+
+                                        &.x-timeline-realizado {
+                                            .x-timeline-icon {
+                                                @include sprite($timeline-realizado-done);
+                                            }
+                                        }
+
+                                        &.x-timeline-aprovado {
+                                            .x-timeline-icon {
+                                                @include sprite($timeline-aprovado-done);
+                                            }
+                                        }
+
+                                        &.x-timeline-faturado {
+                                            .x-timeline-icon {
+                                                @include sprite($timeline-faturado-done);
+                                            }
+                                        }
+
+                                        &.x-timeline-enviado {
+                                            .x-timeline-icon {
+                                                @include sprite($timeline-preparando-done);
+                                            }
+                                        }
+
+                                        &.x-timeline-entregue {
+                                            .x-timeline-icon {
+                                                @include sprite($timeline-enviado-done);
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .order-info {
+                                    >div {
+                                        font-size: 0;
+                                        border-bottom: 1px solid #e8e8e8;
+                                        padding-bottom: 40px;
+
+                                        .general-info {
+                                            display: inline-block;
+                                            vertical-align: top;
+                                            padding-right: 5%;
+
+                                            h3 {
+                                                margin-top: 45px;
+                                                margin-bottom: 20px;
+                                                font-size: 13px;
+                                                text-transform: uppercase;
+                                                font-family: "Playfair Display";
+                                                font-weight: 700;
+                                                color: #414042;
+                                                letter-spacing: 1px;
+
+                                                +div {
+                                                    font-family: "Lato", sans-serif;
+                                                    font-size: 13px;
+                                                    color: #808080;
+                                                    line-height: 22px;
+                                                }
+                                            }
+
+                                            &.payment-info {
+                                                width: 40%;
+                                            }
+
+                                            &.shipping-info {
+                                                width: 40%
+                                            }
+
+                                            &.client-profile-info {
+                                                display: none;
+                                            }
+
+                                            &.total-info {
+                                                width: 20%;
+                                                padding-right: 0;
+
+                                                .totals {
+                                                    float: right;
+
+                                                    table>tbody>tr {
+                                                        border: 0;
+                                                    }
+
+                                                    table>tfoot>tr {
+                                                        border: 0;
+
+                                                        th {
+                                                            width: 20%;
+                                                        }
+
+                                                        td {
+                                                            font-size: 13px;
+                                                            font-weight: normal;
+                                                            text-align: right;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .order-details {
+                                    .top-row {
+                                        margin: 25px 0 0;
+                                        padding-bottom: 25px;
+                                        border-bottom: 1px solid #e8e8e8;
+
+                                        .span9 {
+                                            display: inline-block;
+                                            vertical-align: top;
+
+                                            .section-info-title {
+                                                font-family: "Playfair Display";
+                                                font-size: 13px;
+                                                text-transform: uppercase;
+                                                color: #dfaf83;
+                                                font-weight: 700;
+                                                letter-spacing: 1px;
+                                                margin-top: 0;
+                                            }
+
+                                            .seller-info,
+                                            .trackingInfo {
+                                                font-family: "Lato", sans-serif;
+                                                font-size: 14px;
+                                                color: #808080;
+                                                line-height: 22px;
+                                                margin-top: 8px;
+
+                                                strong {
+                                                    font-weight: normal;
+                                                }
+                                            }
+
+                                            .showTrackingInfo {
+                                                a {
+                                                    width: auto;
+                                                    height: 30px;
+                                                    line-height: 30px;
+                                                    padding: 0 30px;
+                                                    text-align: center;
+                                                    text-transform: uppercase;
+                                                    color: #fff;
+                                                    letter-spacing: 1px;
+                                                    font-size: 10px;
+                                                    font-family: "Playfair", sans-serif;
+                                                    font-weight: 700;
+                                                    background-color: #dfaf83;
+                                                    display: inline-block;
+                                                    cursor: pointer;
+                                                }
+                                            }
+                                        }
+
+                                        .order-status-info {
+                                            display: inline-block;
+                                            vertical-align: top;
+                                            float: right;
+
+                                            .order-status {
+                                                width: auto;
+                                                height: 30px;
+                                                line-height: 30px;
+                                                padding: 0 30px;
+                                                text-align: center;
+                                                color: #808080;
+                                                letter-spacing: 1px;
+                                                font-size: 13px;
+                                                font-family: "Lato", sans-serif;
+                                                background-color: #f7f7f7;
+                                                display: inline-block;
+                                                margin: 0;
+                                            }
+
+                                            .request-cancel {
+                                                text-align: center;
+                                                width: 100%;
+
+                                                .request-cancel-link {
+                                                    text-align: center;
+
+                                                    a {
+                                                        font-family: "Lato", sans-serif;
+                                                        font-size: 12px;
+                                                        font-style: italic;
+                                                        color: #808080;
+                                                        line-height: 22px;
+                                                        cursor: pointer;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .items {
+                                        border-bottom: 0;
+
+                                        table {
+                                            width: 100%;
+
+                                            thead {
+                                                tr {
+                                                    border-bottom: 1px solid #e8e8e8;
+                                                    height: 50px;
+
+                                                    th {
+                                                        font-size: 11px;
+                                                        text-transform: uppercase;
+                                                        font-family: "Playfair Display";
+                                                        font-weight: 700;
+                                                        color: #414042;
+                                                        letter-spacing: 1px;
+                                                        text-align: center;
+
+                                                        &:first-child {
+                                                            text-align: left;
+                                                            width: 40%;
+                                                        }
+
+                                                        &:last-child {
+                                                            text-align: right;
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                            tbody {
+                                                tr {
+                                                    border: 0;
+
+                                                    &:first-child {
+                                                        td {
+                                                            padding: 15px 0 0;
+                                                        }
+                                                    }
+
+                                                    td {
+                                                        text-align: center;
+                                                        padding: 5px 0 0;
+
+                                                        p,
+                                                        span {
+                                                            font-family: "Lato", sans-serif;
+                                                            font-size: 13px;
+                                                            color: #808080;
+                                                        }
+
+                                                        &:first-child {
+                                                            text-align: left;
+
+                                                            img {
+                                                                height: 55px;
+                                                                width: auto;
+                                                            }
+                                                        }
+
+                                                        &:nth-child(2) {
+                                                            text-align: left;
+                                                            padding-left: 10px;
+
+                                                            a {
+                                                                font-family: "Playfair Display";
+                                                                font-size: 12px;
+                                                                color: #808080;
+                                                            }
+
+                                                            .brand {
+                                                                display: none;
+                                                            }
+                                                        }
+
+                                                        &:last-child {
+                                                            text-align: right;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .nav-pills {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .interna .x-instagram-banner .box-banner {
+        position: relative;
+        height: 381px;
+        margin-bottom: -87px;
+        clear: both;
+
+        img {
+            height: 100%;
+            width: auto;
+            position: absolute;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+        }
+    }
+
+    #my-orders-container {
+        .br2 {
+            border-radius: inherit !important;
+        }
+
+        .br2.black-70 {
+            background-color: #d3ae81 !important;
+            padding: 10px 80px;
+            color: #fff;
+        }
+
+        .myo-cancel-btn {
+            color: #d3ae81;
+            background-color: white;
+            border-color: #d3ae81;
+            padding: 12px;
+        }
+
+        .db.fw5.mid-gray {
+            color: #000000;
+            font-weight: 700;
+            font-family: 'Playfair Display', sans-serif;
+            font-size: small;
+            line-height: 25px;
+        }
+
+        .db.heavier-blue {
+            color: #000000;
+            font-weight: 600;
+            font-size: small;
+        }
+
+        .mb0-l.mid-gray {
+            font-family: 'Playfair Display', sans-serif;
+            color: #000000;
+            font-weight: 700;
+            font-size: smaller;
+            line-height: 21px;
+            margin-top: -13px;
+        }
+
+        .mid-gray.ttu {
+            font-family: 'Playfair Display', sans-serif;
+            color: #9d9d9d;
+            font-size: small;
+            font-weight: 600;
+        }
+
+        .heavier-blue.fw4.link {
+            font-family: 'Playfair Display', sans-serif;
+            color: black;
+            font-size: small;
+            font-weight: 700;
+        }
+
+        .db.mt1.f6 {
+            font-family: 'Playfair Display', sans-serif;
+            color: #959595;
+            font-weight: 500;
+            line-height: 30px;
+        }
+
+        .db.mt0.mb2.f6.fw6 {
+            font-family: 'Playfair Display', sans-serif;
+            color: #000000;
+            font-weight: 700;
+            line-height: 30px;
+        }
+
+        a.heavier-blue {
+            svg path {
+                fill: #000;
+            }
+        }
+
+    }
+
+    .x-wishlist-page {
+        padding-top: 100px;
+        width: 100%;
+        position: relative;
+        max-width: 1366px;
+        margin: 0 auto;
+        overflow: hidden;
+
+        .x-nav-account {
+            margin: 45px 8% 0;
+            color: #414042;
+            border-bottom: 1px solid #bcbcbc;
+            float: left;
+            width: 84.0025%;
+            position: relative;
+            z-index: 9999999;
+        }
+
+        &__container {
+            clear: both;
+            max-width: 1205px;
+            margin: 0 auto;
+            padding: 35px 20px;
+
+            .prateleira {
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                }
+
+                li {
+                    width: 25%;
+                }
+            }
+
+            .js-shelf-product-video {
+                display: none !important;
+            }
+        }
+
+        &__not-found {
+            padding: 100px 30px;
+            text-align: center;
+            font-size: 18px;
+            font-family: "Lato", sans-serif;
+            color: #808080;
+            display: none;
+        }
+    }
+}

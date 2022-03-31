@@ -1,0 +1,98 @@
+body {
+  .ajuda-flutuante {
+    display: block;
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+    z-index: 109;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    &-list {
+      display: none;
+      &-button {
+        display: flex;
+        background: #FDF5ED;
+        border-radius: 8px;
+        cursor: pointer;
+        width: fit-content;
+        float: right;
+        clear: both;
+        &-text {
+          align-items: center;
+          display: flex;
+          padding: 12px 16px;
+          font-size: 14px;
+          line-height: 17px;
+          color: #232323;
+          font-weight: normal;
+        }
+        &-icon {
+          align-items: center;
+          display: flex;
+          margin-left: 16px;
+        }
+        &:hover {
+          background: #F9E0CA;
+        }
+        &:last-child {
+          margin-bottom: 16px;
+        }
+      }
+    }
+    &__button-init {
+      display: flex;
+      background: #F7D6B8;
+      border-radius: 8px;
+      filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.25));
+      cursor: pointer;
+      width: fit-content;
+      float: right;
+      clear: both;
+      &-text {
+        padding: 16px 0;
+        padding-right: 10px;
+      }
+      &-icon {
+        padding: 0 10px;
+        align-items: center;
+        display: flex;
+      }
+    }
+    &__button-close {
+      display: none;
+      background: #F7D6B8;
+      border-radius: 8px;
+      filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.45));
+      cursor: pointer;
+      width: fit-content;
+      float: right;
+      clear: both;
+      &-text {
+        padding: 16px 0;
+        padding-right: 10px;
+      }
+      &-icon {
+        padding: 0 10px;
+        align-items: center;
+        display: flex;
+      }
+    }
+  }
+  &.is--showing__menu-drop-image {
+    .ajuda-flutuante {
+      z-index: 108;
+    }
+  }
+  &.help-is-open {
+    .ajuda-flutuante {
+      &__button-init {
+        display: none;
+      }
+      &__button-close {
+        display: flex;
+      }
+    }
+  }
+}
+  
+

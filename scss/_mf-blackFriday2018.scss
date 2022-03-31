@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Merriweather:300i,700');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    margin: 0;
+}
+
+#ajaxBusy {
+    display: none !important;
+}
+
+.x {
+    &-blackFriday2018 {
+        &__main {
+            background-color: #f5cca6;
+        }
+
+        &__title {
+            margin: 0;
+            padding-top: 33px;
+            padding-top: calc(33rem / 16);
+
+            a {
+                display: block;
+                width: 126px;
+                width: calc(126rem / 16);
+                margin: 0 auto;
+                font-size: 0;
+                background-image: url('/arquivos/mariaFilo-BlackFriday2018-logo.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    padding: 15.3125% 0;
+                    padding: calc(49 / 160 / 2 * 100%) 0;
+                }
+
+                .is--mobile & {
+                    width: 33%;
+                    width: calc(198 / 600 * 100%);
+                }
+            }
+        }
+
+        &__subtitle {
+            width: 790px;
+            width: calc(790rem / 16);
+            max-width: 75.1666666667%;
+            max-width: calc(451 / 600 * 100%);
+            margin: 82px auto 68px;
+            margin: calc(82rem / 16) auto calc(68rem / 16);
+            font-size: 0;
+            background-image: url('/arquivos/mariaFilo-BlackFriday2018-blackFriday.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            &::before {
+                content: '';
+                display: block;
+                padding: 20.3797468% 0;
+                padding: calc(322 / 790 / 2 * 100%) 0;
+            }
+
+            .is--mobile & {
+                margin: 73px auto 44px;
+                margin: calc(73rem / 16) auto calc(44rem / 16);
+            }
+        }
+
+        &__form {
+            text-align: center;
+        }
+
+        &__fieldset {
+            min-width: 0;
+            margin: 0;
+            border: 0;
+            padding: 0;
+        }
+
+        &__legend {
+            max-width: 75.1666666667%;
+            max-width: calc(451 / 600 * 100%);
+            margin: 30px 0;
+            margin: calc(30rem / 16) 0 0;
+            color: #333333;
+            font-family: "Lato";
+            font-size: 25px;
+            font-size: calc(25rem / 16);
+            font-style: italic;
+            font-weight: bold;
+            letter-spacing: 2px;
+            letter-spacing: calc(2rem / 16);
+            line-height: 28px;
+            line-height: calc(28rem / 16);
+            text-align: center;
+
+            .is--mobile & {
+                font-size: 21px;
+                font-size: calc(21rem / 16);
+            }
+        }
+
+        &__input {
+            width: 500px;
+            width: calc(500rem / 16);
+            max-width: 83.1666667%;
+            max-width: calc(499 / 600 * 100%);
+            margin: 65px 14px 0;
+            margin: calc(65rem / 16) calc(14rem / 16) 0;
+            border: solid #ba8e64;
+            border-width: 1px;
+            border-width: calc(1rem / 16);
+            padding: 19px;
+            padding: calc(19rem / 16);
+            display: inline-block;
+            color: #333333;
+            font-family: "Lato";
+            font-size: 14px;
+            font-size: calc(14rem / 16);
+            letter-spacing: 3px;
+            letter-spacing: calc(3rem / 16);
+
+            &::placeholder {
+                color: #cfcfcf;
+            }
+
+            .is--mobile & {
+                margin: 45px 14px 0;
+                margin: calc(45rem / 16) calc(14rem / 16) 0;
+            }
+        }
+
+        &__submit {
+            margin-top: 65px;
+            margin-top: calc(65rem / 16);
+            border: 0;
+            padding: 20px 27px;
+            padding: calc(20rem / 16) calc(27rem / 16);
+            color: #ffffff;
+            font-family: "Lato";
+            font-size: 14px;
+            font-size: calc(14rem / 16);
+            font-weight: 800;
+            letter-spacing: 3px;
+            letter-spacing: calc(3rem / 16);
+            text-transform: uppercase;
+            background-color: #333333;
+
+            &:disabled {
+                font-size: 0;
+
+                &::before {
+                    content: 'Aguarde';
+                    display: block;
+                    font-size: 14px;
+                    font-size: calc(14rem / 16);
+                }
+            }
+
+            .is--mobile & {
+                margin-top: 45px;
+                margin-top: calc(45rem / 16);
+            }
+        }
+
+        &__description {
+            box-sizing: border-box;
+            width: 1270px;
+            width: calc(1270rem / 16);
+            max-width: 87%;
+            max-width: calc(522 / 600 * 100%);
+            margin: 81px auto 0;
+            margin: calc(81rem / 16) auto 0;
+            border-radius: 25px;
+            border-radius: calc(25 / 16 * 1 rem);
+            padding: 54px;
+            padding: calc(54rem / 16);
+            background-color: #f7d5b5;
+
+            .is--mobile & {
+                padding: 50px 33px;
+                padding: calc(50rem / 16) calc(33rem / 16);
+            }
+
+            &-title {
+                width: max-content;
+                margin: 0 auto;
+                border-bottom: dotted #333333 1px;
+                border-bottom: dotted #333333 calc(1rem / 16);
+                padding-bottom: 10px;
+                padding-bottom: calc(10rem / 16);
+                color: #333333;
+                font-size: 40px;
+                font-size: calc(40rem / 16);
+                font-family: "Playfair Display";
+                font-style: italic;
+                font-weight: 300;
+                text-align: center;
+                text-transform: lowercase;
+
+                .is--mobile & {
+                    border-bottom-style: solid;
+                    font-size: 29px;
+                    font-size: calc(29rem / 16);
+                }
+            }
+
+            &-items {
+                margin: 65px 0;
+                margin: calc(65rem / 16) 0;
+                padding: 0;
+                list-style: none;
+
+                .is--mobile & {
+                    margin: 50px 0;
+                    margin: calc(50rem / 16) 0;
+                }
+            }
+
+            &-item {
+                margin-bottom: 40px;
+                margin-bottom: calc(40rem / 16);
+                color: #333333;
+                font-family: "Lato";
+                font-size: 21px;
+                font-size: calc(21rem / 16);
+                letter-spacing: 2px;
+                letter-spacing: calc(2rem / 16);
+                line-height: 28px;
+                line-height: calc(28rem / 16);
+                text-align: center;
+
+                &::before {
+                    content: '>>>  ';
+                    white-space: pre;
+                }
+
+                .is--mobile & {
+                    margin-bottom: 50px;
+                    margin-bottom: calc(50rem / 16);
+                }
+
+                em {
+                    font-style: italic;
+                    font-weight: 700;
+                }
+            }
+
+            &-disclaimer {
+                margin: 0;
+                text-align: center;
+
+                .is--mobile & {
+                    margin-top: 25px;
+                    margin-top: calc(25rem / 16);
+                    padding: 0 50px;
+                    padding: 0 calc(50rem / 16);
+                }
+
+                small {
+                    color: #6b6b6b;
+                    font-family: "Lato";
+                    font-size: 17px;
+                    font-size: calc(17rem / 16);
+                    font-style: italic;
+                    letter-spacing: 1px;
+                    letter-spacing: calc(1rem / 16);
+                    line-height: 28px;
+                    line-height: calc(28rem / 16);
+                }
+            }
+        }
+
+        &__questions {
+            margin: 0;
+            padding: 0 0 25px;
+            padding: 0 0 calc(25rem / 16);
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style: none;
+
+            .is--mobile & {
+                padding-bottom: 95px;
+                padding-bottom: calc(95rem / 16);
+            }
+        }
+
+        &__question {
+            margin: 76px 57px 0;
+            margin: calc(76rem / 16) calc(57rem / 16) 0;
+            $selector: &;
+
+            &--email {
+                #{$selector}-title {
+                    background-image: url('/arquivos/mariaFilo-BlackFriday2018-email.png');
+                }
+            }
+
+            &--minicart {
+                #{$selector}-title {
+                    background-image: url('/arquivos/mariaFilo-BlackFriday2018-minicart.png');
+                }
+            }
+
+            &--more {
+                #{$selector}-title {
+                    background-image: url('/arquivos/mariaFilo-BlackFriday2018-more.png');
+                }
+            }
+
+            .is--mobile & {
+                width: 87%;
+                width: calc(522 / 600 * 100%);
+                margin: 63px auto 0;
+                margin: calc(63rem / 16) auto 0;
+                display: flex;
+                align-items: flex-start;
+
+                &:nth-child(odd) {
+                    flex-direction: row-reverse;
+
+                    #{$selector}-title {
+                        right: 0;
+                    }
+
+                    #{$selector}-text {
+                        text-align: right;
+                    }
+                }
+
+                &:nth-child(even) {
+                    #{$selector}-title {
+                        left: 0;
+                    }
+
+                    #{$selector}-text {
+                        text-align: left;
+                    }
+                }
+
+                &--email {
+                    #{$selector}-title {
+                        margin: 0 0 0 -20px;
+                        margin: 0 0 0 calc(-20rem / 16);
+                    }
+                }
+    
+                &--minicart {
+                    #{$selector}-title {
+                        margin: 0 -10px 0 0;
+                        margin: 0 calc(-10rem / 16) 0 0;
+                    }
+                }
+    
+                &--more {
+                    #{$selector}-title {
+                        margin: 0 0 0 -35px;
+                        margin: 0 0 0 calc(-35rem / 16);
+                    }
+                }
+            }
+
+            &-title {
+                width: 69px;
+                width: calc(69rem / 16);
+                margin: 0 auto;
+                font-size: 0;
+                background: center no-repeat;
+                background-size: contain;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    padding: 50% 0;
+                }
+            }
+
+            &-text {
+                width: 365px;
+                width: calc(365rem / 16);
+                margin: 50px 0;
+                margin: calc(50rem / 16) 0;
+                font-size: 21px;
+                font-size: calc(21rem / 16);
+                letter-spacing: 2px;
+                letter-spacing: calc(2rem / 16);
+                line-height: 30px;
+                line-height: calc(30rem / 16);
+                color: #333333;
+                font-family: "Lato";
+                text-align: center;
+
+                .is--mobile & {
+                    margin: 0;
+                }
+            }
+        }
+
+        &__info {
+            &-title {
+                width: max-content;
+                margin: 90px auto 70px;
+                margin: calc(90rem / 16) auto calc(70rem / 16) ;
+                border-bottom: #333333 solid 1px;
+                border-bottom: #333333 solid calc(1rem / 16);
+                padding-bottom: 10px;
+                padding-bottom: calc(10rem / 16);
+                color: #a88665;
+                font-family: "Playfair Display";
+                font-size: calc(40rem / 16);
+                font-style: italic;
+                font-weight: 300;
+                line-height: 28px;
+                line-height: calc(28rem / 16);
+                text-align: center;
+                text-transform: lowercase;
+
+                .is--mobile & {
+                    margin: 55px auto;
+                    margin: calc(55rem / 16) auto;
+                    font-size: 29px;
+                    font-size: calc(29rem / 16);
+                }
+            }
+
+            &-text {
+                width: 1510px;
+                width: calc(1510rem / 1);
+                max-width: 70%;
+                max-width: calc(420 / 600 * 100%);
+                margin: 0 auto 90px;
+                margin: 0 auto calc(90rem / 16);
+                color: #333333;
+                font-family: "Lato";
+                font-size: 16px;
+                font-size: calc(16rem / 16);
+                letter-spacing: 1px;
+                letter-spacing: calc(1rem / 16);
+                line-height: 28px;
+                line-height: calc(28rem / 16);
+                text-align: center;
+
+                .is--mobile & {
+                    margin: 0 auto 53px;
+                    margin: 0 auto calc(53rem / 16);
+                    font-size: 14px;
+                    font-size: calc(14rem / 16);
+                    line-height: 30px;
+                    line-height: calc(30rem / 16);
+                }
+            }
+        }
+
+        &__popup {
+            box-sizing: border-box;
+            width: 522px;
+            width: calc(522rem / 16);
+            max-width: 87%;
+            max-width: calc(522 / 600 * 100%);
+            padding: 20px 75px;
+            padding: calc(20rem / 16) calc(75rem / 16);
+            background-color: #ffffff;
+
+            &-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                opacity: 0;
+                visibility: hidden;
+                transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+                background-color: rgba($color: (#000000), $alpha: 0.6);
+
+                &.is--active {
+                    opacity: 1;
+                    visibility: visible;
+                    transition-delay: 0s;
+                }
+            }
+
+            &-text {
+                margin: 35px 0;
+                margin: calc(35rem / 16) 0;
+                color: #ab8b6b;
+                font-family: "Lato";
+                font-size: 18px;
+                font-size: calc(18rem / 16);
+                letter-spacing: 1px;
+                letter-spacing: calc(1rem / 16);
+                line-height: 28px;
+                line-height: calc(28rem / 16);
+                text-align: center;
+
+                strong {
+                    margin: 15px 0;
+                    margin: calc(15rem / 16) 0;
+                    color: #ab8b6b;
+                    font-family: "Playfair Display";
+                    font-size: 20px;
+                    font-size: calc(20rem / 16);
+                    font-weight: bold;
+                    letter-spacing: 2px;
+                    letter-spacing: calc(2rem / 16);
+                    line-height: 28px;
+                    line-height: calc(28rem / 16);
+                    text-align: center;
+                }
+            }
+
+            &-close {
+                margin: 20px auto;
+                margin: calc(20rem / 16) auto;
+                border: 0;
+                padding: 15px 31px;
+                padding: calc(15rem / 16) calc(31rem / 16);
+                display: block;
+                color: #ffffff;
+                font-family: "Lato";
+                font-size: 16px;
+                font-size: calc(16rem / 16);
+                font-weight: 800;
+                letter-spacing: 3px;
+                letter-spacing: calc(3rem / 16);
+                text-transform: uppercase;
+                background-color: #333333;
+            }
+        }
+    }
+}

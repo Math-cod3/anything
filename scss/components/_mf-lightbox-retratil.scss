@@ -1,0 +1,113 @@
+
+#lightbox-lateral {
+    position: fixed;
+    top: 348px;
+    right: -300px;
+    z-index: 10;
+    transition: 0.5s ease-in-out;
+
+    &.opened {
+        right: 0;
+    }
+}
+
+.news-retratil {
+    @include display-flex();
+
+    &__icon {
+        position: absolute;
+        top: 20px;
+        left: -45px;
+        cursor: pointer;
+    }
+
+    &__content {
+        position: relative;
+        width: 300px;
+        padding: 10px 10px 16px;
+        background-color: #f1e4d4;
+    }
+
+    &__close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 10px;
+        height: 14px;
+
+        &:hover {
+            opacity: 0.3;
+        }
+
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            left: 4px;
+            width: 1px;
+            height: 14px;
+            background-color: #373546;
+        }
+
+        &::before {
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+
+    &__title {
+        margin-bottom: 24px;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 0.7px;
+    }
+
+    &__form {
+        // height: 263px;
+        padding: 22px 20px 0;
+    }
+
+    &__input {
+        margin-bottom: 20px;
+        padding: 10px;
+        width: 240px;
+        height: 30px;
+        font-family: Lato;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.65px;
+    }
+
+    &__submit {
+        margin-bottom: 30px;
+        width: 240px;
+        height: 40px;
+        font-family: Lato;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: 1.3px;
+        background-color: #000;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    &__privacy {
+        text-align: center;
+        font-family: Lato;
+        font-size: 11px;
+        font-style: italic;
+        letter-spacing: 0.28px;
+
+        a {
+            color: #787878;
+        }
+    }
+}
