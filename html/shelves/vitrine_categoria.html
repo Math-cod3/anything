@@ -1,0 +1,62 @@
+#set($id = $product.Id)
+#set($idSku = $product.productVariantId)
+#set($uri = $product.Uri)
+#set($escapedName = $product.HtmlEscapedName)
+
+
+    <div class="x-productShelf">
+        <input type="hidden" class="x-id" value="$id" />
+
+        <div class="x-productShelf__image">
+            <button class="x-add-it-to-wishlist js--shelf-add-to-wish" data-id="$id">adiconar à wishlist</button>
+            <div class="x-productShelf__buyButton">$product.BottomBuy</div>
+            <div class="x-productShelf__image--overlay"></div>
+
+            <a title="$escapedName" href="$uri">
+                $product.GetImageTag(650,757)
+            </a>
+        </div>
+        <div class="x-productShelf__content">
+            <div class="x-productShelf__wrapper--left">
+                <h2>
+                    <a class="x-productShelf__title" title="$escapedName" href="$uri">
+                        $product.EscapedName
+                    </a>
+                </h2>
+            </div>
+            <div class="x-productShelf__wrapper--right">
+                #if ($product.IsInStock)
+                <div class="x-productShelf__price">
+                    <a title="$escapedName" href="$uri">
+                        #if ($product.HasBestPrice)
+                            <span class="x-productShelf__price--oldPrice">
+                                $product.ListPrice
+                            </span>
+                            <span class="x-productShelf__price--bestPrice">
+                            $product.BestPrice
+                            </span>
+                        #else
+                            <span class="x-productShelf__price--bestPrice">
+                                $product.BestPrice
+                            </span>
+                        #end
+                        #if ($product.NumbersOfInstallment > 1)
+                        <span class="x-productShelf__installment">
+                            <span class="x-productShelf__installment--number"> ${product.NumbersOfInstallment}X </span> de  <span class="x-productShelf__installment--value">$product.InstallmentValue</span>
+                        </span>
+
+                        #end
+                    </a>
+                </div>
+            #else
+                <p class="x-productShelf-outOfStock">
+                    <a title="$escapedName" href="$uri">
+                        <span class="x-productShelf-outOfStock__text">
+                            Produto Esgotado
+                        </span>
+                    </a>
+                </p>
+            #end
+                </div>
+        </div>
+</div>

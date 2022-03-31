@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce"
+      lang="pt-br">
+
+    <head>
+        <vtex:metaTags/>
+        <vtex:template id="MariaFilo-Head" />
+        <link href="/arquivos/enext-institucional-mariafilo.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <div class="x-general">
+
+            <vtex:template id="MariaFilo-Header" />
+
+            <main class="x-content">
+
+                <div class="x-institucional">
+
+                    <div class="x-institucional__campaign x-campaign">
+
+                        <div class="x-campaign__title">
+                            <h2>Campanha</h2>
+                        </div>
+
+                        <div class="x-campaign__list">
+                            <vtex:contentPlaceHolder id="Lista-De-Campanhas" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="x-instagram-banner">
+                    <vtex:bannerInstagram />
+                </div>
+
+            </main>
+
+            <vtex:template id="MariaFilo-Footer" />
+
+        </div>
+        <vtex:template id="MariaFilo-Scripts" />
+
+        <script type="text/javascript" src="/arquivos/enext-institucional-mariafilo.js"></script>
+    </body>
+
+</html>
+

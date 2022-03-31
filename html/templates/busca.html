@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce"
+    lang="pt-br">
+
+    <head>
+        <vtex:metaTags/>
+        <vtex:template id="MariaFilo-Head" />
+        <link href='/arquivos/enext-categoria-mariafilo.css' rel='stylesheet' type='text/css' />
+    </head>
+
+    <body>
+        <div class="x-general">
+            <vtex:template id="MariaFilo-Header" />
+            <main class="x-content">
+               
+               <section class="x-category__search">
+                    <div class="x-category__wrapper">
+                        <span class="x-category__icon"></span>
+                        <h4><span class="js--searched-text">###</span></h4>
+                        <p class="x-category__text">Você buscou por <span class="js--searched-text">#</span>, exibindo resultados para <span class="js--searched-text">#</span></p>
+                        
+                        <span class="x-category__results"> <span class="js--searched-results-num">#</span> resultados encontrados</span>
+                    </div>
+               </section>
+                
+
+                <section class="x-categoryControllers">
+                    <div class="x-categoryControllers__wrapper"> 
+                        <div class="x-categoryControllers__wrapper--left">
+                            <div class="x-categoryControllers__breadcrumb">
+                                <vtex.cmc:breadCrumb />
+                            </div>
+                        </div>
+
+                        <div class="x-categoryControllers__wrapper--right">
+
+                            <div class="x-categoryControllers__orderProducts">
+                                <span class="x-categoryControllers__orderProducts--title">Ordenar por</span>
+                                <ul class="x-categoryControllers__orderProducts--wrapper">
+                                    <li class="x-categoryControllers__orderProducts--link"><a href="&amp;O=OrderByReviewRateDESC">lançamento</a></li>
+                                    <li class="x-categoryControllers__orderProducts--link"><a href="&amp;O=OrderByPriceASC">menor preço</a></li>
+                                    <li class="x-categoryControllers__orderProducts--link"><a href="&amp;O=OrderByPriceDESC">maior preço</a></li>
+                                    <li class="x-categoryControllers__orderProducts--link"><a href="&amp;O=OrderByNameASC">A - Z</a></li>
+                                    <li class="x-categoryControllers__orderProducts--link"><a href="&amp;O=OrderByNameDESC">Z - A</a></li>
+                                    <li class="x-categoryControllers__orderProducts--link"><a href="&amp;O=OrderByTopSaleDESC">mais vendidos</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="x-categoryControllers__layoutFormat">
+                                <div id="layoutFormat--default" class="x-categoryControllers__layoutFormat--default">
+                                    <span class="x-column-icon"></span>
+                                    <span class="x-column-icon"></span>
+                                </div>
+                                <div id="layoutFormat--more" class="x-categoryControllers__layoutFormat--more">
+                                    <span class="x-column-icon"></span>
+                                    <span class="x-column-icon"></span>
+                                    <span class="x-column-icon"></span>
+                                    <span class="x-column-icon"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </section>
+
+
+                <section class="x-categoryContent">
+                    <div class="x-categoryContent__wrapper">
+                        <div class="x-categoryContent__products">
+                            <vtex.cmc:searchResult layout="4a258ce9-136f-46aa-9925-ed1081dfe366" itemCount="12" columnCount="12" />
+                        </div>
+                    </div>
+                </section>
+                
+                <div class="x-instagram-banner">
+                    <vtex:bannerInstagram />
+                </div>
+
+            </main>
+            <vtex:template id="MariaFilo-Footer" />
+        </div>
+        <vtex:template id="MariaFilo-Scripts" />
+        <script type="text/javascript" src="/arquivos/enext-categoria-mariafilo.js"></script>
+    </body>
+
+    </html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce"
+      lang="pt-br">
+
+    <head>
+        <vtex:metaTags/>
+        <vtex:template id="MariaFilo-Head" />
+        <link href="/arquivos/enext-institucional-mariafilo.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <div class="x-general">
+
+            <vtex:template id="MariaFilo-Header" />
+
+            <main class="x-content">
+
+                <div class="x-institucional">
+
+                    <div class="x-institucional x-campaign-intern">
+
+                        <!-- CONTROLE CUSTOMIZADO -->
+                        <vtex.cmc:MenuCampanha />
+                        <!-- / CONTROLE CUSTOMIZADO -->
+                        
+                        <div class="x-campaign-intern__container">
+                           
+                            <div class="x-campaign-intern__top">
+                                <vtex:contentPlaceHolder id="Banner-Topo" />
+                                
+                                <div class="x-campaign-intern__title-container">
+                                    <h3><vtex:contentPlaceHolder id="Texto-Topo-Título" /></h3>
+                                    <p><vtex:contentPlaceHolder id="Texto-Topo-Resumo" /></p>
+                                </div>
+                            </div>
+                            
+                            <div class="x-campaign-intern__text">
+                                <vtex:contentPlaceHolder id="Texto-Inicial" />
+                            </div>
+                            
+                            <div class="x-campaign-intern__fullbanner">
+                                <vtex:contentPlaceHolder id="Banner-Full-1" />
+                            </div>
+                            
+                            <div class="x-campaign-intern__double-banner">
+                                <vtex:contentPlaceHolder id="Banner-Duplo" />
+                            </div>
+                            
+                            <div class="x-campaign-intern__fullbanner">
+                                <vtex:contentPlaceHolder id="Banner-Full-2" />
+                            </div>
+                            
+                            <div class="x-campaign-intern__bottom">
+                               <div class="x-campaign-intern__title-container">
+                                    <h3><vtex:contentPlaceHolder id="Texto-Final-Título" /></h3>
+                                    <p><vtex:contentPlaceHolder id="Texto-Final-Resumo" /></p>
+                                </div>
+                                
+                                <vtex:contentPlaceHolder id="Banner-Final" />
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="x-instagram-banner">
+                    <vtex:bannerInstagram />
+                </div>
+
+            </main>
+
+            <vtex:template id="MariaFilo-Footer" />
+
+        </div>
+        <vtex:template id="MariaFilo-Scripts" />
+
+        <script type="text/javascript" src="/arquivos/enext-institucional-mariafilo.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce"
+      lang="pt-br">
+
+    <head>
+        <vtex:metaTags/>
+        
+        <!-- Open Graph -->
+        <meta itemprop="image" content="https://www.mariafilo.com.br/arquivos/android-chrome-512x512.png" />
+        <meta property="busca:image" content="https://www.mariafilo.com.br/arquivos/android-chrome-512x512.png"/>
+        <meta property="og:image" content="https://www.mariafilo.com.br/arquivos/android-chrome-512x512.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+  
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.mariafilo.com.br" />
+        <meta property="og:description" content="Maria Filó | Loja Oficial da Maria Filó. Aqui você encontra moda e inspiração." />
+        <meta property="og:title" content="Maria Filó" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:site_name" content="mariafilo.com.br" />
+        
+        <vtex:template id="MariaFilo-Head-dev" />
+        <link href="https://mariafilo.vteximg.com.br/arquivos/enext-institucional-mariafilo.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <div class="x-general">
+
+            <vtex:template id="MariaFilo-Header" />
+
+            <main class="x-content">
+
+                <div class="x-institucional">
+                    <div class="x-institucional-default">    
+                        <!-- CONTROLE CUSTOMIZADO -->
+                        <vtex.cmc:MenuInstitucional />
+                        <!-- / CONTROLE CUSTOMIZADO -->
+                    </div>
+
+                    <div class="x-institucional__franquias x-franquias">
+                        <div class="x-franquias__resume">
+                            <vtex:contentPlaceHolder id="Banner" />
+                            <div class="x-franquias__text">
+                                <p><vtex:contentPlaceHolder id="Texto-Principal" /></p>
+                            </div>
+                        </div>
+                        
+                       <div class="x-franquias__sign">
+                            <h5 class="x-franquias__title"><vtex:contentPlaceHolder id="Titulo" /></h5>
+                            
+                            <p class="x-franquias__text"><vtex:contentPlaceHolder id="Texto-Secundario" /></p>
+                            <!--div class="x-service__chat">
+                                <a class="x-franquias__btn" href="https://api.whatsapp.com/send?phone=552125036852">Envie um WhatsApp</a>
+                            </div-->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="x-instagram-banner">
+                    <vtex:bannerInstagram />
+                </div>
+
+                <div class="container__table">
+                    <vtex:contentPlaceHolder id="Representantes" />
+				</div>
+
+            </main>
+
+            <vtex:template id="MariaFilo-Footer" />
+
+        </div>
+        <vtex:template id="MariaFilo-Scripts-dev" />
+
+        <script type="text/javascript" src="https://mariafilo.vteximg.com.br/arquivos/enext-institucional-mariafilo.js"></script>
+    </body>
+
+</html>

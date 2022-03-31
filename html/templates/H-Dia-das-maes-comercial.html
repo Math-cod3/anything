@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+  xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+  <vtex:metaTags />
+  <vtex:template id="MariaFilo-Head-dev" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body>
+  <div class="x-general">
+
+    <vtex:template id="MariaFilo-Header" />
+
+    <main class="x-content">
+
+      <div class="mothers-day__top">
+        <vtex:contentPlaceHolder id="banner-top" />
+      </div>
+
+      <div class="mothers-day__prices">
+        <vtex:contentPlaceHolder id="prices-01" />
+        <vtex:contentPlaceHolder id="prices-02" />
+        <vtex:contentPlaceHolder id="prices-03" />
+        <vtex:contentPlaceHolder id="prices-04" />
+      </div>
+
+      <div class="mothers-day__suggestions">
+        <div>
+          <vtex:contentPlaceHolder id="product-01" />
+        </div>
+
+        <div>
+          <vtex:contentPlaceHolder id="product-02" />
+        </div>
+
+        <div>
+          <vtex:contentPlaceHolder id="product-03" />
+        </div>
+
+        <div>
+          <vtex:contentPlaceHolder id="product-04" />
+        </div>
+      </div>
+
+      <div class="mothers-day__mood">
+        <vtex:contentPlaceHolder id="shelf-title" />
+
+        <div class="mothers-day__mood-arrows">
+          <a href="javascript:void(0)" class="mothers-day__mood-arrows--fakeprev"></a>
+          <span class="mothers-day__mood-arrows--actual"></span>
+          <a href="javascript:void(0)" class="mothers-day__mood-arrows--fakenext"></a>
+        </div>
+
+        <div class="mothers-day__mood-images">
+          <div class="box-banner">
+            <vtex:contentPlaceHolder id="shelf-image-01" />
+          </div>
+          <div class="box-banner">
+            <vtex:contentPlaceHolder id="shelf-image-02" />
+          </div>
+          <div class="box-banner">
+            <vtex:contentPlaceHolder id="shelf-image-03" />
+          </div>
+          <div class="box-banner">
+            <vtex:contentPlaceHolder id="shelf-image-04" />
+          </div>
+          <div class="box-banner">
+            <vtex:contentPlaceHolder id="shelf-image-05" />
+          </div>
+        </div>
+        <vtex:contentPlaceHolder id="shelf-link" />
+      </div>
+
+      <div class="mothers-day__benefits">
+        <vtex:contentPlaceHolder id="banner-compre-ganhe" />
+      </div>
+
+      <div class="mothers-day__sizes">
+        <img src="https://mariafilo.vteximg.com.br/arquivos/ggd-sizes.png" />
+        <div>
+          <h2>Sob medida</h2>
+          <p>Selecione um ou mais tamanhos</p>
+          <div>
+            <ul>
+              <li>PP</li>
+              <li>P</li>
+              <li>M</li>
+              <li>G</li>
+              <li>UN</li>
+            </ul>
+            <ul>
+              <li>34</li>
+              <li>36</li>
+              <li>38</li>
+              <li>40</li>
+              <li>42</li>
+              <li>44</li>
+            </ul>
+          </div>
+          <a href="/Loja/Roupas/?fq=C:/60/26/">Ver resultados</a>
+        </div>
+      </div>
+
+      <div class="mothers-day__bottom">
+        <vtex:contentPlaceHolder id="banner-bottom" />
+      </div>
+
+    </main>
+
+    <vtex:template id="MariaFilo-Footer" />
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/emn178/chartjs-plugin-labels/src/chartjs-plugin-labels.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <vtex:template id="MariaFilo-Scripts-dev" />
+</body>
+
+</html>

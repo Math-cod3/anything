@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+    <vtex:metaTags />
+    <vtex:template id="MariaFilo-Head-dev" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <meta name="google-site-verification" content="yDOj0VMUJOevsrprRKs1qUxVNFgjldM1t-uI5aH2TYc" />
+</head>
+
+<body>
+    <main class="x-general">
+        <vtex:template id="MariaFilo-Header" />
+        <vtex:template id="MariaFilo-Menu" />
+        <section class="mf-container mf-banner">
+            <vtex:contentPlaceHolder id="Banner Principal" />
+        </section>
+        <section class="mf-container mf-intro">
+            <article class="mf-container__wrapper">
+                <vtex:contentPlaceHolder id="Texto - Intro" />
+                <!-- <p class="mf-text__big"> 
+                        Ressignificar a forma de fazer roupas é a nossa meta. 
+                        Em  compromisso com o ODS 12, da ONU, que busca maneiras responsáveis de produzir, nossa linha Hera é criada a partir de tecidos e processos com baixo impacto ambiental.
+                    </p> -->
+                <vtex:contentPlaceHolder id="CTA - Intro" />
+                <!-- <a  class="mf-button__orange" href="#" target="_blank">
+
+                        conheça a linha
+                        
+                        </a> -->
+            </article>
+        </section>
+        <section class="mf-container mf-content__info">
+            <article class="mf-container__wrapper">
+                <div class="mf-content__info-banner">
+                    <vtex:contentPlaceHolder id="Conteudo - Info Banner" />
+                </div>
+                <div class="mf-content__info-text">
+                    <vtex:contentPlaceHolder id="Conteudo - Info Texto" />
+                </div>
+            </article>
+        </section>
+        <section class="mf-container mf-vitrine">
+            <article class="mf-container__wrapper">
+                <div class="mf-text__title mf-vitrine__title">
+                    <vtex:contentPlaceHolder id="Vitrine - Titulo" />
+                </div>
+                <div class="x-vitrine-products">
+                    <vtex:contentPlaceHolder id="Vitrine - Produtos" />
+                </div>
+            </article>
+        </section>
+        <section class="mf-container mf-content__main">
+            <article class="mf-container__wrapper">
+                <div class="mf-content__main-banner">
+                    <vtex:contentPlaceHolder id="Conteúdo - Banner Novidades" />
+                </div>
+                <div class="mf-content__main-text">
+                    <vtex:contentPlaceHolder id="Conteúdo - Texto Novidades" />
+                </div>
+                <div class="mf-content__main-block">
+                    <div class="mf-content__main-video">
+                        <vtex:contentPlaceHolder id="Conteúdo - Vídeo" />
+                    </div>
+                    <div class="mf-content__testimonial">
+                        <div class="mf-content__testimonial-image">
+                            <vtex:contentPlaceHolder id="Conteúdo - Depoimento - Perfil" />
+                        </div>
+                        <div class="mf-content__testimonial-block">
+                            <p class="mf-content__testimonial-desc">
+                                <vtex:contentPlaceHolder id="Conteúdo - Depoimento - Texto" />
+                                <vtex:contentPlaceHolder id="Conteúdo - Depoimento - Nome e Cargo" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="mf-container mf-range">
+            <div class="mf-range__text">
+                <vtex:contentPlaceHolder id="Faixa - Texto" />
+            </div>
+            <div class="mf-range__button">
+                <vtex:contentPlaceHolder id="Faixa - CTA" />
+            </div>
+        </section>
+        <section class="mf-container mf-banner-bottom">
+            <article class="mf-container__wrapper">
+                <vtex:contentPlaceHolder id="Banner Bottom" />
+            </article>
+        </section>
+        <section class="mf-container mf-spotify">
+            <article class="mf-container__wrapper">
+                <div class="mf-spotify__banner">
+                    <vtex:contentPlaceHolder id="Spotify - Banner" />
+                </div>
+                <div class="mf-spotify__content">
+                    <vtex:contentPlaceHolder id="Spotify -  Conteúdo" />
+                </div>
+            </article>
+        </section>
+
+        <vtex:template id="MariaFilo-Footer" />
+    </main>
+    <vtex:template id="MariaFilo-Scripts-dev" />
+    <!-- <script type="text/javascript" src="/arquivos/enext-home-mariafilo.js"></script> -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+
+</html>

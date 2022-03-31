@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce"
+    lang="pt-br">
+
+<head>
+    <vtex:metaTags/>
+    <vtex:template id="MariaFilo-Head" />
+    <link href="/arquivos/enext-institucional-mariafilo.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="x-general">
+
+        <vtex:template id="MariaFilo-Header" />
+
+        <main class="x-content">
+
+            <div class="x-institucional">
+
+                <!-- CONTROLE CUSTOMIZADO -->
+                <vtex.cmc:MenuInstitucional />
+                <!-- / CONTROLE CUSTOMIZADO -->
+
+                <div class="x-institucional__career x-career">
+
+                    <div class="x-career__resume">
+                        <vtex:contentPlaceHolder id="Banner" />
+                        <div class="x-career__text">
+                            <div class="x-career__text--box">
+                                <h4>
+                                    <vtex:contentPlaceHolder id="Titulo-Principal" />
+                                </h4>
+                                <p>
+                                    <vtex:contentPlaceHolder id="Texto-Principal" />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="x-career__form-container">
+                        <form action="#" class="x-career__form">
+
+                            <fieldset class="x-career__data-block">
+                                <legend class="x-career__data-title">Dados pessoais</legend>
+
+                                <div class="x-career__group-input is--name">
+                                    <label class="x-career__label">
+                                            <span class="x-career__label-text is--required">Nome Complete</span>
+                                            <input type="text" name="name" class="x-career__input" required="required"/>
+                                        </label>
+                                </div>
+
+                                <div class="x-career__group-input is--email">
+                                    <label class="x-career__label">
+                                            <span class="x-career__label-text is--required">E-mail</span>
+                                            <input type="email" name="email" class="x-career__input" required="required"/>
+                                        </label>
+                                </div>
+
+                                <div class="x-career__group-input is--tel1">
+                                    <label class="x-career__label">
+                                            <span class="x-career__label-text is--required">Telefone 1</span>
+                                            <input type="text" name="tel1" class="x-career__input" required="required"/>
+                                        </label>
+                                </div>
+
+                                <div class="x-career__group-input is--tel2">
+                                    <label class="x-career__label">
+                                            <span class="x-career__label-text">Telefone 2</span>
+                                            <input type="text" name="tel2" class="x-career__input" />
+                                        </label>
+                                </div>
+
+                                <div class="x-career__group-input is--cep">
+                                    <label class="x-career__label">
+                                            <span class="x-career__label-text is--required">CEP</span>
+                                            <input type="text" name="cep" class="x-career__input" required="required"/>
+                                        </label>
+                                </div>
+
+                                <div class="x-career__group-input is--neighborhood">
+                                    <label class="x-career__label">
+                                            <span class="x-career__label-text is--required">Bairro</span>
+                                            <input type="text" name="neighborhood" class="x-career__input" required="required"/>
+                                        </label>
+                                </div>
+
+                                <div class="x-career__group-input is--address">
+                                    <label class="x-career__label">
+                                            <span class="x-career__label-text is--required">Endereço</span>
+                                            <input type="text" name="address" class="x-career__input" required="required"/>
+                                        </label>
+                                </div>
+
+                                <div class="x-career__group-input is--number">
+                                    <label class="x-career__label">
+                                            <span class="x-career__label-text is--required">Número</span>
+                                            <input type="text" name="number" class="x-career__input" required="required"/>
+                                        </label>
+                                </div>
+
+                                <div class="x-career__group-input is--complement">
+                                    <label class="x-career__label">
+                                            <span class="x-career__label-text is--required">Complemento</span>
+                                            <input type="text" name="complement" class="x-career__input" required="required"/>
+                                        </label>
+                                </div>
+                            </fieldset>
+
+
+                            <fieldset class="x-career__data-block">
+                                <legend class="x-career__data-title">Qualificações</legend>
+
+                                <div class="x-career__group-input is--jobtype">
+                                    <span class="x-career__label-text is--required">Tipo de vaga</span>
+
+                                    <label class="x-career__label">
+                                            <input type="radio" name="jobtype" value="Estudante" class="x-career__input--box" required="required"/>
+                                            <span class="x-career__label-text is--required">Estudante</span>
+                                        </label>
+
+                                    <label class="x-career__label">
+                                            <input type="radio" name="jobtype" value="Recém-Formado" class="x-career__input--box" required="required"/>
+                                            <span class="x-career__label-text is--required">Recém-Formado</span>
+                                        </label>
+
+                                    <label class="x-career__label">
+                                            <input type="radio" name="jobtype" value="Profissional" class="x-career__input--box" required="required"/>
+                                            <span class="x-career__label-text is--required">Profissional</span>
+                                        </label>
+                                </div>
+
+                                <div class="x-career__group-input is--area">
+                                    <label class="x-career__label">
+                                            <span class="x-career__label-text is--required">Área de atuação</span>
+                                            <div class="x-career__fakeselect-container">
+                                                <span class="x-career__fakeselect-text">Selecione</span>
+                                                <div class="x-career__fakeselect-drop">
+                                                    
+                                                    <div class="x-career__group-input is--area">
+                                                        <label class="x-career__label">
+                                                            <span class="x-career__label-text is--required">Administração</span>
+                                                            <input type="radio" name="area" value="Administração" class="x-career__input" required="required"/>
+                                                        </label>
+
+                                    <label class="x-career__label">
+                                                            <span class="x-career__label-text is--required">Administração</span>
+                                                            <input type="radio" name="area" value="Administração" class="x-career__input" required="required"/>
+                                                        </label>
+
+                                    <label class="x-career__label">
+                                                            <span class="x-career__label-text is--required">Administração</span>
+                                                            <input type="radio" name="area" value="Administração" class="x-career__input" required="required"/>
+                                                        </label>
+
+                                    <label class="x-career__label">
+                                                            <span class="x-career__label-text is--required">Administração</span>
+                                                            <input type="radio" name="area" value="Administração" class="x-career__input" required="required"/>
+                                                        </label>
+
+                                    <label class="x-career__label">
+                                                            <span class="x-career__label-text is--required">Administração</span>
+                                                            <input type="radio" name="area" value="Administração" class="x-career__input" required="required"/>
+                                                        </label>
+
+                                    <label class="x-career__label">
+                                                            <span class="x-career__label-text is--required">Administração</span>
+                                                            <input type="radio" name="area" value="Administração" class="x-career__input" required="required"/>
+                                                        </label>
+
+                                    <label class="x-career__label">
+                                                            <span class="x-career__label-text is--required">Administração</span>
+                                                            <input type="radio" name="area" value="Administração" class="x-career__input" required="required"/>
+                                                        </label>
+
+                                    <label class="x-career__label">
+                                                            <span class="x-career__label-text is--required">Administração</span>
+                                                            <input type="radio" name="area" value="Administração" class="x-career__input" required="required"/>
+                                                        </label>
+
+                                    <label class="x-career__label">
+                                                            <span class="x-career__label-text is--required">Administração</span>
+                                                            <input type="radio" name="area" value="Administração" class="x-career__input" required="required"/>
+                                                        </label>
+
+                                    <label class="x-career__label">
+                                                            <span class="x-career__label-text is--required">Administração</span>
+                                                            <input type="radio" name="area" value="Administração" class="x-career__input" required="required"/>
+                                                        </label>
+
+                                    <label class="x-career__label">
+                                                            <span class="x-career__label-text is--required">Administração</span>
+                                                            <input type="radio" name="area" value="Administração" class="x-career__input" required="required"/>
+                                                        </label>
+
+                                    <label class="x-career__label">
+                                                            <span class="x-career__label-text is--required">Administração</span>
+                                                            <input type="radio" name="area" value="Administração" class="x-career__input" required="required"/>
+                                                        </label>
+                                </div>
+
+                    </div>
+                </div>
+                </label>
+            </div>
+
+            <div class="x-career__group-input is--local">
+                <label class="x-career__label">
+                                            <span class="x-career__label-text is--required">Local de trabalho</span>
+                                            <div class="x-career__fakeselect-container">
+                                                <span class="x-career__fakeselect-text">Selecione</span>
+                                                <div class="x-career__fakeselect-drop">
+                                                    
+                                                    <div class="x-career__group-input is--local">
+                                                        <label class="x-career__label">
+                                                            <span class="x-career__label-text is--required">São Paulo</span>
+                                                            <input type="radio" name="local" value="São Paulo" class="x-career__input" required="required"/>
+                                                        </label>
+
+                <label class="x-career__label">
+                                                            <span class="x-career__label-text is--required">São Paulo</span>
+                                                            <input type="radio" name="local" value="São Paulo" class="x-career__input" required="required"/>
+                                                        </label>
+
+                <label class="x-career__label">
+                                                            <span class="x-career__label-text is--required">São Paulo</span>
+                                                            <input type="radio" name="local" value="São Paulo" class="x-career__input" required="required"/>
+                                                        </label>
+
+                <label class="x-career__label">
+                                                            <span class="x-career__label-text is--required">São Paulo</span>
+                                                            <input type="radio" name="local" value="São Paulo" class="x-career__input" required="required"/>
+                                                        </label>
+
+                <label class="x-career__label">
+                                                            <span class="x-career__label-text is--required">São Paulo</span>
+                                                            <input type="radio" name="local" value="São Paulo" class="x-career__input" required="required"/>
+                                                        </label>
+
+                <label class="x-career__label">
+                                                            <span class="x-career__label-text is--required">São Paulo</span>
+                                                            <input type="radio" name="local" value="São Paulo" class="x-career__input" required="required"/>
+                                                        </label>
+
+                <label class="x-career__label">
+                                                            <span class="x-career__label-text is--required">São Paulo</span>
+                                                            <input type="radio" name="local" value="São Paulo" class="x-career__input" required="required"/>
+                                                        </label>
+
+                <label class="x-career__label">
+                                                            <span class="x-career__label-text is--required">São Paulo</span>
+                                                            <input type="radio" name="local" value="São Paulo" class="x-career__input" required="required"/>
+                                                        </label>
+
+                <label class="x-career__label">
+                                                            <span class="x-career__label-text is--required">São Paulo</span>
+                                                            <input type="radio" name="local" value="São Paulo" class="x-career__input" required="required"/>
+                                                        </label>
+
+                <label class="x-career__label">
+                                                            <span class="x-career__label-text is--required">São Paulo</span>
+                                                            <input type="radio" name="local" value="São Paulo" class="x-career__input" required="required"/>
+                                                        </label>
+
+                <label class="x-career__label">
+                                                            <span class="x-career__label-text is--required">São Paulo</span>
+                                                            <input type="radio" name="local" value="São Paulo" class="x-career__input" required="required"/>
+                                                        </label>
+
+                <label class="x-career__label">
+                                                            <span class="x-career__label-text is--required">São Paulo</span>
+                                                            <input type="radio" name="local" value="São Paulo" class="x-career__input" required="required"/>
+                                                        </label>
+            </div>
+
+    </div>
+    </div>
+    </label>
+    </div>
+
+    <div class="x-career__group-input is--resume">
+        <label class="x-career__label">
+                                            <span class="x-career__label-text is--required">Envie seu currículo (JPG, DOC, PDF)</span>
+                                            <div class="x-career__fakefile-field">
+                                                <span class="x-career__filename">Selecione um arquivo</span>
+                                                <span class="x-career__fakefilebtn">Fazer Upload</span>
+                                            </div>
+                                            <!-- DEIXAR ESCONDIDO -> INPUT FILE -->
+                                            <input type="file" name="resume" class="x-career__input--box is--hidden" required="required"/>
+                                            <!-- / DEIXAR ESCONDIDO-->
+                                        </label>
+    </div>
+
+    </fieldset>
+
+
+    <div class="x-career__foot">
+        <button class="x-career__send" type="submit">Enviar</button>
+        <button class="x-career__cancel" type="reset">Cancelar</button>
+    </div>
+    </form>
+    </div>
+    </div>
+    </div>
+
+    <div class="x-instagram-banner">
+        <vtex:bannerInstagram />
+    </div>
+
+    </main>
+
+    <vtex:template id="MariaFilo-Footer" />
+
+    </div>
+    <vtex:template id="MariaFilo-Scripts" />
+
+    <script type="text/javascript" src="/arquivos/enext-institucional-mariafilo.js"></script>
+</body>
+
+</html>

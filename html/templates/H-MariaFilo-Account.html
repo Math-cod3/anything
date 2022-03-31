@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce"
+      lang="pt-br">
+
+    <head>
+        <vtex:metaTags/>
+        <vtex:template id="MariaFilo-Head" />
+        <link href="/arquivos/enext-account-mariafilo.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="/arquivos/ecn-account-mariafilo.css" />
+        <script src="https://meuspedidos.yami.com.br/returnmanager.min.js" type="text/javascript"></script>
+        <meta name="yAccount" content="mariafilo"/>
+    </head>
+
+    <body>
+        <div class="x-general">
+
+            <vtex:template id="MariaFilo-Header" />
+
+            <main class="x-content">
+
+                <div class="x-account">
+
+                    <!-- CONTROLE CUSTOMIZADO -->
+                    <vtex.cmc:MenuMinhaConta />
+                    <!-- / CONTROLE CUSTOMIZADO -->
+
+                    <div class="x-account__container">
+                        <div class="x-account__profile">
+                            <vtex.cmc:accountUserProfile />
+                        </div>
+                        <!--<div class="x-account__address">-->
+                        <!--    <vtex.cmc:accountAddress/>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+                
+                <div class="x-instagram-banner">
+                    <vtex:bannerInstagram />
+                </div>
+
+            </main>
+
+            <vtex:template id="MariaFilo-Footer" />
+
+        </div>
+        <vtex:template id="MariaFilo-Scripts-Account" />
+
+        <script type="text/javascript" src="/arquivos/enext-account-mariafilo.js"></script>
+    </body>
+
+</html>

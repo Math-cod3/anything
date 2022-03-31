@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce"
+    lang="pt-br">
+
+    <head>
+        <!-- Open Graph -->
+        <meta itemprop="image" content="https://www.mariafilo.com.br/arquivos/android-chrome-512x512.png" />
+        <meta property="busca:image" content="https://www.mariafilo.com.br/arquivos/android-chrome-512x512.png"/>
+        <meta property="og:image" content="https://www.mariafilo.com.br/arquivos/android-chrome-512x512.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+  
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.mariafilo.com.br" />
+        <meta property="og:description" content="Maria Filó | Loja Oficial da Maria Filó. Aqui você encontra moda e inspiração." />
+        <meta property="og:title" content="Maria Filó" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:site_name" content="mariafilo.com.br" />
+        
+        <!--customplace-->
+        <vtex:contentPlaceHolder id="tag title" />
+        <vtex:metaTags/>
+        <vtex:template id="MariaFilo-Head" />
+        <link href='/arquivos/enext-categoria-mariafilo.css' rel='stylesheet' type='text/css' />
+        <link href='/arquivos/ecn-category-black-friday-mariafilo.css' rel='stylesheet' type='text/css' />
+    </head>
+
+    <body>
+        <div class="x-general">
+            <vtex:template id="MariaFilo-Header" />
+            <main class="x-content">
+                <section class="x-categoryBanner-wrapper">
+                    <vtex:contentPlaceHolder id="Banner-Categoria" />
+                </section>
+
+                <section class="x-categoryControllers">
+                    <div class="x-categoryControllers__wrapper--filters">
+                        <div class="x-categoryControllers__filters js--vtex-filters">
+                            <span class="x-categoryControllers__triggerFilter"></span>
+                            <vtex.cmc:searchNavigator />
+                        </div>
+                    </div>
+
+                    <div class="x-categoryControllers__wrapper"> 
+                        <div class="x-categoryControllers__wrapper--left">
+                            <div class="x-categoryControllers__breadcrumb">
+                                <vtex.cmc:breadCrumb />
+                            </div>
+                        </div>
+
+                        <div class="x-categoryControllers__wrapper--right">
+
+                            <div class="x-categoryControllers__orderProducts">
+                                <span class="x-categoryControllers__orderProducts--title">Ordenar por</span>
+                                <ul class="x-categoryControllers__orderProducts--wrapper">
+                                    <li class="x-categoryControllers__orderProducts--link x-order"><a data-orderby="O=OrderByReleaseDateDESC">lançamento</a></li>
+                                    <li class="x-categoryControllers__orderProducts--link x-order"><a data-orderby="O=OrderByPriceASC">menor preço</a></li>
+                                    <li class="x-categoryControllers__orderProducts--link x-order"><a data-orderby="O=OrderByPriceDESC">maior preço</a></li>
+                                    <li class="x-categoryControllers__orderProducts--link x-order"><a data-orderby="O=OrderByNameASC">A - Z</a></li>
+                                    <li class="x-categoryControllers__orderProducts--link x-order"><a data-orderby="O=OrderByNameDESC">Z - A</a></li>
+                                    <li class="x-categoryControllers__orderProducts--link x-order"><a data-orderby="O=OrderByTopSaleDESC">mais vendidos</a></li>
+                                    <li class="x-categoryControllers__orderProducts--link x-order"><a data-orderby="O=OrderByScoreDESC">maior pontuação</a></li>
+                                </ul>
+                            </div>
+                            <div class="x-categoryControllers__orderProducts" style='display: none;'>
+                                <span class="x-categoryControllers__orderProducts--title">Ordenar Por</span>
+                                <ul class="x-categoryControllers__orderProducts--wrapper">
+                                    <li class="x-categoryControllers__orderProducts--link">
+                                        <a href="javascript:void(0)" data-orderby="&amp;O=OrderByTopSaleDESC">Mais vendidos</a>
+                                    </li>
+                                    <li class="x-categoryControllers__orderProducts--link">
+                                        <a href="javascript:void(0)" data-orderby="&amp;O=OrderByPriceDESC">Maior Preço</a>
+                                    </li>
+                                    <li class="x-categoryControllers__orderProducts--link">
+                                        <a href="javascript:void(0)" data-orderby="&amp;O=OrderByPriceASC">Menor Preço</a>
+                                    </li>
+                                    <li class="x-categoryControllers__orderProducts--link">
+                                        <a href="javascript:void(0)" data-orderby="&amp;O=OrderByNameASC">A - Z</a>
+                                    </li>
+                                    <li class="x-categoryControllers__orderProducts--link">
+                                        <a href="javascript:void(0)" data-orderby="&amp;O=OrderByNameDESC">Z - A</a>
+                                    </li>
+                                    <li class="x-categoryControllers__orderProducts--link">
+                                        <a href="javascript:void(0)" data-orderby="&amp;O=OrderByReleaseDateDESC">Mais recentes</a>
+                                    </li>
+                                    <li class="x-categoryControllers__orderProducts--link">
+                                        <a href="javascript:void(0)" data-orderby="&amp;O=OrderByScoreDESC">Maior pontuação</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="x-categoryControllers__layoutFormat">
+                                <div id="layoutFormat--default" class="x-categoryControllers__layoutFormat--default">
+                                    <span class="x-column-icon"></span>
+                                    <span class="x-column-icon"></span>
+                                </div>
+                                <div id="layoutFormat--more" class="x-categoryControllers__layoutFormat--more layout-format--active">
+                                    <span class="x-column-icon"></span>
+                                    <span class="x-column-icon"></span>
+                                    <span class="x-column-icon"></span>
+                                    <span class="x-column-icon"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </section>
+
+
+                <section class="x-categoryContent">
+                    <div class="x-categoryContent__wrapper">
+                        <div class="x-categoryContent__products">
+                            <vtex.cmc:searchResult layout="4a258ce9-136f-46aa-9925-ed1081dfe366" showUnavailable="false" itemCount="12" columnCount="12" />
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="x-bannerFooter-contentPage">
+                    <vtex:bannerInstagram />
+                </section>
+                <div class="x-loading"><p><strong>Aguarde</strong><br/></p></div>
+            </main>
+            <vtex:template id="MariaFilo-Footer" />
+        </div>
+        <vtex:template id="MariaFilo-Scripts" />
+        <script type="text/javascript" src="/arquivos/nouislider.min.js"></script>
+        <script type="text/javascript" src="/arquivos/vtexSmartResearch.js"></script>
+        <script type="text/javascript" src="/arquivos/enext-filterprice.js"></script>
+        <script type="text/javascript" src="/arquivos/enext-categoria-mariafilo.js"></script>
+    </body>
+
+</html>

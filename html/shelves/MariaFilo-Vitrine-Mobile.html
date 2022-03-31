@@ -1,0 +1,114 @@
+#set($id = $product.Id) 
+#set($idSku = $product.productVariantId) 
+#set($uri = $product.Uri) 
+#set($escapedName = $product.HtmlEscapedName)
+
+#if ($product.IsInStock)
+<div class="x-product" data-aos="fade-up">
+#else
+<div class="x-product outStock"  data-aos="fade-up">
+#end
+    <input type="hidden" class="x-id" value="$id" />
+    <button class="x-add-it-to-wishlist js--shelf-add-to-wish" data-id="$id"></button>
+    <span class="x-remove-it-to-wishlist x-wishlist-delete"></span>
+    
+    <div class="js-shelf-product-video">
+      $product.ProductField(45)
+    </div> 
+    
+    <figure class="x-image">
+        <!-- FLAGS -->
+        <div class="x-flag-shelf js--flag-shelf" data-id="$id">
+            #if ($product.HasBestPrice)
+                <span class="x-flag x-flag--liqui $product.DepartmentName"><b>liqui</b></span>
+            #end
+            <span class="x-flag x-flag--novo $product.DepartmentName"><b>novo</b></span>
+            $product.HightLight
+        </div>
+        <!-- FLAGS -->
+            <a title="$escapedName" href="$uri" class="">
+            $product.GetImageTag(30)
+        </a>
+    </figure>
+
+    <div class="x-product-info">
+        <div class="x-product-info_name">
+            <h2>
+                <a title="$escapedName" href="$uri">
+                    $product.Name
+                </a>
+            </h2>
+        </div>
+
+
+        #if ($product.IsInStock)
+            <div class="x-product-info_price $product.DepartmentName">
+                <a title="$escapedName" href="$uri">  
+                    <!--<span style="display:none"> -->
+                    <!--    #if($product.DepartmentName == 'OFF')-->
+                    <!--        #if ($product.HasBestPrice)-->
+                    <!--            <span class="x-oldPrice">-->
+                    <!--                $product.ListPrice-->
+                    <!--            </span> -->
+
+                    <!--            <span class="x-bestPrice">-->
+                    <!--                $product.BestPrice -->
+                    <!--            </span>-->
+                    <!--        #else-->
+                    <!--            <span class="x-bestPrice">-->
+                    <!--                $product.BestPrice-->
+                    <!--            </span>                    -->
+                    <!--        #end-->
+                    <!--    #else-->
+                    <!--        #if ($product.HasBestPrice)-->
+                    <!--            <span class="x-bestPrice">-->
+                    <!--                $product.ListPrice-->
+                    <!--            </span>-->
+                    <!--        #else-->
+                    <!--            <span class="x-bestPrice">-->
+                    <!--                $product.BestPrice-->
+                    <!--            </span>                    -->
+                    <!--        #end-->
+                    <!--    #end-->
+                    <!--</span> -->
+                    #if ($product.HasBestPrice)
+                        <span class="x-oldPrice">
+                            $product.ListPrice
+                        </span> 
+
+                        <span class="x-bestPrice">
+                            $product.BestPrice 
+                        </span>
+                    #else
+                        <span class="x-bestPrice">
+                            $product.BestPrice
+                        </span>                    
+                    #end
+
+                    #if ($product.NumbersOfInstallment > 1)
+                        <span class="x-installment">
+                            <span class="x-number">
+                                ${product.NumbersOfInstallment}X 
+                            </span> de 
+                            <span class="x-value">
+                                $product.InstallmentValue
+                            </span>
+                        </span>
+                    #else
+                            
+                    #end  
+                </a>
+            </div>
+        #else
+            <div class="x-product-info_outOfStock">
+                <p class="x-outOfStock">
+                    <a title="$escapedName" href="$uri">
+                        <span class="x-text">
+                            Produto Esgotado
+                        </span>
+                    </a>
+                </p>
+            </div>
+        #end
+    </div>
+</div>

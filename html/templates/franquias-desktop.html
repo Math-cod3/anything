@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce"
+      lang="pt-br">
+
+    <head>
+        <vtex:metaTags/>
+        <vtex:template id="MariaFilo-Head" />
+        <link href="/arquivos/enext-institucional-mariafilo.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <div class="x-general">
+
+            <vtex:template id="MariaFilo-Header" />
+
+            <main class="x-content">
+
+                <div class="x-institucional">
+
+                    <!-- CONTROLE CUSTOMIZADO -->
+                    <vtex.cmc:MenuInstitucional />
+                    <!-- / CONTROLE CUSTOMIZADO -->
+
+                    <div class="x-institucional__franquias x-franquias">
+                        <div class="x-franquias__resume">
+                            <vtex:contentPlaceHolder id="Banner" />
+                            <div class="x-franquias__text">
+                                <p><vtex:contentPlaceHolder id="Texto-Principal" /></p>
+                            </div>
+                        </div>
+                        
+                        <div class="x-franquias__sign">
+                            <h5 class="x-franquias__title"><vtex:contentPlaceHolder id="Titulo" /></h5>
+                            
+                            <p class="x-franquias__text"><vtex:contentPlaceHolder id="Texto-Secundario" /></p>
+                            
+                            <a href="#" class="x-franquias__btn">Entre em contato</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="x-instagram-banner">
+                    <vtex:bannerInstagram />
+                </div>
+
+            </main>
+
+            <vtex:template id="MariaFilo-Footer" />
+
+        </div>
+        <vtex:template id="MariaFilo-Scripts" />
+
+        <script type="text/javascript" src="/arquivos/enext-institucional-mariafilo.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce"
+    lang="pt-br">
+
+    <head>
+    <!--customplace-->
+        <vtex:contentPlaceHolder id="tag title" />
+        <vtex:metaTags/>
+        <vtex:template id="MariaFilo-Head" />
+        <link href='https://mariafilo.vteximg.com.br/arquivos/ecn-category-mariafilo.css' rel='stylesheet' type='text/css' />
+        <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/> -->
+    </head>
+
+    <body>
+        <div class="x-general">
+            <vtex:template id="MariaFilo-Header" />           
+            <main class="x-content">
+                <section class="content-area banner-department x-categoryBanner-wrapper">
+                    <vtex:contentPlaceHolder id="Banner-Categoria" />
+                </section>
+                <div class="wrapper">
+
+                    <section class="content-area department-seo-wrapper department-seo-top">
+                        <div class="content">
+                            <vtex.cmc:searchtitle/>	
+                            <p class="department-seo"><vtex:contentPlaceHolder id= "Departamento SEO Top" /></p>
+                        </div>
+                    </section>
+
+                    <section class="content-area search-result">
+                        <!-- department sidenav -->
+                        <div class="content filter-options">
+                            <div class="content-area">
+                                <div class="category-title">
+                                    <span>Filtros</span>
+                                </div>
+                                <div class="filter-selected">
+                                    <div class="filters"></div>
+                                    <div class="clean-filters"><a href="#">Limpar filtros</a></div>
+                                </div>
+                                <div class="category-filters">
+                                    <vtex.cmc:searchNavigator/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- department shelf result -->
+                        <div class="content main-shelf-result">
+                            <div class="content-area shelf-options">
+                                <div class="content">
+                                    <div class="option-result-number"><span></span></div>
+                                    <div class="option-sort">
+                                        <div class="order-toggle">
+                                            <div class="order-dropdown ecn-dropdown">
+                                                <div class="ecn-dropdown-action" id="catalog-order-dropdown">
+                                                    <a class="link-option select" href="#">
+                                                        <span>ORDENAR</span>
+                                                    </a>
+                                                </div>
+                                                <div class="ecn-dropdown-content">
+                                                    <div class="user-actions">
+                                                        <div class="content">
+                                                            <a class="menor-preco" href="#" data-order="OrderByPriceASC">Menor Preço</a>
+                                                            <a class="maior-preco" href="#" data-order="OrderByPriceDESC">Maior Preço</a>
+                                                            <a class="lancamentos" href="#" data-order="OrderByReleaseDateDESC">Novidades</a>
+                                                            <a class="mais-vendidos" href="#" data-order="OrderByTopSaleDESC">Mais vendidos</a>
+                                                            <a class="melhor-desconto" href="#" data-order="OrderByBestDiscountDESC">Melhor desconto</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-area shelf-result-wrapper">
+                                <div class="content">
+                                    <vtex.cmc:searchResult layout="4a258ce9-136f-46aa-9925-ed1081dfe366" showUnavailable="false" itemCount="18" columnCount="18" />
+                                </div>    
+                                <div class="content message">
+                                    <div class="main-message">
+                                        <h2>Não há resultados para essa combinação de filtros.</h2>
+                                    </div>
+                                    <div class="content-try">
+                                        <p>Tente novamente</p><span>Outras combinações mostrarão resultados!</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                    
+
+                    <section class="content-area department-seo-wrapper department-seo-bottom">
+                        <div class="content">
+                            <vtex.cmc:searchtitle/>	
+                            <h3 class="department-seo"><vtex:contentPlaceHolder id= "Departamento SEO Bottom" /></h3>
+                        </div>
+                        <div class="bottom-category-nav">
+
+                        </div>
+                    </section>
+                    
+                    <div class="x-loading"><p><strong>Aguarde</strong><br/></p></div>
+                </div>
+            </main>
+
+            <vtex:template id="MariaFilo-Footer" />
+        </div>
+        <vtex:template id="MariaFilo-Scripts" />
+        
+        <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+        <script type="text/javascript" src="https://mariafilo.vteximg.com.br/arquivos/ecn-category-mariafilo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="https://mariafilo.vteximg.com.br/arquivos/avanti-search.js" type="text/javascript" charset="utf-8"></script>
+        <script src="https://mariafilo.vteximg.com.br/arquivos/jquery-sticky.js" type="text/javascript"></script>
+        
+        
+        <!-- <script type="text/javascript" src="https://mariafilo.vteximg.com.br/arquivos/nouislider.min.js"></script>
+        <script type="text/javascript" src="https://mariafilo.vteximg.com.br/arquivos/enext-filterprice.js"></script> -->
+        <!-- <script type="text/javascript" src="https://mariafilo.vteximg.com.br/arquivos/vtexSmartResearch.js"></script> -->
+	    <!--<script>AOS.init();</script>-->
+    </body>
+
+</html>

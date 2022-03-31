@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce"
+lang="pt-br">
+    <head>
+        <!--customplace-->
+        <vtex:contentPlaceHolder id="Tag Title" />
+        <vtex:metaTags/>
+        <link rel="stylesheet" href="/arquivos/enext-geral-mariafilo.css"/>
+        <link rel="stylesheet" href="/arquivos/ecn-landing-page-cadastro-mariafilo.css"/>
+    </head>
+    <body>
+        <div class="x-general">
+            <header class="x-header">
+                <section class="x-header__title-container">
+                    <figure class="x-header__title"><a href="/" title="Maria Filó"><vtex.cmc:xSvgMariaFiloLogo/></a></figure>
+                </section>
+            </header>
+            <main class="x-content">
+                <div class="wrapper">
+                    <section class="lp-title">
+                        <h1><vtex:contentPlaceHolder id="Frase 1" /></h1>
+                    </section>
+                    <section class="lp-form">
+                        <form action="">
+                            <div class="lp-form__fields">
+                                <fieldset class="lp-form__fields-item">
+                                    <label for="name">Nome completo</label>
+                                    <input type="text" name="name" id="name"/>
+                                </fieldset>
+                                <fieldset class="lp-form__fields-item">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" name="email" id="email"/>
+                                </fieldset>
+                            </div>
+                            <div class="lp-form__response lp-form__response--error"></div>
+                            <div class="lp-form__submit-btn">
+                                <input type="submit" value="Enviar" title="Enviar formulário de cadastro"/>
+                            </div>
+                        </form>
+                    </section>
+                    <section class="lp-plus">
+                        <p>E mais:</p>
+                    </section>
+                    <section class="lp-advantages">
+                        <div class="lp-advantages__item">
+                            <figure class="lp-advantages__item-image">
+                                <img src="/arquivos/padlock.png" alt="" srcset=""/>
+                            </figure>
+                            <div class="lp-advantages__item-text">
+                                <h4>Acesso antecipado a novidades, promos e collabs</h4>
+                            </div>
+                        </div>
+                        <div class="lp-advantages__item">
+                            <figure class="lp-advantages__item-image">
+                                <img src="/arquivos/birthday-cake.png" alt="" srcset=""/>
+                            </figure>
+                            <div class="lp-advantages__item-text">
+                                <h4><strong>15% OFF </strong>no mês<br/> do seu aniversário</h4>
+                            </div>
+                        </div>
+                        <div class="lp-advantages__item">
+                            <figure class="lp-advantages__item-image">
+                                <img src="/arquivos/envelope.png" alt="" srcset=""/>
+                            </figure>
+                            <div class="lp-advantages__item-text">
+                                <h4>Conteúdos exclusivos, repletos de informação de moda</h4>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <vtex:template id="MariaFilo-Footer"/>
+        </div>
+        <script src="/arquivos/ecn-landing-page-cadastro-mariafilo.js"></script>
+    </body>
+</html>

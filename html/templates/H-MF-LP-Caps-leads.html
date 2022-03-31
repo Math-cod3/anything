@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+    <head>
+        <vtex:metaTags/>
+        <vtex:template id="MariaFilo-Head-dev" />
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link href="/arquivos/enext-home-mariafilo.css" rel="stylesheet" type="text/css" />
+        <meta name="google-site-verification" content="yDOj0VMUJOevsrprRKs1qUxVNFgjldM1t-uI5aH2TYc" />
+    </head>
+
+    <body>
+        <main class="x-general">
+            <vtex:template id="MariaFilo-Header" />
+            <vtex:template id="MariaFilo-Menu" />
+            <main class="x-content">
+                <section class="newsletter-box">
+                    <div class="newsletter-box--bg">
+                        <vtex:contentPlaceHolder id="Newsletter-Background"/>
+                    </div>
+                    <div class="newsletter-box--top">
+                        <h2 class="newsletter-box--top__tlt">
+                            <vtex:contentPlaceHolder id="Newsletter-Title"/>
+                        </h2>
+                        <p class="newsletter-box--top__excerpt">
+                            <vtex:contentPlaceHolder id="Newsletter-resumo"/>
+                            <span><vtex:contentPlaceHolder id="Newsletter-valPromo"/></span>
+                        </p>
+                    </div>
+                    <div class="newsletter-box--bottom">
+                        <div class="newsletterLp">
+                            <input type="text" id="nomenews" name="nomenews" placeholder="Qual é o seu nome?">
+                            <input type="email" id="emailnews" name="emailnews" placeholder="E o seu e-mail?">
+                            <input type="text" id="phonenews" name="phonenews" placeholder="Telefone (opcional)">
+                            <span class="submit-newsletter">CADASTRAR</span>
+                            <span class="newsletter-box--bottom__info">*campos obrigatórios</span>
+                        </div>
+                    </div>
+                    <div class="newsletter-box--bottom--success">
+                        <h3 class="newsletter-box--bottom--success__tlt"><vtex:contentPlaceHolder id="Newsletter-Mensagem-Sucesso-tlt"/></h3>
+                        <p class="newsletter-box--bottom--success__excerpt"><vtex:contentPlaceHolder id="Newsletter-Mensagem-Sucesso-excerpt"/></p>
+                        <p class="newsletter-box--bottom--success__excerpt-done"><vtex:contentPlaceHolder id="Newsletter-Mensagem-Sucesso-excerpt-cupom-copiado"/></p>
+                        <p class="newsletter-box--bottom--success__cupom"><vtex:contentPlaceHolder id="Newsletter-Mensagem-Sucesso-cupom"/></p>
+                        <p class="newsletter-box--bottom--success__cupom-done"><vtex:contentPlaceHolder id="Newsletter-Mensagem-Sucesso-cupom-copiado"/></p>
+                        <vtex:contentPlaceHolder id="Newsletter-Mensagem-Sucesso-lnk-vantagens"/>
+                    </div>
+                    <span class="newsletter-box--bottom__btn">
+                        <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 1L8 8L1 0.999999" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </section><!-- newsletter-box END -->
+
+                <section id="video-area" class="video-area">
+                    <div class="video-area--top">
+                        <h2 class="video-area--tlt">
+                            <vtex:contentPlaceHolder id="Video-Title"/>
+                        </h2>
+                        <article class="video-area--txt">
+                            <vtex:contentPlaceHolder id="Video-Txt"/>
+                        </article>
+                    </div>
+                    <div class="video-area--video">
+                        <vtex:contentPlaceHolder id="Video"/>
+                    </div>
+                </section><!-- video-area END -->
+
+                <section class="clipping-area">
+                    <h2 class="clipping-area--tlt"><vtex:contentPlaceHolder id="Criacoes-Title"/></h2>
+                    <article class="clipping-area--excerpt"><vtex:contentPlaceHolder id="Criacoes-Resumo"/></article>
+                    <ul class="clipping-area--list">
+                        <vtex:contentPlaceHolder id="Criacoes-Conteudo"/>
+                    </ul>
+                </section><!-- clipping-area END -->
+
+                <section class="collections-box">
+                    <div class="collections-box--top">
+                        <h2 class="collections-box--tlt">
+                            <vtex:contentPlaceHolder id="Colecoes-tlt"/>
+                        </h2>
+                        <article class="collections-box--excerpt">
+                            <vtex:contentPlaceHolder id="Colecoes-Resumo"/>
+                        </article>
+                    </div>
+                    <div class="collections-box--bottom">
+                        <vtex:contentPlaceHolder id="Colecoes-Image"/>
+                    </div>
+                    <div class="collections-box--bottom--lnk">
+                        <vtex:contentPlaceHolder id="Colecoes-link"/>
+                    </div>
+                </section><!-- collections-box END -->
+
+                <section class="insta-box">
+                    <div class="insta-box--top">
+                        <h2 class="insta-box--top__tlt"><vtex:contentPlaceHolder id="Insta-tlt"/></h2>
+                        <p class="insta-box--top__excerpt"><vtex:contentPlaceHolder id="Insta-resumo"/></p>
+                    </div>
+                    <div class="insta-box--use">
+                        <ul class="insta-box--use__list">
+                            <vtex:contentPlaceHolder id="Insta-Conteudo"/>
+                        </ul>
+                    </div>
+                </section><!-- insta-box END -->
+
+                <section class="youtube-area">
+                    <div class="youtube-area--list">
+                        <vtex:contentPlaceHolder id="Youtube-Conteudo"/>
+                    </div>
+                </section><!-- youtube-area END -->
+
+                <section class="take-a-look">
+                    <div class="take-a-look--top">
+                        <div class="take-a-look--top--left">
+                            <div class="take-a-look--top--box-top">
+                                <h2 class="take-a-look--top__tlt">
+                                    <vtex:contentPlaceHolder id="News-tlt"/>
+                                </h2>
+                                <article class="take-a-look--top__excerpt">
+                                    <vtex:contentPlaceHolder id="News-resumo"/>
+                                </article>
+                                <div class="take-a-look--cta">
+                                    <vtex:contentPlaceHolder id="News-botoes"/>
+                                </div>
+                            </div>
+                            <div class="take-a-look--top--right">
+                                <vtex:contentPlaceHolder id="News-Foto"/>
+                            </div>
+                        </div>
+                    </div>
+                </section><!-- take-a-look END -->
+
+                <section class="chrono-area">
+                    <vtex:contentPlaceHolder id="Linha-do-tempo-imagem"/>
+                    <div class="chrono-area__txt">
+                        <vtex:contentPlaceHolder id="Linha-do-tempo-txt"/>
+                    </div>
+                    <vtex:contentPlaceHolder id="Linha-do-tempo-lnk"/>
+                    <div class="chrono-area__ceo">
+                        <vtex:contentPlaceHolder id="Linha-do-tempo-ceo"/>
+                    </div>
+                </section><!-- chrono-area END -->
+
+                <section id="vantagens" class="tipbar-box">
+                    <ul class="tipbar-box--list">
+                        <li class="tipbar-box--list__item">
+                            <vtex:contentPlaceHolder id="Vantagens-1-troca"/>
+                        </li>
+                        <li class="tipbar-box--list__item">
+                            <vtex:contentPlaceHolder id="Vantagens-2-pix"/>
+                        </li>
+                        <li class="tipbar-box--list__item">
+                            <vtex:contentPlaceHolder id="Vantagens-2-promos"/>
+                        </li>
+                        <li class="tipbar-box--list__item">
+                            <vtex:contentPlaceHolder id="Vantagens-2-entrega"/>
+                        </li>
+                    </ul>
+                </section><!-- tipbar-box END -->
+            </main>
+            <vtex:template id="MariaFilo-Footer" />
+        </main>
+        <vtex:template id="MariaFilo-Scripts-dev" />
+        <script type="text/javascript" src="/arquivos/enext-home-mariafilo.js"></script>
+    </body>
+</html>

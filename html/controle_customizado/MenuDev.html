@@ -1,0 +1,535 @@
+<style>
+  .x-menu__item--highlight .x-menu__dropper {
+    color: #b2324a !important;
+  }
+  .x-menu__item--highlight.is--showing__menu-links .x-menu__dropper {
+    border-color: #b2324a !important;
+  }
+</style>
+
+<nav class="x-menu js--menu-item__closer">
+  <span class="x-menu__item js--menu-item">
+    <a href="/novidades" class="x-menu__dropper js--menu-item__toggler js--menu-item__oppener"
+       type="button">Novidades</a>
+    <div class="x-menu__links">
+      <div class="x-menu__images">
+        <div class="x-menu__image" data-image-item="preview">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Preview1.jpg" alt="/arquivos/menu-desk-Preview1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Preview2.jpg" alt="/arquivos/menu-desk-Preview2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="duo">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-duo-1.jpg" alt="/arquivos/menu-desk-duo-1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-duo-2.jpg" alt="/arquivos/menu-desk-duo-2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="resort">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-resort-1.jpg" alt="/arquivos/menu-desk-resort-1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-resort-2.jpg" alt="/arquivos/menu-desk-resort-2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="souk">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-souk-1.jpg" alt="/arquivos/menu-desk-souk-1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-souk-2.jpg" alt="/arquivos/menu-desk-souk-2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="dore">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-dore-1.jpg" alt="/arquivos/menu-desk-dore-1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-dore-2.jpg" alt="/arquivos/menu-desk-dore-2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="festas">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-festas-1.jpg" alt="/arquivos/menu-desk-festas-1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-festas-2.jpg" alt="/arquivos/menu-desk-festas-2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="mirage">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-mirage-1.jpg" alt="/arquivos/menu-desk-mirage-1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-mirage-2.jpg" alt="/arquivos/menu-desk-mirage-2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="tie-dye">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-tie-dye-1.jpg" alt="/arquivos/menu-desk-tie-dye-1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-tie-dye-2.jpg" alt="/arquivos/menu-desk-tie-dye-2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="sahara">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-sahara-lounge-1.jpg" alt="/arquivos/menu-desk-sahara-lounge-1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-sahara-lounge-2.jpg" alt="/arquivos/menu-desk-sahara-lounge-2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="oasis">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-oasis-1.jpg" alt="/arquivos/menu-desk-oasis-1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-oasis-2.jpg" alt="/arquivos/menu-desk-oasis-2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="majorelle">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-majorelle-1.jpg" alt="/arquivos/menu-desk-majorelle-1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-majorelle-2.jpg" alt="/arquivos/menu-desk-majorelle-2.jpg">
+          </div>
+        </div>
+      </div>
+      <ul class="x-menu__link-wrapper">
+        <li class="x-menu__link"><a data-image-item="preview" href="/preview" title="Preview">Preview</a></li>
+        <li class="x-menu__link"><a data-image-item="duo" href="/duo" title="Duo">Duo</a></li>
+        <li class="x-menu__link"><a data-image-item="resort" href="/resort" title="Resort">Resort</a></li>
+        <li class="x-menu__link"><a data-image-item="souk" href="/souk" title="Souk">Souk</a></li>
+        <li class="x-menu__link"><a data-image-item="dore" href="/dore" title="Doré">Doré</a></li>
+        <li class="x-menu__link"><a data-image-item="festas" href="/festas" title="Festas">Festas</a></li>
+      </ul>
+      <ul class="x-menu__link-wrapper">
+        <li class="x-menu__link"><a data-image-item="mirage" href="/mirage" title="Mirage">Mirage</a></li>
+        <li class="x-menu__link"><a data-image-item="tie-dye" href="/tie-dye" title="Tie Dye">Tie Dye</a></li>
+        <li class="x-menu__link"><a data-image-item="sahara" href="/sahara" title="Sahara Lounge">Sahara Lounge</a></li>
+        <li class="x-menu__link"><a data-image-item="oasis" href="/oasis" title="Oásis">Oásis</a></li>
+        <li class="x-menu__link"><a data-image-item="majorelle" href="/majorelle" title="Majorelle">Majorelle</a></li>
+        <li class="x-menu__link x-menu__link--see-all"><a data-image-item="" href="/novidades" title="Novidades">Ver tudo</a></li>
+      </ul>
+    </div>
+  </span>
+  <span class="x-menu__item js--menu-item">
+    <a href="/Loja/Roupas?O=OrderByReleaseDateDESC"
+       class="x-menu__dropper js--menu-item__toggler js--menu-item__oppener" type="button">Roupas</a>
+    <div class="x-menu__links">
+      <div class="x-menu__images">
+        <div class="x-menu__image" data-image-item="blusa">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Blusas1.jpg" alt="/arquivos/menu-desk-Blusas1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Blusas2.jpg" alt="/arquivos/menu-desk-Blusas2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="calca">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Calcas1.jpg" alt="/arquivos/menu-desk-Calcas1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Calcas2.jpg" alt="/arquivos/menu-desk-Calcas2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="caqueta-e-casaco">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Cacaco-Jaqueta1.jpg" alt="/arquivos/menu-desk-Cacaco-Jaqueta1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Cacaco-Jaqueta2.jpg" alt="/arquivos/menu-desk-Cacaco-Jaqueta2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="macacao">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Macacao1.jpg" alt="/arquivos/menu-desk-Macacao1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Macacao2.jpg" alt="/arquivos/menu-desk-Macacao2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="saia">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Saia1.jpg" alt="/arquivos/menu-desk-Saia1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Saia2.jpg" alt="/arquivos/menu-desk-Saia2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="short-e-bermuda">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Short1.jpg" alt="/arquivos/menu-desk-Short1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Short2.jpg" alt="/arquivos/menu-desk-Short2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="vestido-curto">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Vestido-Curto1.jpg" alt="/arquivos/menu-desk-Vestido-Curto1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Vestido-Curto2.jpg" alt="/arquivos/menu-desk-Vestido-Curto2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="vestido-midi">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Vestido-Midi1.jpg" alt="/arquivos/menu-desk-Vestido-Midi1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Vestido-Midi2.jpg" alt="/arquivos/menu-desk-Vestido-Midi2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="vestido-longo">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Vestido-Longo1.jpg" alt="/arquivos/menu-desk-Vestido-Longo1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Vestido-Longo2.jpg" alt="/arquivos/menu-desk-Vestido-Longo2.jpg">
+          </div>
+        </div>
+      </div>
+      <ul class="x-menu__link-wrapper">
+        <li class="x-menu__link"><a data-image-item="blusa" href="/Loja/Roupas/Blusa?O=OrderByReleaseDateDESC" title="Blusa">Blusa</a></li>
+        <li class="x-menu__link"><a data-image-item="calca" href="/Loja/Roupas/Calca?O=OrderByReleaseDateDESC" title="Calça">Calça</a></li>
+        <li class="x-menu__link"><a data-image-item="caqueta-e-casaco" href="/Loja/Roupas/Jaqueta-e-Casaco?O=OrderByReleaseDateDESC"
+                                    title="Jaqueta e Casaco">Jaqueta e Casaco</a></li>
+        <li class="x-menu__link"><a data-image-item="macacao" href="/Loja/Roupas/Macacao?O=OrderByReleaseDateDESC" title="Macacão">Macacão</a>
+        </li>
+        <li class="x-menu__link"><a data-image-item="saia" href="/Loja/Roupas/Saia?O=OrderByReleaseDateDESC" title="Saia">Saia</a></li>
+        <li class="x-menu__link"><a data-image-item="short-e-bermuda" href="/Loja/Roupas/Short-e-Bermuda?O=OrderByReleaseDateDESC"
+                                    title="Short e Bermuda">Short e Bermuda</a></li>
+      </ul>
+      <ul class="x-menu__link-wrapper">
+        <li class="x-menu__link">
+          <a data-image-item="vestido-longo" href="/Loja/Roupas/Vestido?O=OrderByReleaseDateDESC" title="Vestido">Vestido</a>
+          <div class="x-menu__links-submenu">
+            <ul class="x-menu__link-wrapper">
+              <li class="x-menu__link-submenu"><a data-image-item="vestido-curto" href="/Loja/Roupas/Vestido/curto?O=OrderByReleaseDateDESC" title="Curto">Curto</a></li>
+              <li class="x-menu__link-submenu"><a data-image-item="vestido-midi" href="/Loja/Roupas/Vestido/midi?O=OrderByReleaseDateDESC" title="Midi">Midi</a></li>
+              <li class="x-menu__link-submenu"><a data-image-item="vestido-longo" href="/Loja/Roupas/Vestido/longo?O=OrderByReleaseDateDESC" title="Longo">Longo</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="x-menu__link x-menu__link--see-all"><a href="/Loja/Roupas?O=OrderByReleaseDateDESC"
+                                                          title="Roupas">Ver tudo</a></li>
+      </ul>
+    </div>
+  </span>
+    <span class="x-menu__item js--menu-item">
+    <a href="#" class="x-menu__dropper js--menu-item__toggler js--menu-item__oppener">Especiais</a>
+    <div class="x-menu__links">
+      <div class="x-menu__images">
+        <div class="x-menu__image" data-image-item="suite">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Suite1.jpg" alt="/arquivos/menu-desk-Suite1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Suite2.jpg" alt="/arquivos/menu-desk-Suite2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="colecao-lux">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-lux1.jpg" alt="/arquivos/menu-desk-lux1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-lux2.jpg" alt="/arquivos/menu-desk-lux2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="alfaiataria">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Alfaiataria1.jpg" alt="/arquivos/menu-desk-Alfaiataria1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Alfaiataria2.jpg" alt="/arquivos/menu-desk-Alfaiataria2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="hera">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Hera1.jpg" alt="/arquivos/menu-desk-Hera1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Hera2.jpg" alt="/arquivos/menu-desk-Hera2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="noite">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Noite1.jpg" alt="/arquivos/menu-desk-Noite1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Noite2.jpg" alt="/arquivos/menu-desk-Noite2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="casa-e-decor">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Casa-decor1.jpg" alt="/arquivos/menu-desk-Casa-decor1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Casa-decor2.jpg" alt="/arquivos/menu-desk-Casa-decor2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="seda">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Seda1.jpg" alt="/arquivos/menu-desk-Seda1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Seda2.jpg" alt="/arquivos/menu-desk-Seda2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="trico">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Trico1.jpg" alt="/arquivos/menu-desk-Trico1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Trico2.jpg" alt="/arquivos/menu-desk-Trico2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="jeans">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Jeans1.jpg" alt="/arquivos/menu-desk-Jeans1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Jeans2.jpg" alt="/arquivos/menu-desk-Jeans2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="estampados">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Estampado1.jpg" alt="/arquivos/menu-desk-Estampado1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Estampado2.jpg" alt="/arquivos/menu-desk-Estampado2.jpg">
+          </div>
+        </div>
+      </div>
+      <ul class="x-menu__link-wrapper">
+        <li class="x-menu__link x-menu__link--titulo">
+          <span title="Linhas Especiais">Linhas Especiais</span>
+        </li>
+        <li class="x-menu__link"><a data-image-item="suite" href="/suite" title="Suite">Suite</a></li>
+        <li class="x-menu__link"><a data-image-item="colecao-lux" href="/colecao-lux" title="Coleção Lux">Coleção Lux</a></li>
+        <li class="x-menu__link"><a data-image-item="alfaiataria" href="/alfaiataria" title="Alfaiataria">Alfaiataria</a></li>
+        <li class="x-menu__link"><a data-image-item="hera" href="/subhome/linha-hera" title="Hera">Hera</a></li>
+        <li class="x-menu__link"><a data-image-item="noite" href="/Noite" title="Noite">Noite</a></li>
+        <li class="x-menu__link"><a data-image-item="casa-e-decor" href="/Loja/casa-e-decor?O=OrderByReleaseDateDESC" title="Casa e Décor">Casa &amp;
+            Décor</a></li>
+      </ul>
+      <ul class="x-menu__link-wrapper">
+        <li class="x-menu__link x-menu__link--titulo">
+          <span title="Materiais">Materiais</span>
+        </li>
+        <li class="x-menu__link"><a data-image-item="seda" href="/seda" title="Seda">Seda</a></li>
+        <li class="x-menu__link"><a data-image-item="trico" href="/Loja/Roupas/Trico?O=OrderByReleaseDateDESC" title="Tricot">Tricot</a></li>
+        <li class="x-menu__link"><a data-image-item="jeans" href="/Loja/Roupas/Jeans?O=OrderByReleaseDateDESC" title="Jeans">Jeans</a></li>
+        <li class="x-menu__link"><a data-image-item="estampados" href="/estampas" title="Estampados">Estampados</a></li>
+      </ul>
+    </div>
+  </span>
+  <span class="x-menu__item js--menu-item">
+    <a href="/Loja/Acessorios?O=OrderByReleaseDateDESC"
+       class="x-menu__dropper js--menu-item__toggler js--menu-item__oppener" type="button">Acessórios</a>
+    <div class="x-menu__links">
+      <div class="x-menu__images">
+        <div class="x-menu__image" data-image-item="biju">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Biju1.jpg" alt="/arquivos/menu-desk-Biju1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Biju2.1.jpg" alt="/arquivos/menu-desk-Biju2.1.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="bolsa">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Bolsa1.jpg" alt="/arquivos/menu-desk-Bolsa1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Bolsa2.jpg" alt="/arquivos/menu-desk-Bolsa2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="calcado">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Calcado1.jpg" alt="/arquivos/menu-desk-Calcado1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Calcado2.jpg" alt="/arquivos/menu-desk-Calcado2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="cinto">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Cinto1.jpg" alt="/arquivos/menu-desk-Cinto1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Cinto2.jpg" alt="/arquivos/menu-desk-Cinto2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="lenco">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Lenco1.jpg" alt="/arquivos/menu-desk-Lenco1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Lenco2.jpg" alt="/arquivos/menu-desk-Lenco2.jpg">
+          </div>
+        </div>
+      </div>
+      <ul class="x-menu__link-wrapper">
+        <li class="x-menu__link"><a data-image-item="biju" href="/Loja/Acessorios/Biju?O=OrderByReleaseDateDESC" title="Biju">Biju</a></li>
+        <li class="x-menu__link"><a data-image-item="bolsa" href="/Loja/Acessorios/Bolsa?O=OrderByReleaseDateDESC" title="Bolsa">Bolsa</a></li>
+        <li class="x-menu__link"><a data-image-item="calcado" href="/Loja/Acessorios/Calcado?O=OrderByReleaseDateDESC" title="Calçado">Calçado</a>
+        </li>
+        <li class="x-menu__link"><a data-image-item="cinto" href="/Loja/Acessorios/Cinto?O=OrderByReleaseDateDESC" title="Cinto">Cinto</a></li>
+        <li class="x-menu__link"><a data-image-item="lenco" href="/Loja/Acessorios/Lenco?O=OrderByReleaseDateDESC" title="Lenço">Lenço</a></li>
+        <li class="x-menu__link x-menu__link--see-all"><a href="/Loja/Acessorios?O=OrderByReleaseDateDESC"
+                                                          title="Acessórios">Ver tudo</a></li>
+      </ul>
+    </div>
+  </span>
+  <span class="x-menu__item js--menu-item">
+    <a href="/off?O=OrderByReleaseDateDESC"
+       class="x-menu__dropper js--menu-item__toggler js--menu-item__oppener" type="button">Bazar
+      <svg class="x-pull-right" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM7.45587 6.73092C7.5622 6.48892 7.61537 6.22126 7.61537 5.92792C7.61537 5.62359 7.5677 5.34859 7.47237 5.10292C7.37703 4.85359 7.2432 4.64092 7.07087 4.46492C6.9022 4.28892 6.6987 4.15326 6.46037 4.05792C6.2257 3.95892 5.96903 3.90942 5.69037 3.90942C5.4117 3.90942 5.15503 3.95892 4.92037 4.05792C4.68937 4.15326 4.4877 4.28892 4.31537 4.46492C4.1467 4.64092 4.0147 4.85359 3.91937 5.10292C3.82403 5.34859 3.77637 5.62359 3.77637 5.92792C3.77637 6.22126 3.82403 6.48892 3.91937 6.73092C4.0147 6.97292 4.1467 7.18192 4.31537 7.35792C4.4877 7.53026 4.68937 7.66409 4.92037 7.75942C5.15503 7.85476 5.4117 7.90242 5.69037 7.90242C5.94337 7.90242 6.18537 7.85476 6.41637 7.75942C6.65103 7.66409 6.85637 7.53026 7.03237 7.35792C7.20837 7.18192 7.34953 6.97292 7.45587 6.73092ZM6.25687 5.46592C6.28987 5.58692 6.30637 5.74092 6.30637 5.92792C6.30637 6.10392 6.28987 6.25059 6.25687 6.36792C6.22753 6.48526 6.18537 6.57876 6.13037 6.64842C6.07537 6.71809 6.00937 6.76759 5.93237 6.79692C5.85903 6.82626 5.77837 6.84092 5.69037 6.84092C5.60237 6.84092 5.5217 6.82626 5.44837 6.79692C5.37503 6.76759 5.3127 6.71809 5.26137 6.64842C5.21003 6.57876 5.1697 6.48526 5.14037 6.36792C5.11103 6.25059 5.09637 6.10392 5.09637 5.92792C5.09637 5.74092 5.11103 5.58692 5.14037 5.46592C5.1697 5.34126 5.21003 5.24226 5.26137 5.16892C5.3127 5.09559 5.37503 5.04426 5.44837 5.01492C5.5217 4.98559 5.60237 4.97092 5.69037 4.97092C5.77837 4.97092 5.85903 4.98559 5.93237 5.01492C6.00937 5.04426 6.07537 5.09559 6.13037 5.16892C6.18537 5.24226 6.22753 5.34126 6.25687 5.46592ZM10.3379 4.06892C10.2572 4.12026 10.1894 4.17709 10.1344 4.23942L4.09537 11.9999H5.37137C5.4887 11.9999 5.5877 11.9779 5.66837 11.9339C5.7527 11.8863 5.82237 11.8276 5.87737 11.7579L11.9164 3.98642H10.6734C10.5304 3.98642 10.4185 4.01392 10.3379 4.06892ZM12.0649 10.9274C12.1712 10.6818 12.2244 10.4123 12.2244 10.1189C12.2244 9.81459 12.1767 9.53959 12.0814 9.29392C11.986 9.04459 11.8522 8.83192 11.6799 8.65592C11.5112 8.47992 11.3077 8.34426 11.0694 8.24892C10.8347 8.14992 10.578 8.10042 10.2994 8.10042C10.0207 8.10042 9.76403 8.14992 9.52937 8.24892C9.29837 8.34426 9.0967 8.47992 8.92437 8.65592C8.7557 8.83192 8.6237 9.04459 8.52837 9.29392C8.43303 9.53959 8.38537 9.81459 8.38537 10.1189C8.38537 10.4123 8.43303 10.6818 8.52837 10.9274C8.6237 11.1694 8.7557 11.3784 8.92437 11.5544C9.0967 11.7268 9.29837 11.8606 9.52937 11.9559C9.76403 12.0513 10.0207 12.0989 10.2994 12.0989C10.5524 12.0989 10.7944 12.0513 11.0254 11.9559C11.26 11.8606 11.4654 11.7268 11.6414 11.5544C11.8174 11.3784 11.9585 11.1694 12.0649 10.9274ZM10.8659 9.66242C10.8989 9.78342 10.9154 9.93559 10.9154 10.1189C10.9154 10.2949 10.8989 10.4416 10.8659 10.5589C10.8365 10.6763 10.7944 10.7698 10.7394 10.8394C10.6844 10.9091 10.6184 10.9586 10.5414 10.9879C10.468 11.0173 10.3874 11.0319 10.2994 11.0319C10.2114 11.0319 10.1307 11.0173 10.0574 10.9879C9.98403 10.9586 9.9217 10.9091 9.87037 10.8394C9.81903 10.7698 9.7787 10.6763 9.74937 10.5589C9.72003 10.4416 9.70537 10.2949 9.70537 10.1189C9.70537 9.93559 9.72003 9.78342 9.74937 9.66242C9.7787 9.53776 9.81903 9.43876 9.87037 9.36542C9.9217 9.29209 9.98403 9.24076 10.0574 9.21142C10.1307 9.18209 10.2114 9.16742 10.2994 9.16742C10.3874 9.16742 10.468 9.18209 10.5414 9.21142C10.6184 9.24076 10.6844 9.29209 10.7394 9.36542C10.7944 9.43876 10.8365 9.53776 10.8659 9.66242Z" fill="black"/>
+      </svg>
+    </a>
+    <div class="x-menu__links">
+      <div class="x-menu__images">
+        <div class="x-menu__image" data-image-item="off-acessorios">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Bazar-Acessorios1.jpg" alt="/arquivos/menu-desk-Bazar-Acessorios1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Bazar-Acessorios2.jpg" alt="/arquivos/menu-desk-Bazar-Acessorios2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="off-blusa">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Bazar-Blusa1.jpg" alt="/arquivos/menu-desk-Bazar-Blusa1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Bazar-Blusa2.jpg" alt="/arquivos/menu-desk-Bazar-Blusa2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="off-calca">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Bazar-Calca1.jpg" alt="/arquivos/menu-desk-Bazar-Calca1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Bazar-Calca2.jpg" alt="/arquivos/menu-desk-Bazar-Calca2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="off-jaqueta-e-casaco">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Bazar-Jaqueta-casaco1.jpg" alt="/arquivos/menu-desk-Bazar-Jaqueta-casaco1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Bazar-Jaqueta-casaco2.jpg" alt="/arquivos/menu-desk-Bazar-Jaqueta-casaco2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="off-macacao">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Bazar-Macacao1.jpg" alt="/arquivos/menu-desk-Bazar-Macacao1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Bazar-Macacao2.jpg" alt="/arquivos/menu-desk-Bazar-Macacao2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="off-saia">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Bazar-Saia1.jpg" alt="/arquivos/menu-desk-Bazar-Saia1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Bazar-Saia2.jpg" alt="/arquivos/menu-desk-Bazar-Saia2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="off-short-e-bermuda">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Bazar-Short1.jpg" alt="/arquivos/menu-desk-Bazar-Short1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Bazar-Short2.jpg" alt="/arquivos/menu-desk-Bazar-Short2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="off-vestido-curto">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Bazar-Vestido-curto1.jpg" alt="/arquivos/menu-desk-Bazar-Vestido-curto1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Bazar-Vestido-curto2.jpg" alt="/arquivos/menu-desk-Bazar-Vestido-curto2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="off-vestido-midi">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Bazar-Vestido-midi1.jpg" alt="/arquivos/menu-desk-Bazar-Vestido-midi1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Bazar-Vestido-midi2.jpg" alt="/arquivos/menu-desk-Bazar-Vestido-midi2.jpg">
+          </div>
+        </div>
+        <div class="x-menu__image" data-image-item="off-vestido-longo">
+          <div class="x-menu__image--big">
+            <img src="/arquivos/menu-desk-Bazar-Vestido-longo1.jpg" alt="/arquivos/menu-desk-Bazar-Vestido-longo1.jpg">
+          </div>
+          <div class="x-menu__image--small">
+            <img src="/arquivos/menu-desk-Bazar-Vestido-longo2.jpg" alt="/arquivos/menu-desk-Bazar-Vestido-longo2.jpg">
+          </div>
+        </div>
+      </div>
+      <ul class="x-menu__link-wrapper">
+        <li class="x-menu__link"><a data-image-item="off-acessorios" href="/off/acessorios?O=OrderByReleaseDateDESC" title="Acessórios">Acessórios</a></li>
+        <li class="x-menu__link"><a data-image-item="off-blusa" href="/off/roupas/blusa?O=OrderByReleaseDateDESC" title="Blusa">Blusa</a></li>
+        <li class="x-menu__link"><a data-image-item="off-calca" href="/off/roupas/calca?O=OrderByReleaseDateDESC" title="Calça">Calça</a></li>
+        <li class="x-menu__link"><a data-image-item="off-jaqueta-e-casaco" href="/off/roupas/jaqueta-e-casaco?O=OrderByReleaseDateDESC" title="Jaqueta e Casaco">Jaqueta e Casaco</a></li>
+        <li class="x-menu__link"><a data-image-item="off-macacao" href="/off/roupas/macacao?O=OrderByReleaseDateDESC" title="Macacão">Macacão</a></li>
+        <li class="x-menu__link"><a data-image-item="off-saia" href="/off/roupas/saia?O=OrderByReleaseDateDESC" title="Saia">Saia</a></li>
+      </ul>
+      <ul class="x-menu__link-wrapper">
+        <li class="x-menu__link"><a data-image-item="off-short-e-bermuda" href="/off/roupas/short-e-bermuda?O=OrderByReleaseDateDESC" title="Short e Bermuda">Short e Bermuda</a></li>
+        <li class="x-menu__link">
+          <a data-image-item="off-vestido-longo" href="/off/roupas/vestido?O=OrderByReleaseDateDESC" title="Vestido">Vestido</a>
+          <div class="x-menu__links-submenu">
+            <ul class="x-menu__link-wrapper">
+              <li class="x-menu__link-submenu"><a data-image-item="off-vestido-curto" href="/off/roupas/vestido/curto?O=OrderByReleaseDateDESC" title="Curto">Curto</a></li>
+              <li class="x-menu__link-submenu"><a data-image-item="off-vestido-midi" href="/off/roupas/vestido/midi?O=OrderByReleaseDateDESC" title="Midi">Midi</a></li>
+              <li class="x-menu__link-submenu"><a data-image-item="off-vestido-longo" href="/off/roupas/vestido/longo?O=OrderByReleaseDateDESC" title="Longo">Longo</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="x-menu__link x-menu__link--see-all"><a href="/off?O=OrderByReleaseDateDESC"
+                                                          title="Ver tudo">Ver tudo</a></li>
+      </ul>
+    </div>
+  </span>
+  <span class="x-menu__item js--menu-item">
+    <a href="#" class="x-menu__dropper js--menu-item__toggler js--menu-item__oppener" title="Inspiração"
+            type="button">Inspiração</a>
+    <div class="x-menu__links">
+      <div class="x-menu__banner-images">
+        <a class="x-menu__banner-image" href="https://blog.mariafilo.com.br/" title="Blog">
+          <img src="/arquivos/menu-inspiracao-blog.jpg" alt="/arquivos/menu-inspiracao-blog.jpg">
+          <div class="x-menu__banner-image--titulo">Blog</div>
+        </a>
+        <a class="x-menu__banner-image" href="/lookbook" title="Lookbook">
+          <img src="/arquivos/menu-inspiracao-lookbook.jpg" alt="/arquivos/menu-inspiracao-lookbook.jpg">
+          <div class="x-menu__banner-image--titulo">Lookbook</div>
+        </a>
+        <a class="x-menu__banner-image" href="/institucional/editoriais" title="Editoriais">
+          <img src="/arquivos/menu-inspiracao-editorial1.jpg" alt="/arquivos/menu-inspiracao-editorial1.jpg">
+          <div class="x-menu__banner-image--titulo">Editoriais</div>
+        </a>
+        <a class="x-menu__banner-image" href="/institucional/campanhas" title="Campanhas">
+          <img src="/arquivos/menu-inspiracao-campanha.jpg" alt="/arquivos/menu-inspiracao-campanha.jpg">
+          <div class="x-menu__banner-image--titulo">Campanhas</div>
+        </a>
+      </div>
+    </div>
+  </span>
+<!--    <a href="/off?O=OrderByReleaseDateDESC#1" class="x-menu__item"-->
+<!--       style="color: #b2324a !important; font-weight: 800 !important;" title="BAZAR" type="button">BAZAR</a>-->
+</nav>
