@@ -1,0 +1,576 @@
+{
+	"package": {
+		"items": [
+			{
+				"itemIndex": 0,
+				"quantity": 1,
+				"price": 38165,
+				"description": null,
+				"unitMultiplier": 0
+			}
+		],
+		"courier": "Sequoia",
+		"invoiceNumber": "746",
+		"invoiceValue": 38165,
+		"invoiceUrl": "http://www.nfe.fazenda.gov.br/portal/consultaRecaptcha.aspx",
+		"issuanceDate": "2021-12-21T14:19:23",
+		"trackingNumber": "SFX1637693870209BR",
+		"invoiceKey": "35211200504777000193550010000007461009620627",
+		"trackingUrl": "https://sequoia-sfs-web-prd.azurewebsites.net/rastreamento/pedido",
+		"embeddedInvoice": "",
+		"type": "Output",
+		"courierStatus": {
+			"status": "ok",
+			"finished": false,
+			"deliveredDate": "2021-12-28T15:10:10.0919435Z",
+			"data": [
+				{
+					"lastChange": "2021-12-28T14:09:07",
+					"city": "",
+					"state": "",
+					"description": "Em Rota",
+					"createDate": "2021-12-28T15:10:10.0919432Z"
+				},
+				{
+					"lastChange": "2021-12-27T11:19:26",
+					"city": "",
+					"state": "",
+					"description": "Em Transferência",
+					"createDate": "2021-12-27T11:50:08.7038715Z"
+				},
+				{
+					"lastChange": "2021-12-27T06:40:44",
+					"city": "",
+					"state": "",
+					"description": "Recepção Física",
+					"createDate": "2021-12-27T07:20:09.1932979Z"
+				},
+				{
+					"lastChange": "2021-12-27T06:39:44",
+					"city": "",
+					"state": "",
+					"description": "Transferida",
+					"createDate": "2021-12-27T07:20:09.1932985Z"
+				},
+				{
+					"lastChange": "2021-12-21T18:10:20",
+					"city": "",
+					"state": "",
+					"description": "Coletado",
+					"createDate": "2021-12-21T18:50:11.134421Z"
+				},
+				{
+					"lastChange": "2021-12-21T17:45:24",
+					"city": "",
+					"state": "",
+					"description": "A coletar",
+					"createDate": "2021-12-21T19:50:20.8479265Z"
+				},
+				{
+					"lastChange": "2021-12-21T17:40:06",
+					"city": "",
+					"state": "",
+					"description": "Inconsistente",
+					"createDate": "2021-12-21T19:50:20.8479271Z"
+				}
+			]
+		},
+		"cfop": null,
+		"restitutions": {},
+		"volumes": null,
+		"EnableInferItems": null
+	},
+	"subjectItemAttachment": {
+		"item": "Vestido Midi Jacquar...",
+		"totalItems": 1
+	},
+	"cancellationReason": null,
+	"items": [
+		{
+			"additionalInfo": {
+				"categoriesIds": "/35/36/50/",
+				"productClusterId": "135,162,221,480,496,541,601,658,751,755,765,781,782,783,804,806,815,835,836,850,858,861",
+				"commercialConditionId": "1",
+				"dimension": {
+					"cubicweight": 0,
+					"height": 3,
+					"length": 33,
+					"weight": 700,
+					"width": 30
+				},
+				"brandName": "Maria Filó",
+				"brandId": "2000003",
+				"offeringInfo": null,
+				"offeringType": null,
+				"offeringTypeId": null
+			},
+			"sellerSku": "219679003",
+			"priceTable": "1",
+			"priceValidUntil": "2022-01-11T02:59:00Z",
+			"callCenterOperator": null,
+			"commission": 2000,
+			"freightCommission": 0,
+			"taxCode": "62044900",
+			"catalogProvider": "vrn:vtex.catalog-api-proxy:-:mariafilo:master:/proxy/authenticated/catalog/pvt/sku/stockkeepingunitbyid/32309",
+			"uniqueId": "B0621F9B78434E5DABB3163527058AA5",
+			"id": "32309",
+			"productId": "17625",
+			"productRefId": "15.07760_2429",
+			"refId": "15.07760_2429_5",
+			"ean": "15077602429G",
+			"name": "Vestido Midi Jacquard Verde / G",
+			"skuName": "Verde / G",
+			"modalType": null,
+			"parentItemIndex": null,
+			"parentAssemblyBinding": null,
+			"assemblies": [],
+			"tax": 0,
+			"price": 44900,
+			"listPrice": 89900,
+			"manualPrice": null,
+			"manualPriceAppliedBy": null,
+			"sellingPrice": 38165,
+			"rewardValue": 0,
+			"isGift": false,
+			"preSaleDate": null,
+			"productCategoryIds": "/35/36/50/",
+			"productCategories": {
+				"35": "OFF",
+				"36": "Roupas",
+				"50": "Vestido"
+			},
+			"quantity": 1,
+			"seller": "MKTP043",
+			"sellerChain": [
+				"MKTP043"
+			],
+			"imageUrl": "http://mariafilo.vteximg.com.br/arquivos/ids/295879-769-1000/1507760_2429_1-VESTIDO-MIDI-JACQUARD.jpg?v=637550628166130000",
+			"detailUrl": "/vestido-midi-jacquard-verde-15-07760-2429/p",
+			"components": [],
+			"bundleItems": [],
+			"attachments": [],
+			"attachmentOfferings": [],
+			"offerings": [],
+			"priceTags": [
+				{
+					"name": "discount@price-814eca2d-83ef-45c1-b1f1-6fc365973005#35bb3081-a6e1-450a-a168-7cb9d08aa3fa",
+					"value": -6735,
+					"rawValue": -67.35,
+					"isPercentual": false,
+					"identifier": "814eca2d-83ef-45c1-b1f1-6fc365973005"
+				},
+				{
+					"name": "discount@shipping-1187c2b0-e627-4582-b7c5-a7c0a6c18cae#0f67e668-baf1-4057-842e-e170f7140d36",
+					"value": -1974,
+					"rawValue": -19.74,
+					"isPercentual": false,
+					"identifier": "1187c2b0-e627-4582-b7c5-a7c0a6c18cae"
+				},
+				{
+					"name": "discount@shipping-ec5b208c-0e44-4a65-b65a-e68b30e87b6a#1e80d741-cfe6-406c-86ec-84f9bd9ec0d7",
+					"value": 0,
+					"rawValue": 0,
+					"isPercentual": false,
+					"identifier": "ec5b208c-0e44-4a65-b65a-e68b30e87b6a"
+				}
+			],
+			"availability": "available",
+			"measurementUnit": "un",
+			"unitMultiplier": 1,
+			"manufacturerCode": null,
+			"priceDefinition": {
+				"calculatedSellingPrice": 38165,
+				"total": 38165,
+				"sellingPrices": [
+					{
+						"value": 38165,
+						"quantity": 1
+					}
+				]
+			}
+		}
+	],
+	"sellers": [
+		{
+			"subSellerId": "MKTP043",
+			"fulfillmentEndpoint": "https://gruposomaapi.conectala.com.br/app/Api/SellerCenter/Vtex/MariaFilo",
+			"id": "MKTP043",
+			"name": "MKTP_TRANSLADO",
+			"logo": ""
+		}
+	],
+	"giftRegistryData": null,
+	"receiptData": null,
+	"contextData": null,
+	"marketPlaceOrderId": "",
+	"marketPlaceOrderGroup": null,
+	"marketplaceServicesEndpoint": null,
+	"orderFormId": "d91eaf7caca24e8dacc7c5300f234628",
+	"sequence": "1584156",
+	"affiliateId": "",
+	"status": "",
+	"callCenterOperator": "",
+	"userProfileId": "53f74891-4364-4366-9557-8cb351c179ce",
+	"hostName": "mariafilo",
+	"creationVersion": null,
+	"creationEnvironment": null,
+	"lastChangeVersion": null,
+	"workflowInstanceId": null,
+	"marketplacePaymentValue": null,
+	"orderId": "v1584156mfl-01",
+	"orderGroup": "v1584156mfl",
+	"state": "invoiced",
+	"isCheckedIn": false,
+	"sellerOrderId": "41732",
+	"storeId": null,
+	"checkedInPickupPointId": null,
+	"value": 38165,
+	"totals": [
+		{
+			"id": "Items",
+			"name": "Total dos Itens",
+			"value": 44900
+		},
+		{
+			"id": "Discounts",
+			"name": "Total dos Descontos",
+			"value": -6735
+		},
+		{
+			"id": "Shipping",
+			"name": "Total do Frete",
+			"value": 0,
+			"alternativeTotals": [
+				{
+					"id": "AlternativeShippingTotal",
+					"name": "Alternative Shipping Total",
+					"value": 1974
+				},
+				{
+					"id": "AlternativeShippingDiscount",
+					"name": "Alternative Shipping Discount",
+					"value": -1974
+				}
+			]
+		},
+		{
+			"id": "Tax",
+			"name": "Total da Taxa",
+			"value": 0
+		}
+	],
+	"clientProfileData": {
+		"email": "067623e0a10b41b6a853b33d75607ae7@ct.vtex.com.br",
+		"firstName": "Lidiane",
+		"lastName": "Gasparetti",
+		"document": "34574408839",
+		"documentType": "cpf",
+		"phone": "+5512997085018",
+		"corporateName": null,
+		"tradeName": null,
+		"corporateDocument": null,
+		"stateInscription": null,
+		"corporatePhone": null,
+		"isCorporate": false,
+		"profileCompleteOnLoading": true,
+		"profileErrorOnLoading": false,
+		"customerClass": null
+	},
+	"ratesAndBenefitsData": {
+		"rateAndBenefitsIdentifiers": [
+			{
+				"id": "814eca2d-83ef-45c1-b1f1-6fc365973005",
+				"name": "Natal | Bazar Progressivo",
+				"featured": false,
+				"description": "Todo Bazar com Desconto Progressivo 2 peça +15% off, 3 peças ou mais +25% off",
+				"matchedParameters": {
+					"progressiveDiscount@Marketing": "32237,32309"
+				},
+				"additionalInfo": null
+			},
+			{
+				"id": "1187c2b0-e627-4582-b7c5-a7c0a6c18cae",
+				"name": "Frete grátis Vendedor",
+				"featured": false,
+				"description": "Frete grátis em todo o site com o código de vendedora nas compras acima de R$150",
+				"matchedParameters": {
+					"slaIds": "normal",
+					"productCluster@CatalogSystem": "868|exclusive"
+				},
+				"additionalInfo": null
+			},
+			{
+				"id": "ec5b208c-0e44-4a65-b65a-e68b30e87b6a",
+				"name": "Frete grátis",
+				"featured": false,
+				"description": "Frete grátis no site com mínimo de R$500 em compras para clientes que não utilizarem o código de vendedora.",
+				"matchedParameters": {
+					"slaIds": "normal",
+					"productCluster@CatalogSystem": "868|exclusive"
+				},
+				"additionalInfo": null
+			}
+		],
+		"teaser": []
+	},
+	"shippingData": {
+		"address": {
+			"addressType": "residential",
+			"receiverName": "Lidiane Gasparetti",
+			"addressId": "4857395632755",
+			"isDisposable": false,
+			"postalCode": "12220-450",
+			"city": "São José dos Campos",
+			"state": "SP",
+			"country": "BRA",
+			"street": "Rua Francisco Pereira Filho",
+			"number": "80",
+			"neighborhood": "Vila Industrial",
+			"complement": "apto 34",
+			"reference": null,
+			"geoCoordinates": [
+				-45.857093811035156,
+				-23.174816131591797
+			]
+		},
+		"logisticsInfo": [
+			{
+				"itemIndex": 0,
+				"selectedSla": "Normal",
+				"selectedDeliveryChannel": "delivery",
+				"addressId": "4857395632755",
+				"slas": [
+					{
+						"id": "Normal",
+						"deliveryChannel": "delivery",
+						"name": "Normal",
+						"deliveryIds": [],
+						"shippingEstimate": "9bd",
+						"shippingEstimateDate": "2022-01-03T14:25:09.8755718Z",
+						"lockTTL": "10d",
+						"availableDeliveryWindows": [],
+						"deliveryWindow": null,
+						"price": 0,
+						"listPrice": 1974,
+						"tax": 0,
+						"pickupStoreInfo": {
+							"isPickupStore": false,
+							"friendlyName": null,
+							"address": null,
+							"additionalInfo": null,
+							"dockId": null
+						},
+						"pickupPointId": null,
+						"pickupDistance": null,
+						"polygonName": null,
+						"transitTime": null
+					}
+				],
+				"shipsTo": [
+					"BRA"
+				],
+				"itemId": "32309",
+				"deliveryChannels": [
+					{
+						"id": "delivery"
+					}
+				]
+			}
+		],
+		"selectedAddresses": [
+			{
+				"addressType": "residential",
+				"receiverName": "Lidiane Gasparetti",
+				"addressId": "4857395632755",
+				"isDisposable": false,
+				"postalCode": "12220-450",
+				"city": "São José dos Campos",
+				"state": "SP",
+				"country": "BRA",
+				"street": "Rua Francisco Pereira Filho",
+				"number": "80",
+				"neighborhood": "Vila Industrial",
+				"complement": "apto 34",
+				"reference": null,
+				"geoCoordinates": [
+					-45.857093811035156,
+					-23.174816131591797
+				]
+			}
+		],
+		"availableAddresses": [
+			{
+				"addressType": "residential",
+				"receiverName": "Lidiane Gasparetti",
+				"addressId": "4857395632755",
+				"isDisposable": false,
+				"postalCode": "12220-450",
+				"city": "São José dos Campos",
+				"state": "SP",
+				"country": "BRA",
+				"street": "Rua Francisco Pereira Filho",
+				"number": "80",
+				"neighborhood": "Vila Industrial",
+				"complement": "apto 34",
+				"reference": null,
+				"geoCoordinates": [
+					-45.857093811035156,
+					-23.174816131591797
+				]
+			}
+		],
+		"pickupPoints": []
+	},
+	"paymentData": {
+		"giftCards": [],
+		"transactions": [
+			{
+				"isActive": true,
+				"transactionId": "02BB013C5AA94723861BF147D4156E48",
+				"merchantName": "MARIAFILO",
+				"payments": [
+					{
+						"id": "6850001DE0D94A309FEAC0C036F5D7BD",
+						"paymentSystem": "2",
+						"paymentSystemName": "Visa",
+						"value": 66130,
+						"installments": 3,
+						"connectorResponses": {
+							"Tid": "472684231",
+							"ReturnCode": null,
+							"Message": null,
+							"authId": "250365",
+							"nsu": "472684231",
+							"acquirer": "pagarme"
+						},
+						"referenceValue": 66130,
+						"cardHolder": null,
+						"cardNumber": null,
+						"firstDigits": "441524",
+						"lastDigits": "2548",
+						"cvv2": null,
+						"expireMonth": null,
+						"expireYear": null,
+						"url": null,
+						"koinUrl": null,
+						"tid": "472684231",
+						"redemptionCode": null,
+						"giftCardId": null,
+						"giftCardProvider": null,
+						"giftCardAsDiscount": null,
+						"group": "creditCard",
+						"dueDate": null,
+						"accountId": "B7B986BD0D764F6F97FFF335C32A2765",
+						"parentAccountId": null,
+						"bankIssuedInvoiceIdentificationNumber": null,
+						"bankIssuedInvoiceIdentificationNumberFormatted": null,
+						"bankIssuedInvoiceBarCodeNumber": null,
+						"bankIssuedInvoiceBarCodeType": null,
+						"billingAddress": {
+							"addressType": "residential",
+							"receiverName": "Lidiane Gasparetti",
+							"addressId": "4857395632755",
+							"isDisposable": false,
+							"postalCode": "12220-450",
+							"city": "São José dos Campos",
+							"state": "SP",
+							"country": "BRA",
+							"street": "Rua Francisco Pereira Filho",
+							"number": "80",
+							"neighborhood": "Vila Industrial",
+							"complement": "apto 34",
+							"reference": null,
+							"geoCoordinates": [
+								-45.857093811035156,
+								-23.174816131591797
+							]
+						}
+					}
+				],
+				"sharedTransaction": true
+			}
+		]
+	},
+	"clientPreferencesData": {
+		"locale": "pt-BR",
+		"optinNewsLetter": false
+	},
+	"commercialConditionData": null,
+	"marketingData": {
+		"utmSource": null,
+		"utmMedium": null,
+		"utmCampaign": null,
+		"utmipage": null,
+		"utmiPart": null,
+		"utmiCampaign": "VendMF",
+		"coupon": null,
+		"marketingTags": []
+	},
+	"storePreferencesData": {
+		"countryCode": "BRA",
+		"saveUserData": false,
+		"timeZone": "E. South America Standard Time",
+		"currencyCode": "BRL",
+		"currencyLocale": 1046,
+		"currencySymbol": "R$",
+		"currencyFormatInfo": {
+			"currencyDecimalDigits": 2,
+			"currencyDecimalSeparator": ",",
+			"currencyGroupSeparator": ".",
+			"currencyGroupSize": 3,
+			"startsWithCurrencySymbol": true
+		}
+	},
+	"openTextField": {
+		"value": "vendedor: FRANQUIA SAO JOSE codigo: 4073"
+	},
+	"invoiceData": null,
+	"itemMetadata": null,
+	"taxData": null,
+	"customData": null,
+	"hooksData": null,
+	"changeData": null,
+	"subscriptionData": null,
+	"salesChannel": "1",
+	"followUpEmail": "067623e0a10b41b6a853b33d75607ae7@ct.vtex.com.br",
+	"creationDate": "2021-12-21T14:24:55.3430333Z",
+	"lastChange": "2021-12-21T17:30:14.7381809Z",
+	"timeZoneCreationDate": "2021-12-21T11:24:55.3430333",
+	"timeZoneLastChange": "2021-12-21T14:30:14.7381809",
+	"isCompleted": true,
+	"merchantName": null,
+	"userType": "",
+	"roundingError": 0,
+	"allowEdition": false,
+	"allowCancellation": false,
+	"isUserDataVisible": false,
+	"allowChangeSeller": false,
+	"_accountInfo": {
+		"HostName": "vtex",
+		"MainAccountName": "vtex",
+		"IsPersisted": true,
+		"IsRemoved": false,
+		"Id": "e39d05f9-0c54-4469-a626-8bb5cff169f8",
+		"Cnpj": "123456789",
+		"CompanyName": "Vtex Remarkable Technology",
+		"TradingName": "VTEX",
+		"AccountName": "vtex",
+		"DefaultUrl": null,
+		"Address": "PRAIA DE BOTAFOGO",
+		"Number": "518",
+		"Complement": "",
+		"District": "BOTAFOGO",
+		"City": "RIO DE JANEIRO",
+		"State": "RJ",
+		"PostalCode": "22250040",
+		"Country": "Brazil",
+		"Telephone": "2222222222",
+		"IsActive": false,
+		"Sponsor": "bd4b4b3f-d486-4412-9c90-18cac00b52bb",
+		"Logo": "VTEX_icon_pink_RGB.jpg",
+		"AppId": "80ec8b10-25b7-48de-b425-7b93554002cb",
+		"IsOperating": false,
+		"LV": "LV-1000009",
+		"Sigla": null
+	}
+}

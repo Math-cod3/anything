@@ -1,0 +1,25 @@
+<div class="fl w-100 pt3">
+  <h5 class="f6 ffa cwl-m ttu fw7 mb2">((i18n.common.summary))</h5>
+
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    {{#each totals}}
+      {{#if value}}
+      <tr>
+        <td class="pv1 bb b--light-gray h6 ffa">
+          <span class="ffa h6 cwl">{{#eq id "Items"}}((i18n.common.items)){{/eq}}</span>
+          <span class="ffa h6 cwl">{{#eq id "Shipping"}}((i18n.common.shipping)){{/eq}}</span>
+          <span class="ffa h6 cwl">{{#eq id "Discounts"}}((i18n.common.discounts)){{/eq}}</span>
+          <span class="ffa h6 cwl">{{#eq id "Tax"}}((i18n.common.taxes)){{/eq}}</span>
+        </td>
+        <td class="pv1 bb b--light-gray tr ffa h6 cwl">((i18n.common.currency)) {{formatCurrency value}}</td>
+      </tr>
+      {{/if}}
+    {{/each}}
+    {{#if value}}
+      <tr>
+        <td class="pv1 ffa h6 cwl">((i18n.common.total))</td>
+        <td class="pv1 ffa h6 cwl align-right tr">((i18n.common.currency)) {{formatCurrency value}}</td>
+      </tr>
+    {{/if}}
+  </table>
+</div>

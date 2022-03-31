@@ -1,0 +1,13 @@
+{{#each items.0.slas}}
+  {{#compare ../items.0.selectedSla '==' id}}
+    <span class="h6 ffa fw7 cwl-m">{{pickupStoreInfo.friendlyName}}</span><br/>
+    {{#with pickupStoreInfo.address}}
+      <span class="h6 ffa cwl-m">{{street}}, {{number}}{{#if complement}} - {{complement}}
+      {{/if}}
+        - {{neighborhood}} - {{city}} - {{state}}
+      </span><br/>
+      <span class="h6 ffa cwl-m">((i18n.shipping.postalCode)) {{postalCode}}</span>
+    {{/with}}
+  {{/compare}}
+{{/each}}
+

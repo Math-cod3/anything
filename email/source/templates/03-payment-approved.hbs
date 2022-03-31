@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+  <!-- partial:partials/html-head.hbs --><!-- partial -->
+	<body>
+		<table id="body-table" width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" valign="top">
+					<table class="w-100 mw6-5 mv4-ns bg-white" width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+
+            <!-- Header -->
+            <tr>
+              <td class="w-100 tc">
+                <!-- partial:partials/logo.hbs --><!-- partial -->
+              </td>
+            </tr>
+
+            <tr>
+              <td class="w-100 tc">
+                <h3 class="h2 b tc mt5 mb4 ttn ffg tracked-normal">((i18n.payment.approved))</h3>
+
+                <div class="h4 mt2 cwl tc ffa ph4">
+                  Olá, {{clientProfileData.firstName}}! Boa notícia: seu pagamento foi confirmado!
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="pt5">
+                <p class="w-100 tc mb4">
+                  <img src="https://mariafilo.vteximg.com.br/arquivos/email-status-2.png" alt="">
+                </p>
+              </td>
+            </tr>
+
+            <!-- Payment - not splitted -->
+            {{#compare split "!=" true}}
+              <tr>
+                <td class="w-100 ph4-ns pv4">
+                  <div class="w-100 bt b--light-gray br2 b-light pa4">
+                    <h4 class="w100 ffa ttu mb2">((i18n.payment.title))</h4>
+                    {{#each paymentData.transactions}}
+                      <!-- partial:partials/payment.hbs --><!-- partial -->
+                      <div class="dib mt2 pv1 ph2 bg-green-s-l h6 ffa cwl-m">((i18n.payment.pending))</div>
+                    {{/each}}
+                  </div>
+                </td>
+              </tr>
+            {{/compare}}
+
+            <tr>
+              <td class="w-100 ph4-ns">
+                <p class="h4 lh-title ffa tc cwl mt4">
+                  Agora seu pedido será faturado e, em breve, entregue no endereço indicado.<br/><br/>
+                  Confira mais detalhes da sua compra:
+                </p>
+
+                <!-- partial:partials/messages/order-link.hbs --><!-- partial -->
+              </td>
+            </tr>
+
+            <tr>
+              <td class="ph4-ns pt3 pb5">
+                <!-- partial:partials/messages/regards.hbs --><!-- partial -->
+              </td>
+            </tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

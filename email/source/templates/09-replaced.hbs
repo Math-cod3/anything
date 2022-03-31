@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+  <!-- partial:partials/html-head.hbs --><!-- partial -->
+	<body>
+		<table id="body-table" width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" valign="top">
+					<table class="w-100 mw6-5 mv4-ns bg-white" width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+
+            <!-- Header -->
+            <tr>
+              <td class="w-100 tc">
+                <!-- partial:partials/logo.hbs --><!-- partial -->
+              </td>
+            </tr>
+
+            <tr>
+              <td class="pl4 pr4">
+                <!-- More than 1 package -->
+                <div class="w-100 pa4 tc">
+                  <h3 class="h2 b tc mt4 mb0 ttn ffg tracked-normal">Pedido alterado</h3>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="w-100 ph4-ns">
+                <div class="h4 mt2 cwl tc ffa ph4">
+                  Olá, {{orders.0.clientProfileData.firstName}}!<br/> Seu pedido #{{orders.0.orderId}} foi alterado. Infelizmente o item XXXX precisou ser removido do seu pedido e não poderá seguir para a entrega.
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="pt5">
+                <p class="w-100 tc mb4">
+                  <img src="https://mariafilo.vteximg.com.br/arquivos/email-status-3.png" alt="">
+                </p>
+              </td>
+            </tr>
+
+            <!-- Order info -->
+            {{#each orders}}
+						<tr>
+              <td class="w-100 ph4-ns pv4">
+                <div class="w-100 bt b--light-gray br2 b-light pa4">
+                  <h4 class="ffa ttu">((i18n.common.order)) <span class="fw5">#{{orderId}}</span></h4>
+                  <p class="mt0 mb4 silver">((i18n.package.seller)) {{sellers.0.name}}</p>
+
+                  {{#richShippingData shippingData}}
+                    {{#group logisticsInfo by="addessId"}}
+                      <!-- Packages -->
+                      {{#group items by="packageId"}}
+                        <div class="cb fn pt3">
+                          {{#compare item.length '>' 1}}
+                            <h3 class="mb2">((i18n.package.title)) {{#math index '+' 1}}{{/math}}</h3>
+                          {{/compare}}
+                        </div>
+
+                        <!-- partial:partials/package.hbs --><!-- partial -->
+                      {{/group}}
+                      
+                      <div class="cb fn pt3">
+                        <!-- Address info -->
+                        <!-- partial:partials/address-delivery-title.hbs --><!-- partial -->
+                        <!-- partial:partials/address-pickup-title.hbs --><!-- partial -->
+                      </div>
+                    {{/group}}
+                  {{/richShippingData}}
+
+                  <!-- Payment - splitted -->
+                  {{#compare split "==" true}}
+                    {{#compare paymentData.transactions.payments.length '>' 0}}
+                      <div class="fl w-100 w-50-ns pb3 v-top">
+                        <h3>((i18n.payment.title))</h3>
+
+                        {{#each paymentData.transactions}}
+                        <!-- partial:partials/payment.hbs --><!-- partial -->
+                        {{/each}}
+                      </div>
+                    {{/compare}}
+                  {{/compare}}
+
+                  <hr class="bt b--light-gray bl-0 br-0 bb-0" />
+
+                  <div class="w-40">
+                    <!-- partial:partials/totals.hbs --><!-- partial -->
+                  </div>
+
+                  <div class="cb p0"></div>
+                </div>
+							</td>
+						</tr>
+            {{/each}}
+
+            <tr>
+              <td class="pa4 tc">
+                <p class="ffa h4 ph2 cwl ls-normal lh2">
+                  Existem <strong>três prováveis motivos</strong> para que você esteja recebendo este e-mail:
+                </p>
+
+                <div class="w100 mt4 lh1 tc ls-normal">
+                  <p class="ffa h4 ph2 cwl lh2">1 - Você solicitou o cancelamento.</p>
+                  <p class="ffa h4 ph2 cwl lh2">2 - O seu pagamento não foi aprovado.</p>
+                  <p class="ffa h4 ph2 cwl lh2">3 - Algum produto do seu pedido esgotou antes de ser enviado.</p>
+                </div>
+              
+                <p class="ffa h4 ph2 cwl ls-normal lh2 mt5">
+                  <strong>Caso não tenha solicitado o cancelamento</strong> e não tenha tido nenhum problema com pagamento, vamos explicar abaixo o motivo do cancelamento por indisponibilidade de estoque:<br/><br/>
+                  O estoque do nosso site é integrado com as lojas físicas, desta forma ganhamos uma maior abrangência de estoque e agilidade na entrega. Porém, não obtivemos sucesso na busca pelo(s) produto(s) que selecionou em todos as nossas possibilidades e - antes de ser faturado - o produto esgotou.<br/><br/>
+                  Pedimos desculpas por isso e estamos trabalhando para que cada vez mais essa integração aconteça de forma ágil e efetiva para evitarmos que isso aconteça.
+                </p>
+
+                <p class="ffa h4 ph2 cwl ls-normal lh2 mt5 mb4">
+                  <strong>Após o cancelamento estes são os procedimentos que realizamos:</strong><br/><br/>
+                  No <strong>crédito</strong>, o estorno é realizado automaticamente e o valor aparecerá em até duas faturas subsequentes;<br/><br/>
+                  No <strong>Pix</strong>, ele se dará em até 5 dias úteis na conta bancária que foi realizada a compra;<br/><br/>
+                  Se você pagou com <strong>vale-trocas</strong>, o valor está disponível no mesmo vale;<br/><br/>
+                  Caso o seu pagamento tenha sido feito <strong>em loja</strong>, entraremos em contato por telefone e e-mail pois precisaremos dos seus dados bancários para realizar o depósito, que é feito em até 10 dias úteis.
+                </p>
+                
+                <!-- partial:partials/messages/order-link.hbs --><!-- partial -->
+              </td>
+            </tr>
+
+            <tr>
+              <td class="ph4-ns pt3 pb5">
+                <p class="h5 ffa cwl tc mb3">((i18n.shipping.estimateMessage))</p>
+
+                <!-- partial:partials/messages/regards.hbs --><!-- partial -->
+              </td>
+            </tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

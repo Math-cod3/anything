@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+  <!-- partial:partials/html-head.hbs --><!-- partial -->
+	<body>
+		<table id="body-table" width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" valign="top">
+					<table class="w-100 mw6-5 mv4-ns bg-white" width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+
+            <!-- Header -->
+            <tr>
+              <td class="w-100 tc">
+								<!-- partial:partials/logo.hbs --><!-- partial -->
+              </td>
+            </tr>
+
+            <tr>
+              <td class="pl4 pr4">
+                <!-- More than 1 package -->
+                <div class="w-100 pa4 tc">
+                  <h3 class="h2 b tc mt4 mb0 ttn ffg tracked-normal">((i18n.shipping.updateTitle))</h3>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="w-100 ph4-ns">
+                <div class="h4 mt2 cwl tc ffa ph4 lh3">
+                  Olá, {{clientProfileData.firstName}}!<br/>
+                  O seu pedido teve uma atualização de status.
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="w-100 ph4-ns pt5 pb4">
+                <div class="w-100 bt b--light-gray br2 b-light pt3 pl4 pr4 pb3">
+                  <div class="w-100 pb1">
+                    <p class="dib ffa h5 fw7">MOVIMENTAÇÕES DO SEU PEDIDO</p>
+                    <p class="dib ffa h5 fr">{{package.trackingNumber}}</p>
+                  </div>
+
+                  <hr class="bt b--light-gray bl-0 br-0 bb-0" />
+
+                  {{#each package.courierStatus.data}}
+                    <div class="w-100 pv1">
+                      <p class="w-100 ffa h6 cwl">
+                        <span class="mr2">{{#formatDate this.lastChange}}{{/formatDate}}</span>
+                        <span>{{#formatTime this.lastChange}}{{/formatTime}}</span>
+                      </p>
+
+                      <p class="w-100 ffa h6 color-dark">{{this.description}}</p>
+                    </div>
+
+                    {{#if @last}} 
+                    {{else}}
+                      <hr class="bt b--light-gray bl-0 br-0 bb-0" />
+                    {{/if}}
+                  {{/each}}
+                </div>
+              </td>
+            </tr>
+
+            <!-- Order info -->
+            <tr>
+              <td class="w-100 ph4-ns pv4">
+                <div class="w-100 bt b--light-gray br2 b-light pa4">
+                  <h4 class="ffa ttu">((i18n.common.order)) #{{orderId}}</h4>
+                  <p class="mt1 mb2 silver ffa">((i18n.package.seller)) {{sellers.0.name}}</p>
+
+                  <div class="cb pt3">
+                    {{#richShippingData shippingData}}
+                      {{#group logisticsInfo by="addressId"}}
+                        {{#group items by="packageId"}}
+                          <!-- partial:partials/package.hbs --><!-- partial -->
+                        {{/group}}
+
+                        <!-- Address info -->
+                        <!-- partial:partials/address-delivery-title.hbs --><!-- partial -->
+                      {{/group}}
+                    {{/richShippingData}}
+
+                    <hr class="bt b--light-gray bl-0 br-0 bb-0" />
+
+                    <div class="w-40">
+                      <!-- partial:partials/totals.hbs --><!-- partial -->
+                    </div>
+
+                    <div class="cb p0"></div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            
+            <tr>
+              <td class="ph4-ns pt3">
+                <!-- partial:partials/messages/order-link.hbs --><!-- partial -->
+              </td>
+            </tr>
+
+            <tr>
+              <td class="ph4-ns pt3 pb5">
+                <!-- partial:partials/messages/regards.hbs --><!-- partial -->
+              </td>
+            </tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,13 @@
+{{#compare items.0.selectedDeliveryChannel '==' null}}
+  <div class="bg-light-gray pa3 mb3 ">
+    <h5 class="tuu">((i18n.shipping.delivery))</h5>
+    <!-- partial:address-delivery-info.hbs --><!-- partial -->
+  </div>
+{{/compare}}
+
+{{#eq items.0.selectedDeliveryChannel "delivery"}}
+  <div class="w100 mb3 bt b--light-gray bl-0 br-0 bb-0 pt3">
+    <h5 class="f6 ffa cwl-m ttu fw7 mb2">((i18n.shipping.addressDelivery))</h5>
+    <!-- partial:address-delivery-info.hbs --><!-- partial -->
+  </div>
+{{/eq}}

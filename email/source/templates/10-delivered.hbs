@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+  <!-- partial:partials/html-head.hbs --><!-- partial -->
+	<body>
+		<table id="body-table" width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" valign="top">
+					<table class="w-100 mw6-5 mv4-ns bg-white" width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+
+            <!-- Header -->
+            <tr>
+              <td class="w-100 tc">
+                <!-- partial:partials/logo.hbs --><!-- partial -->
+              </td>
+            </tr>
+
+            <tr>
+              <td class="w-100 tc">
+                <h3 class="h2 b tc mt5 mb4 ttn ffg tracked-normal">((i18n.shipping.manyPackagesDelivered))</h3>
+
+                <div class="h4 mt2 cwl tc ffa ph4">
+                  Olá, {{clientProfileData.firstName}}! O seu pedido foi entregue.<br/>
+                  Obrigada por escolher a Maria Filó.
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="pt5">
+                <p class="w-100 tc mb4">
+                  <img src="https://mariafilo.vteximg.com.br/arquivos/email-status-5.png" alt="">
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="w-100 ph4-ns pv4">
+                <div class="w-100 bt b--light-gray br2 b-light pa4">
+                  {{#richShippingData shippingData}}
+                    {{#group logisticsInfo by="addessId"}}
+                      <div class="cb fn pt2">
+                        <h4 class="ffa ttu mb0">((i18n.shipping.address))</h4>
+                        <!-- Address info -->
+                        <!-- partial:partials/address-delivery-no-title.hbs --><!-- partial -->
+                        <!-- partial:partials/address-pickup-no-title.hbs --><!-- partial -->
+                      </div>
+                    {{/group}}
+                  {{/richShippingData}}
+                </div>
+							</td>
+						</tr>
+
+            <tr>
+              <td class="w-100 ph4-ns pv4">
+                <div class="w-100 bt b--light-gray br2 b-light pa4">
+                  {{#richShippingData shippingData}}
+                    {{#group logisticsInfo by="addessId"}}
+                      <div class="cb fn">
+                        <h4 class="ffa ttu mb2">((i18n.order.package))</h4>
+
+                        {{#group items by="packageId"}}
+                          {{#compare items.0.selectedDeliveryChannel '==' 'pickup-in-point'}}
+                            <!-- partial:partials/items.hbs --><!-- partial -->
+                          {{else}}
+                            <!-- partial:partials/package.hbs --><!-- partial -->
+                          {{/compare}}
+                        {{/group}}
+                      </div>
+                    {{/group}}
+                  {{/richShippingData}}
+                </div>
+							</td>
+						</tr>
+
+            <tr>
+              <td class="pa4 tc">
+                <p class="ffa h4 ph2 cwl ls-normal lh2">
+                  Cada detalhe foi preparado para inspirar e realçar a sua beleza nos encontros da vida.
+                </p>
+
+                <p class="ffa h4 ph2 cwl ls-normal lh2 mt4">
+                  Em breve você receberá um e-mail para participar da nossa pesquisa de satisfação e poderá avaliar sua experiência de compra. Ficaremos muito satisfeitos em receber sua opinião para te atendermos cada vez melhor.
+                </p>
+
+                <p class="ffa h4 ph2 cwl ls-normal lh2 mt4">
+                  <strong>INFORMAÇÃO IMPORTANTE:</strong> A Nota Fiscal do seu produto sempre ficará ao lado direito da sua caixa. Fique atento, ela será necessária caso precise realizar trocas ou devoluções. Também enviaremos uma cópia para o e-mail cadastrado.
+                </p>
+
+                <p class="ffa h4 ph2 cwl ls-normal lh2 mt5">
+                  Você pode solicitar sua troca ou devolução de maneira fácil e rápida no nosso site:
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="tc">
+                <div class="w-100 mb5">
+                  <a class="dib ph3 pv3 white bg-black no-underline fw5 ttu br1 h6 ffa" href="{{ordersUrl}}">((i18n.order.track))</a>
+              </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="ph4-ns pt3 pb5">
+                <!-- partial:partials/messages/regards.hbs --><!-- partial -->
+              </td>
+            </tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

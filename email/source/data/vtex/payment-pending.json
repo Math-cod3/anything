@@ -1,0 +1,387 @@
+{
+	"orders": [
+		{
+			"package": null,
+			"subjectItemAttachment": {
+				"item": "TESTE BATOM VULT Ros...",
+				"totalItems": 1
+			},
+			"cancellationReason": null,
+			"items": [
+				{
+					"additionalInfo": {
+						"dimension": {
+							"cubicweight": 1,
+							"height": 20,
+							"length": 20,
+							"weight": 0.05,
+							"width": 80
+						},
+						"categoriesIds": "/476/",
+						"productClusterId": "",
+						"commercialConditionId": "1",
+						"brandName": "VULT",
+						"brandId": "2000305",
+						"offeringInfo": null,
+						"offeringType": null,
+						"offeringTypeId": null
+					},
+					"sellerSku": "6424",
+					"priceTable": null,
+					"priceValidUntil": "2019-11-07T14:40:53Z",
+					"callCenterOperator": null,
+					"commission": 0,
+					"freightCommission": 0,
+					"uniqueId": "0D92A97A4937464D81B17EDBB0D8BCA5",
+					"id": "6424",
+					"productId": "6423",
+					"refId": null,
+					"ean": "teste345252",
+					"name": "TESTE BATOM VULT Rosa 36",
+					"skuName": "Rosa 36",
+					"modalType": null,
+					"tax": 0,
+					"priceDefinitions": null,
+					"price": 6000,
+					"listPrice": 8000,
+					"manualPrice": null,
+					"sellingPrice": 6000,
+					"orderRewardStatus": null,
+					"rewardValue": 0,
+					"isGift": false,
+					"preSaleDate": null,
+					"productCategoryIds": "/476/",
+					"productCategories": {
+						"476": "Teste Beleza"
+					},
+					"quantity": 1,
+					"seller": "1",
+					"sellerChain": [
+						"1"
+					],
+					"imageUrl": "http://drogariavenancio.vteximg.com.br/arquivos/ids/155426-55-55/batomrosateste1.png?v=636771800396630000",
+					"detailUrl": "/batomvult59-32107-copy-6423-/p",
+					"components": [],
+					"bundleItems": [],
+					"attachments": [],
+					"attachmentOfferings": [],
+					"offerings": [],
+					"priceTags": [
+						{
+							"name": "discount@shipping-c77ee728-494b-4cf5-a85f-73787a520a33#dd9a0f81-0005-4192-9258-f7d6c6331fa3",
+							"value": -259,
+							"rawValue": -2.59,
+							"isPercentual": false,
+							"identifier": "c77ee728-494b-4cf5-a85f-73787a520a33"
+						}
+					],
+					"availability": "available",
+					"measurementUnit": "un",
+					"unitMultiplier": 1
+				}
+			],
+			"sellers": [
+				{
+					"subSellerId": "1",
+					"fulfillmentEndpoint": "http://fulfillment.vtexcommerce.com.br/api/fulfillment?sc=1&an=drogariavenancio",
+					"id": "1",
+					"name": "VENANCIO PRODUTOS FARMACEUTICOS LTDA",
+					"logo": ""
+				}
+			],
+			"giftRegistryData": null,
+			"receiptData": null,
+			"contextData": null,
+			"marketPlaceOrderId": "",
+			"orderFormId": "406d73fb8cc84523836bf59a10dcf7c4",
+			"sequence": "500061",
+			"affiliateId": "",
+			"status": "",
+			"callCenterOperator": "",
+			"userProfileId": "732fee18-5076-4bfa-b0f5-7bdcd1d1fcc1",
+			"hostName": "drogariavenancio",
+			"creationVersion": null,
+			"creationEnvironment": null,
+			"lastChangeVersion": null,
+			"workflowInstanceId": null,
+			"orderId": "874552487528-01",
+			"orderGroup": "874552487528",
+			"state": "payment-pending",
+			"isCheckedIn": false,
+			"sellerOrderId": "00-874552487528-01",
+			"storeId": null,
+			"checkedInPickupPointId": null,
+			"value": 6000,
+			"totals": [
+				{
+					"id": "Items",
+					"name": "Total dos Itens",
+					"value": 6000
+				},
+				{
+					"id": "Discounts",
+					"name": "Total dos Descontos",
+					"value": 0
+				},
+				{
+					"id": "Shipping",
+					"name": "Total do Frete",
+					"value": 0
+				},
+				{
+					"id": "Tax",
+					"name": "Total da Taxa",
+					"value": 0
+				}
+			],
+			"clientProfileData": {
+				"email": "alinemaione@gmail.com-17b.ct.vtex.com.br",
+				"firstName": "Aline",
+				"lastName": "Maione",
+				"document": "08237968760",
+				"documentType": "cpf",
+				"phone": "+5521988920410",
+				"corporateName": null,
+				"tradeName": null,
+				"corporateDocument": null,
+				"stateInscription": null,
+				"corporatePhone": null,
+				"isCorporate": false,
+				"profileCompleteOnLoading": true,
+				"profileErrorOnLoading": false,
+				"customerClass": null
+			},
+			"ratesAndBenefitsData": {
+				"rateAndBenefitsIdentifiers": [
+					{
+						"id": "c77ee728-494b-4cf5-a85f-73787a520a33",
+						"name": "Frete Gratis",
+						"featured": false,
+						"description": "Frete Gratis para compras acima de R$ 150,00",
+						"matchedParameters": {},
+						"additionalInfo": null
+					}
+				],
+				"teaser": []
+			},
+			"shippingData": {
+				"address": {
+					"addressType": "residential",
+					"receiverName": "Aline Maione",
+					"addressId": "65af4015920742a484c620ff3251cae3",
+					"postalCode": "20510-150",
+					"city": "Rio de Janeiro",
+					"state": "RJ",
+					"country": "BRA",
+					"street": "Rua Itacuruçá",
+					"number": "26",
+					"neighborhood": "Tijuca",
+					"complement": "304",
+					"reference": null,
+					"geoCoordinates": []
+				},
+				"logisticsInfo": [
+					{
+						"itemIndex": 0,
+						"selectedSla": "Normal",
+						"selectedDeliveryChannel": "delivery",
+						"addressId": "65af4015920742a484c620ff3251cae3",
+						"slas": [
+							{
+								"id": "Normal",
+								"deliveryChannel": "delivery",
+								"name": "Normal",
+								"deliveryIds": [
+									{
+										"courierId": "11dc950",
+										"warehouseId": "1fb11fb",
+										"dockId": "1273b6e",
+										"courierName": "Jadlog",
+										"quantity": 1
+									}
+								],
+								"shippingEstimate": "7bd",
+								"shippingEstimateDate": null,
+								"lockTTL": "12d",
+								"availableDeliveryWindows": [],
+								"deliveryWindow": null,
+								"price": 0,
+								"listPrice": 259,
+								"tax": 0,
+								"pickupStoreInfo": {
+									"isPickupStore": false,
+									"friendlyName": null,
+									"address": null,
+									"additionalInfo": null,
+									"dockId": null
+								},
+								"pickupPointId": null,
+								"pickupDistance": 0,
+								"polygonName": null
+							}
+						],
+						"shipsTo": [
+							"BRA"
+						],
+						"itemId": "6424",
+						"deliveryChannels": [
+							{
+								"id": "delivery"
+							}
+						]
+					}
+				],
+				"selectedAddresses": [
+					{
+						"addressType": "residential",
+						"receiverName": "Aline Maione",
+						"addressId": "65af4015920742a484c620ff3251cae3",
+						"postalCode": "20510-150",
+						"city": "Rio de Janeiro",
+						"state": "RJ",
+						"country": "BRA",
+						"street": "Rua Itacuruçá",
+						"number": "26",
+						"neighborhood": "Tijuca",
+						"complement": "304",
+						"reference": null,
+						"geoCoordinates": []
+					}
+				],
+				"availableAddresses": [
+					{
+						"addressType": "residential",
+						"receiverName": "Aline Maione",
+						"addressId": "65af4015920742a484c620ff3251cae3",
+						"postalCode": "20510-150",
+						"city": "Rio de Janeiro",
+						"state": "RJ",
+						"country": "BRA",
+						"street": "Rua Itacuruçá",
+						"number": "26",
+						"neighborhood": "Tijuca",
+						"complement": "304",
+						"reference": null,
+						"geoCoordinates": []
+					}
+				],
+				"pickupPoints": []
+			},
+			"paymentData": {
+				"giftCards": [],
+				"transactions": [
+					{
+						"isActive": true,
+						"transactionId": "596985C190D247D782E869F65980EE18",
+						"merchantName": "DROGARIAVENANCIO",
+						"payments": [
+							{
+								"id": "3C7A38C3BE5C49AA98E7CBCA9E9F755A",
+								"paymentSystem": "6",
+								"paymentSystemName": "Boleto Bancário",
+								"value": 6000,
+								"installments": 1,
+								"connectorResponses": {},
+								"referenceValue": 6000,
+								"cardHolder": null,
+								"cardNumber": null,
+								"firstDigits": null,
+								"lastDigits": null,
+								"cvv2": null,
+								"expireMonth": null,
+								"expireYear": null,
+								"url": "https://shopline.itau.com.br/shopline/shopline.aspx?DC=G183U175U211U13U236U100U157U163U233U60U165U217U103U205U11U136U92U103U208U14U7U145U43U99U247U245U52U32U223U99U182U103U206U242U105U14U62U194U82U193U87U236U152U114U222U73U59U84U139U253U125U125U161U65U97U225U215U10U214U228U231U154U6U74U160U173U87U217U180U144U83U164U196U70U19U111U164U240U140U135U197U42U77U213U228U149U51U156U206U173U69U100U133U188U227U27U172U205U243U45U55U183U171U171U134U49U216U204U14U95U71U110U230U189U186U165U201U46U158U250U73U22U1U9U96U197U190U214U37U2U144U40U250U211U9U160U17U79U53U115U251U29U100U166U228U103U153U129U23U0U155U236U200U158U181U235U112U38U136U251U44U154U167U220U193U78U167U166U165U111U240U95U12U128U235U23U233U31U58U67U225U30U160U119U165U88U209U28U212U117U133U99U179U183U51U73U189U128U25U218U85U249U201U78U108U161U156U112U22U168U208U251U112U204U10U47U136U134U212U21U34U120U88U53U79U113U67U63U138U223U165U55U55U155U24U101U50U197U171U34U162U42U119U5U25U220U203U67U104U64U79U214U143U130U66U251U115U25U179U247U79U125U187U203U219U46U112U154U177U3U163U114U77U230U247U13U212U50U155U111U25U77U35U165U178U189U139U234U183U183U160U174U233U220U29U106U154U214U51U239U214U30U27U66U218U159U15U53U252U218U14U106U69U89U45U114U74U47U177U76U49U98U178U186U144U14U155U82U192U55U94U97U22U22U168U106U83U1U6U92U155U152U62U39U36U37U33U98U145U162U87U7U166U182U219U53U85U90U202U72U20U137U118U51U70U230U239U177U1U232U76U156U44U212U187U4U128U209U63U250U212U180U225U165U70U8U50U53U114U96U9U171U122U78U231U161U157U99U168U28U163U117U70U245U146U235U48U9U92U35U182U9U254U66U197U82U89U156U158U51U78U208U20U121U179U238U44U133U130U144U69U254U129U59U24U127U16U245U9U247U7U179U138U226U59U235U28U50U68U231U193U185U155U150U74U250U64U244U",
+								"koinUrl": null,
+								"tid": null,
+								"redemptionCode": null,
+								"giftCardId": null,
+								"giftCardProvider": null,
+								"giftCardAsDiscount": null,
+								"group": "bankInvoice",
+								"dueDate": null,
+								"accountId": null,
+								"parentAccountId": null
+							}
+						],
+						"sharedTransaction": null
+					}
+				]
+			},
+			"clientPreferencesData": {
+				"locale": "pt-BR",
+				"optinNewsLetter": false
+			},
+			"commercialConditionData": null,
+			"marketingData": null,
+			"storePreferencesData": {
+				"countryCode": "BRA",
+				"saveUserData": false,
+				"timeZone": "E. South America Standard Time",
+				"currencyCode": "BRL",
+				"currencyLocale": 1046,
+				"currencySymbol": "R$",
+				"currencyFormatInfo": {
+					"currencyDecimalDigits": 2,
+					"currencyDecimalSeparator": ",",
+					"currencyGroupSeparator": ".",
+					"currencyGroupSize": 3,
+					"startsWithCurrencySymbol": true
+				}
+			},
+			"openTextField": null,
+			"invoiceData": null,
+			"taxData": null,
+			"customData": null,
+			"hooksData": null,
+			"changeData": null,
+			"subscriptionData": null,
+			"salesChannel": "1",
+			"followUpEmail": "cd5664a2dbf14bfbabd77b59c1024d0a@ct.vtex.com.br",
+			"creationDate": "2018-11-07T14:41:41.2125503Z",
+			"lastChange": "2018-11-07T14:41:51.4734993Z",
+			"timeZoneCreationDate": "2018-11-07T12:41:41.2125503",
+			"timeZoneLastChange": "2018-11-07T12:41:51.4734993",
+			"isCompleted": true,
+			"merchantName": null,
+			"userType": "",
+			"roundingError": 0,
+			"allowEdition": false,
+			"allowCancellation": false,
+			"isUserDataVisible": false,
+			"allowChangeSeller": false
+		}
+	],
+	"ordersUrl": "http://drogariavenancio.myvtex.com/account/orders",
+	"orderGroup": "874552487528",
+	"subjectItemAttachment": {
+		"item": "TESTE BATOM VULT Ros...",
+		"totalItems": 1
+	},
+	"split": false,
+	"totalValue": 6000,
+	"callCenterOperatorData": null,
+	"_accountInfo": {
+		"MainAccountName": "mariafilo",
+		"AccountName": "mariafilo",
+		"Cnpj": "10285590000280",
+		"Id": "7f97d3d6-0bd1-4216-9366-81dc3f180642",
+		"IsActive": true,
+		"IsOperating": true,
+		"CreationDate": "2017-01-30T11:49:40",
+		"OperationDate": "2017-07-10T20:38:19",
+		"CompanyName": "Maria Filó",
+		"TradingName": "Maria Filó",
+		"City": "RIO DE JANEIRO",
+		"Complement": null,
+		"Country": "BRASIL",
+		"State": "RJ",
+		"Address": "RUA BELA",
+		"District": "SÃO CRISTÓVÃO",
+		"Number": "649",
+		"PostalCode": "20930-381",
+		"Licences": null,
+		"ParentAccountName": null,
+		"InactivationDate": null,
+		"Platform": "vtex"
+	}
+}

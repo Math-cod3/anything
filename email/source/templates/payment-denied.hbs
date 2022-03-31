@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+  <!-- partial:partials/html-head.hbs --><!-- partial -->
+	<body>
+		<table id="body-table" width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" valign="top">
+					<table class="w-100 mw6-5 mv4-ns bg-white" width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+
+            <!-- Header -->
+            <tr>
+              <td class="w-100 tc">
+                <!-- partial:partials/logo.hbs --><!-- partial -->
+              </td>
+            </tr>
+
+            <tr>
+              <td class="pl4 pr4">
+                <!-- More than 1 package -->
+                <div class="w-100 pa4 tc">
+                  <h3 class="h2 b tc mt4 mb0 ttn ffg tracked-normal">Pagamento não autorizado</h3>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="w-100 ph4-ns">
+                <div class="h4 mt2 cwl tc ffa ph4 lh2">
+                  Olá! Parece que houve algum problema com seu pagamento. Seu pedido foi cancelado.
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="pt5">
+                <p class="w-100 tc mb4">
+                  <img src="https://mariafilo.vteximg.com.br/arquivos/email-status-cancel.png" alt="">
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="w-100 ph4-ns">
+                <div class="h4 mt5 mb3 cwl tc ffa ph4 lh2">
+                  Os detalhes do pedido serão exibidos abaixo para sua conferência:
+                </div>
+              </td>
+            </tr>
+
+            <!-- Items info -->
+            <tr>
+              <td class="w-100 ph4-ns pv4">
+                <div class="w-100 bt b--light-gray br2 b-light pa4">
+                  <h4 class="ffa ttu mb3">((i18n.common.order)) #{{orderId}}</h4>
+
+                  <div class="cb pt3">
+                    {{#richShippingData shippingData}}
+                      {{#group logisticsInfo by="addressId"}}
+                        {{#group items by="packageId"}}
+                          <!-- partial:partials/package.hbs --><!-- partial -->
+                        {{/group}}
+                      {{/group}}
+                    {{/richShippingData}}
+
+                    <hr class="bt b--light-gray bl-0 br-0 bb-0" />
+
+                    <div class="w-40">
+                      <!-- partial:partials/totals.hbs --><!-- partial -->
+                    </div>
+
+                    <div class="cb p0"></div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="ph4-ns pt4">
+                <p class="h4 lh-title ffa tc cwl mt4">Caso queira refazer sua compra, com outra forma de pagamento, basta clicar no botão abaixo:</p>
+                <p class="tc mt4 mb5">
+                  <a class="dib ph3 pv3 white bg-black no-underline fw5 ttu br1 h6 ffa" href="{{items.0.detailUrl}}">COMPRE NOVAMENTE</a>
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="ph4-ns pt4 pb5">
+                <!-- partial:partials/messages/regards.hbs --><!-- partial -->
+              </td>
+            </tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

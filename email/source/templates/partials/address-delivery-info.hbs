@@ -1,0 +1,16 @@
+{{#if orders.0.giftRegistryData}}
+  {{orders.0.giftRegistryData.description}}
+{{else}}
+  {{#each ../../shippingData.availableAddresses}}
+    {{#eq ../addressId AddressId}}
+      <div class="w-100 lh-title">
+        <span class="h6 ffa fw7 cwl-m">{{receiverName}}</span><br/>
+        <span class="h6 ffa cwl-m">{{street}}, {{number}}{{#if complement}} - {{complement}}
+          {{/if}}
+            - {{neighborhood}} - {{city}} - {{state}}
+        </span><br/>
+        <span class="h6 ffa cwl-m">((i18n.shipping.postalCode)) {{postalCode}}</span>
+      </div>
+    {{/eq}}
+  {{/each}}
+{{/if}}

@@ -1,0 +1,67 @@
+{{#richShippingData shippingData}}
+  {{#group logisticsInfo by="packageId"}}
+    {{#each items}}
+      {{#compare @index '==' 0}}
+        <div class="pt3 pb0 w-100">
+          <!-- Change border color for each delivery channel -->
+
+          <div class="ba br2 b-light">
+            <div class="pa4 pb0">
+              <!-- Quantity of items -->
+              {{#eq ../items.length 1}}
+                {{#each ../../../items}}
+                  {{#compare id '==' ../../items.0.itemId}}
+                    <h5 class="ffa fw7 w-100 cwl lh-solid">{{name}}</h5>
+                  {{/compare}}
+                {{/each}}
+              {{else}}
+                {{../items.length}}
+                ((i18n.common.lowercase.items))
+              {{/eq}}
+
+              <!-- Scheduled shipping -->
+              {{#if deliveryWindow}}
+                <!-- partial:shipping-summary-estimate-scheduled.hbs --><!-- partial -->
+              <!-- Shipping estimate -->
+              {{else}}
+                {{#if shippingEstimateDate}}
+                  <!-- partial:shipping-summary-estimate-date.hbs --><!-- partial -->
+                {{else}}
+                  <!-- partial:shipping-summary-estimate-range.hbs --><!-- partial -->
+                {{/if}}
+              {{/if}}
+            </div>
+
+            <!-- Change border color for each delivery channel -->
+            <div class="w100 pl4 pr4">
+              <hr class="bt b--light-gray bl-0 br-0 bb-0" />
+
+              <h5 class="w80 ffa fw3 pt2 pb3 cwl">
+                <!-- Show Pickup Store name -->
+                {{#eq selectedDeliveryChannel "pickup-in-point"}}
+                  {{#each slas}}
+                    {{#compare ../selectedSla '==' id}}
+                      {{pickupStoreInfo.friendlyName}}
+                    {{/compare}}
+                  {{/each}}
+                {{else}}
+                  <!-- Show gift owner's address info -->
+                  {{#if ../../../giftRegistryData}}
+                    {{../../../giftRegistryData.description}}
+                  <!-- Show consumer's address summary -->
+                  {{else}}
+                    {{#each ../../availableAddresses}}
+                      {{#eq ../addressId addressId}}
+                        {{street}}, {{number}}
+                      {{/eq}}
+                    {{/each}}
+                  {{/if}}
+                {{/eq}}
+              </h5>
+            </hr>
+          </div>
+        </div>
+      {{/compare}}
+    {{/each}}
+  {{/group}}
+{{/richShippingData}}

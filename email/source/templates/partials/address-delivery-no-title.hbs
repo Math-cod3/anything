@@ -1,0 +1,11 @@
+{{#compare items.0.selectedDeliveryChannel '==' null}}
+  <div class="w100 mb3 bl-0 br-0 bb-0 pt2">
+    <!-- partial:address-delivery-info.hbs --><!-- partial -->
+  </div>
+{{/compare}}
+
+{{#eq items.0.selectedDeliveryChannel "delivery"}}
+  <div class="w100 mb3 bl-0 br-0 bb-0 pt2">
+    <!-- partial:address-delivery-info.hbs --><!-- partial -->
+  </div>
+{{/eq}}

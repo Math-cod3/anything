@@ -1,0 +1,24 @@
+{{#compare items.length '==' shippingData.logisticsInfo.length}}
+  <div class="w-100 tc">
+    <!-- partial:hi.hbs --><!-- partial -->
+    {{#compare items.length '==' 1}}
+      <span class="w-100 ffa h5 cwl">((i18n.shipping.shippingProduct))</span>
+    {{/compare}}
+    {{#compare items.length '>' 1}}
+      <span class="w-100 ffa h5 cwl">((i18n.shipping.shippingProducts))</span>
+    {{/compare}}
+  </div>
+{{/compare}}
+
+<!-- Intro message: Just some items shipped -->
+{{#compare items.length '!=' shippingData.logisticsInfo.length}}
+  <div class="w-100 tc">
+    <!-- partial:hi.hbs --><!-- partial -->
+    {{#compare items.length '==' 1}}
+      <span class="w-100 ffa h5 cwl">((i18n.shipping.shippingOneProduct))</span>
+    {{/compare}}
+    {{#compare items.length '>' 1}}
+      <span class="w-100 ffa h5 cwl">((i18n.shipping.shippingSomeProducts))</span>
+    {{/compare}}
+  </div>
+{{/compare}}

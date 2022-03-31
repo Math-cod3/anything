@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+  <!-- partial:partials/html-head.hbs --><!-- partial -->
+	<body>
+		<table id="body-table" width="100%" border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td align="center" valign="top">
+					<table class="w-100 mw6-5 mv4-ns bg-white" width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+
+            <!-- Header -->
+            <tr>
+              <td class="w-100 tc">
+                <!-- partial:partials/logo.hbs --><!-- partial -->
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <!-- Just 1 package -->
+                {{#compare items.length '==' shippingData.logisticsInfo.length}}
+                  {{#compare shippingData.logisticsInfo.0.selectedDeliveryChannel '==' 'pickup-in-point'}}
+                    <h3 class="h2 b tc mt5 mb0 ttn ffg tracked-normal">((i18n.shipping.onePackagePickup))</h3>
+                    {{else}}
+                    <h3 class="h2 b tc mt5 mb0 ttn ffg tracked-normal">((i18n.shipping.onePackageDelivery))</h3>
+                  {{/compare}}
+
+                <!-- More than 1 package -->
+                {{else}}
+                  {{#compare shippingData.logisticsInfo.0.selectedDeliveryChannel '==' 'pickup-in-point'}}
+                    <h1>((i18n.shipping.manyPackagesPickup))</h1>
+                  {{else}}
+                    <h1>((i18n.shipping.manyPackagesDelivery))</h1>
+                  {{/compare}}
+
+                  <!-- partial:partials/messages/order-reference.hbs --><!-- partial -->
+
+                  <div class="bg-light-gray ph3 pv3 mt4 fw7 dib w-70-ns center lh-copy">
+                    <div>((i18n.shipping.manyPackages))</div>
+                    <div>((i18n.shipping.notifications))</div>
+                  </div>
+                {{/compare}}
+              </td>
+            </tr>
+
+            <tr>
+              <td class="w-100 ph4-ns tc pt4 pb0">
+                <!-- Intro message: All items shipped -->
+
+                <div class="h4 mt2 cwl tc ffa ph4">
+                  Olá, {{clientProfileData.firstName}}! Temos novidades!<br/>
+                  Seu pedido foi enviado e está a caminho do endereço indicado.
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="pt5">
+                <p class="w-100 tc mb4">
+                  <img src="https://mariafilo.vteximg.com.br/arquivos/email-status-4.png" alt="">
+                </p>
+              </td>
+            </tr>
+
+            <!-- Order info -->
+						<tr>
+              <td class="w-100 ph4-ns pv4">
+                <div class="w-100 bt b--light-gray br2 b-light pa4">
+                  {{#richShippingData shippingData}}
+                    {{#group logisticsInfo by="addressId"}}
+                      <div class="cb fn">
+                        <h3 class="ma0 ffa">((i18n.shipping.address))</h3>
+                        <!-- Address info -->
+                        <!-- partial:partials/address-delivery-no-title.hbs --><!-- partial -->
+                        <!-- partial:partials/address-pickup-no-title.hbs --><!-- partial -->
+                        <!-- partial:partials/address-pickup-business-hours.hbs --><!-- partial -->
+                      </div>
+                    {{/group}}
+                  {{/richShippingData}}
+                </div>
+              </td>
+						</tr>
+
+            <tr>
+              <td class="w-100 ph4-ns pv4">
+                <div class="w-100 bt b--light-gray br2 b-light pa4">
+                  {{#richShippingData shippingData}}
+                    {{#group logisticsInfo by="addessId"}}
+                      <div class="cb fn">
+                        <h3 class="ma0 mb2 ffa">((i18n.order.package))</h3>
+                        <!-- Address info -->
+
+                        {{#group items by="packageId"}}
+                          {{#compare items.0.selectedDeliveryChannel '==' 'pickup-in-point'}}
+                            <!-- partial:partials/items.hbs --><!-- partial -->
+                          {{else}}
+                            <!-- partial:partials/package.hbs --><!-- partial -->
+                          {{/compare}}
+                        {{/group}}
+                      </div>
+                    {{/group}}
+                  {{/richShippingData}}
+                </div>
+							</td>
+						</tr>
+
+            <tr>
+              <td class="ph4-ns pt3">
+                <p class="h4 lh-title ffa tc cwl mt4">
+                  Lembramos que na compra de mais de um item você pode recebê-los separadamente. Clique abaixo para acompanhar o passo a passo da sua entrega.
+                </p>
+
+                <!-- partial:partials/messages/order-link.hbs --><!-- partial -->
+              </td>
+            </tr>
+
+            <tr>
+              <td class="ph4-ns pt3 pb5">
+                <!-- partial:partials/messages/regards.hbs --><!-- partial -->
+              </td>
+            </tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
