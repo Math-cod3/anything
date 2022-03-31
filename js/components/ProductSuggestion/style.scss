@@ -1,0 +1,107 @@
+.product-suggestion {
+  background: #fff;
+  border: 1px solid #EAE9EA;
+  display: flex;
+  position: relative;
+  padding: 10px;
+
+  @media screen and (min-width: 489px) {
+    width: max-content;
+  }
+
+  .closeDiv {
+    width: 50px;
+    .close {
+      color: #000;
+      font-weight: normal;
+      line-height: 12px;
+      opacity: 1;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  }
+
+  > .description {
+    padding-left: 25px;
+  }
+
+  > .description > .title {
+    color: #000;
+    font-weight: bold;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+
+  > .description > .title > p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    max-width: 164px;
+    letter-spacing: 0.08em;
+  }
+
+  > .image {
+    padding-left: 40px;
+  }
+
+ .linkCTA {
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    color: #000;
+    font-weight: normal;
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 12px;
+    &::before {
+      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='14' viewBox='0 0 12 14' fill='none'%3E%3Cpath d='M4.25 4.91668V2.58334C4.25 2.00001 4.6 0.833344 6 0.833344' stroke='black' stroke-width='1.2' stroke-linecap='round'/%3E%3Cpath d='M7.75 4.91668V2.58334C7.75 2.00001 7.4 0.833344 6 0.833344' stroke='black' stroke-width='1.2' stroke-linecap='round'/%3E%3Cpath d='M2.90953 3.4C2.07216 3.4 1.37643 4.04564 1.31398 4.88068L0.815409 11.5473C0.746001 12.4754 1.48028 13.2667 2.41095 13.2667H9.58913C10.5198 13.2667 11.2541 12.4754 11.1847 11.5473L10.6861 4.88068C10.6236 4.04564 9.92792 3.4 9.09055 3.4H2.90953Z' stroke='black' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      padding-right: 13px;
+    }
+    &:hover{
+      text-decoration: none;
+    }
+  }
+
+  .price {
+    font-size: 12px;
+    margin: 10px 0px;
+    line-height: 14px;
+    color: #000;
+    letter-spacing: 0.08em;
+    .listPrice {
+      display: none;
+      color: #999999;
+      text-decoration: line-through;
+      padding-right: 11px;
+    }
+  }
+
+  .parcel {
+    font-size: 10px;
+    line-height: 12px;
+    color: #000;
+    letter-spacing: 0.08em;
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product-suggestion {
+    &-container {
+      height: auto !important;
+      width: 95%;
+      margin: auto;
+      padding: 0 !important;
+    }
+    > .image {
+      padding-left: 0px;
+    }
+    .closeDiv {
+      width: auto;
+    }
+  }
+}
